@@ -9,7 +9,7 @@ Navigate to `Services` -> `Dynamic DNS`
 
 ![dyndns-menu](./img/dyndns-menu.png)
 
-Click <kbd>Add</kbd>
+Click <kbd>➕Add</kbd>
 
 - Service Type: `Cloudflare`
 - Interface to monitor: `WAN`
