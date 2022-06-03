@@ -19,7 +19,7 @@ sidebar_position: 3
 ## Starting up...
 
 - Open `Windows System Image Manager`
-- Go to `File` > `New Answer File`
+- Navigate to `File` > `New Answer File`
 - Click Yes to open a Windows Image now
 - Select the Image for the Version of Windows you want to create an answer file
 
@@ -97,7 +97,7 @@ sidebar_position: 3
 
 ### Save Answer File
 
-- Go to `File` > `Save Answer File As`
+- Navigate to `File` > `Save Answer File As`
 - Save it
 
 # Sysprep

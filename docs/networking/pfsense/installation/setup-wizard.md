@@ -12,7 +12,7 @@ Default credentials are:
 Username: `admin`
 Password: `pfsense`
 
-Once you are logged in you probably will land in the setup wizard. In case you don't. Just go to `System` > `Setup Wizard`
+Once you are logged in you probably will land in the setup wizard. In case you don't. Just Navigate to `System` > `Setup Wizard`
 
 ![pfsense-wizard-step1.png](./img/pfsense-wizard-step1.png)
 

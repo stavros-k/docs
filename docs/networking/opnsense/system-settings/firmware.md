@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Status
 
-Go to `System` > `Firmware` > `Status`
+Navigate to `System` > `Firmware` > `Status`
 
 Shows the current Version of the system.
 
@@ -18,7 +18,7 @@ If a newer version exists, it will show a pop up and prompt you to upgrade.
 
 ## Plugins
 
-Go to `System` > `Firmware` > `Plugins`
+Navigate to `System` > `Firmware` > `Plugins`
 
 This is a list of the available plugins.
 

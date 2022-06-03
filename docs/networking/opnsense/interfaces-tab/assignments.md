@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Interfaces Assignments
 
-Go to `Interfaces` > `Assignments`
+Navigate to `Interfaces` > `Assignments`
 
 Here you can assign physical or virtual interfaces.
 

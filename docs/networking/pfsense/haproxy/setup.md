@@ -18,7 +18,7 @@ This is how it will look in the end
 ## Backends
 `Backends` is the local servers
 
-Go to `Services` -> `HAProxy` -> `Backends` -> `Add`
+Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
 
 * Name your backend (eg. `Backend_truenas`)
 * Click ⤵️ on Server List
@@ -40,7 +40,7 @@ Repeat for the other servers
 
 Frontend is where the redirect is happening
 
-Go to `Services` -> `HAProxy` -> `Frontends` -> `Add`
+Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
 
 * Name your frontend (eg. `Frontend-SNI`)
 * External Address
@@ -70,7 +70,7 @@ Go to `Services` -> `HAProxy` -> `Frontends` -> `Add`
 
 Now we need to open `HTTPS/443` port
 
-Go to `Firewall` -> `Rules` -> ⤵️`Add`
+Navigate to `Firewall` -> `Rules` -> ⤵️`Add`
 
 * Destination: `This firewall (self)`
 * Destination Port Range From: `HTTPS(443)`
@@ -83,7 +83,7 @@ Go to `Firewall` -> `Rules` -> ⤵️`Add`
 
 ## Enable HAProxy
 
-Go to `Services` -> `HAProxy` -> `Settings`
+Navigate to `Services` -> `HAProxy` -> `Settings`
 
 * Enable HAProxy: `Checked`
 * Maximum connections: `1000` (I use 1000, as I have enough memory, you can choose as many as you want)
@@ -96,7 +96,7 @@ Go to `Services` -> `HAProxy` -> `Settings`
 
 ## Check if everything is working
 
-Go to `Status` -> `HAProxy Status`
+Navigate to `Status` -> `HAProxy Status`
 
 If everything is setup correctly, you should have Green Lines for each backend.
 If you see Red Line for any backend, you probably have missed something.

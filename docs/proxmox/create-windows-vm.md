@@ -30,5 +30,5 @@ sidebar_position: 3
 		- Cores: (Set how many cores you want)
 	- **Memory**:
 		- Memory (MiB): (Set how much RAM you want)
-	- Before starting the VM Go to `Options`
+	- Before starting the VM Navigate to `Options`
 		- Double-Click `QEMU Guest Agent` and select `Use QEMU Guest Agent`

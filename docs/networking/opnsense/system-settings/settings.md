@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Basic Security Settings
 
-Go to `System` > `Settings` > `Administration`
+Navigate to `System` > `Settings` > `Administration`
 
 ### HSTS
 
@@ -35,7 +35,7 @@ Click <kbd>Save</kbd> when you done.
 
 ## General
 
-Go to `System` > `Settings` > `General`
+Navigate to `System` > `Settings` > `General`
 
 - Change `Hostname`
 I like to change it to something like `fw` or `firewall`
@@ -57,7 +57,7 @@ Click <kbd>Save</kbd> when you done
 
 ## Loggging
 
-Go to `System` > `Settings` > `Logging`
+Navigate to `System` > `Settings` > `Logging`
 
 - Increase `Preserve logs (Days)` if you want.
 _Setting this too high will need some storage space also_
@@ -70,7 +70,7 @@ Click <kbd>Save</kbd> when you done
 
 ## Miscellaneous
 
-Go to `System` > `Settings` > `Miscellaneous`
+Navigate to `System` > `Settings` > `Miscellaneous`
 
 - Change `Hardware` on `Thermal Sensors` depending on your system.
 - Backups will config later #TODO:

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # LAN Interface
 
-Go to `Interfaces` > `[LAN]`
+Navigate to `Interfaces` > `[LAN]`
 
 Here you can configure your `LAN` Interface
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 You can setup WiFi on OPNsense. Generally is not recommended, but sometimes might be useful.
 
-Go to `Interfaces` > `Wireless` > `Devices`
+Navigate to `Interfaces` > `Wireless` > `Devices`
 
 - Click <kbd>+</kbd>
 - `Parent interface`: `run0 ()`
@@ -16,7 +16,7 @@ Click <kbd>Save</kbd> when you done
 
 ![opnsense-wifi-device](./img/opnsense-wifi-device.png)
 
-Go to `Interfaces` > `Assignments`
+Navigate to `Interfaces` > `Assignments`
 
 - `New interface`: `run0_wlan1 (WLAN)`
 - Click <kbd>+</kbd>
@@ -26,7 +26,7 @@ Click <kbd>Save</kbd> when you done
 
 ![opnsense-wifi-interfaces](./img/opnsense-wifi-interfaces.png)
 
-Go to `Interfaces` > `Assignments` > `[WLAN]`
+Navigate to `Interfaces` > `Assignments` > `[WLAN]`
 
 - Check `Enable interface`
 - Check `Prevent interface removal`
@@ -52,7 +52,7 @@ Go to `Interfaces` > `Assignments` > `[WLAN]`
 Click <kbd>Save</kbd>
 Then Click <kbd>Apply changes</kbd>
 
-Go to `Services` > `DHCPv4` > `[WLAN]`
+Navigate to `Services` > `DHCPv4` > `[WLAN]`
 
 - Check `Enable DHCP server on the WLAN interface`
 - `Range`:
@@ -63,7 +63,7 @@ Go to `Services` > `DHCPv4` > `[WLAN]`
 
 Click <kbd>Save</kbd> when you done
 
-Go to `Firewall` > `Rules` > `WLAN`
+Navigate to `Firewall` > `Rules` > `WLAN`
 
 - Click <kbd>+</kbd>
 - `Action`: `Pass`

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Backups
 
-Go to `System` > `Configuration` > `Backups`
+Navigate to `System` > `Configuration` > `Backups`
 
 Here you can backup your configuration.
 
@@ -20,7 +20,7 @@ By selecting your configuration file and clicking <kbd>Restore configuration</kb
 
 ## History
 
-Go to `System` > `Configuration` > `History`
+Navigate to `System` > `Configuration` > `History`
 
 Here you can rollback any changes you made, as OPNsense saves each change.
 

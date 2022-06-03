@@ -9,9 +9,9 @@ sidebar_position: 1
 
 ## Install WDS (Windows Deployment Services)
 - Change Server Name
-	- Go to `Control Panel`
-	- Go to `System and Security`
-	- Go to `System`
+	- Navigate to `Control Panel`
+	- Navigate to `System and Security`
+	- Navigate to `System`
 	- Click `Rename this PC`
 	- Enter a name. eg `WDS-Server`
 	- Reboot
@@ -43,7 +43,7 @@ sidebar_position: 1
 
 - Windows Server Images
 	1. Prepare the images
-		- Open your Windows ISO and go to `sources`
+		- Open your Windows ISO and Navigate to `sources`
 		- Copy `boot.wim` and `install.wim` to `C:\RemoteInstall`
 		- Rename them to `Server2022Boot.wim` and `Server2022Install.wim`
 	2. Add Boot Images
@@ -67,7 +67,7 @@ sidebar_position: 1
 
 - Windows 10 Images
 	1. Prepare the images
-		- Open your Windows ISO and go to `sources`
+		- Open your Windows ISO and Navigate to `sources`
 		- Copy `boot.wim` and `install.esd` to `C:\RemoteInstall`
 		- Rename them to `Win10Boot.wim` and `Win10Install.esd`
 		- Open Powershell (Administrator) and execute the following
