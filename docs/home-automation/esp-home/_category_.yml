@@ -1,0 +1,5 @@
+label: ESP Home
+position: 1
+link:
+  type: generated-index
+  description: ESP Home Documentation

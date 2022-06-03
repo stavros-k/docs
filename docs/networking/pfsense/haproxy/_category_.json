@@ -1,8 +1,0 @@
-{
-  "label": "HA Proxy",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "pfSense HA Proxy"
-  }
-}
