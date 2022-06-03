@@ -6,7 +6,7 @@ sidebar_position: 4
 
 :::info Prerequisites
 
-- You have [Created](./create--windows-vm) the VM
+- You have [Created](./create-windows-vm) the VM
 
 :::
 

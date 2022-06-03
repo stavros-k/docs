@@ -79,7 +79,7 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/intro',
+                to: '/',
               },
             ],
           },
