@@ -7,8 +7,6 @@ sidebar_position: 2
 ## Dynamic DNS
 Navigate to `Services` -> `Dynamic DNS`
 
-![dyndns-menu](img/dyndns-menu.png)
-
 Click <kbd>➕Add</kbd>
 
 - Service Type: `Cloudflare`

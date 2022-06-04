@@ -47,8 +47,6 @@ First thing I like to do is change the theme.
 
 Go `System` > `General Setup`
 
-![pfsense-general-setup.png](img/pfsense-general-setup.png)
-
 Scroll to `webConfigurator`
 
 Change `Theme` to your prefered color. I prefer `pfSense-dark`
