@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# WiFi Setup
+# Configuration
 
 You can setup WiFi on OPNsense. Generally is not recommended, but sometimes might be useful.
 
