@@ -31,12 +31,12 @@ I like to use [Cloudflare](https://www.cloudflare.com/)'s servers. Also I disabl
 
 Click <kbd>Next</kbd>
 
-There are a few more steps, which is setting up `NTP Servers`, `WAN Interface`, `Lan Interface`, `Admin Password`.
+There are a few more steps, which is setting up `NTP Servers`, `WAN Interface`, `LAN Interface`, `Admin Password`.
 
 The defaults should work just fine.
 
-You really have to setup WAN interface, which is something that I can't help, as each ISP will have different requirements.
-
+If you have connected pfSense behind your already running modem/router, for `WAN` you can leave it to `DHCP` for now.
+Don't forget to set a different Network address than your ISP's modem/router on LAN interface.
 Also remember to set a strong Admin Password.
 
 ## General
