@@ -57,9 +57,21 @@ const config = {
       },
     ],
   ],
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          margin: 150,
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          },
+        },
+      },
       navbar: {
         title: 'Docs by Stavros',
         logo: {
