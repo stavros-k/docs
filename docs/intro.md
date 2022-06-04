@@ -3,7 +3,7 @@ slug: /
 sidebar_position: 1
 ---
 
-# Docs
+# Home
 
 This is a personal documentation site, generated with Docusaurus.
 
