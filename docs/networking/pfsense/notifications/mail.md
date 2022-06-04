@@ -25,4 +25,4 @@ Click <kbd>Test SMTP Settings</kbd>
 If you entered everything correct, you should receive a test mail on the `Notification E-Mail address` you set above.
 If you do receive it, you are ready!
 
-Click <kbd>Save</kbd>
+Click <kbd>💾Save</kbd>

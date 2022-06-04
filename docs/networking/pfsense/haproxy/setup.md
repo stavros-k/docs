@@ -28,7 +28,7 @@ Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
   * Encrypt(SSL) - `Unchecked`
   * SSL Checks - `Unchecked`
 * Health check method -> `Basic`
-* <kbd>Save</kbd>
+* <kbd>💾Save</kbd>
 
 ![haproxyback1](img/haproxyback1.jpg "haproxyback1")
 
@@ -76,7 +76,7 @@ Navigate to `Firewall` -> `Rules` -> ⤵️`Add`
 * Destination Port Range From: `HTTPS(443)`
 * Destination Port Range To: `HTTPS(443)`
 * Give it a Description if you want
-* <kbd>Save</kbd>
+* <kbd>💾Save</kbd>
 
 ![haproxyrule](img/haproxyrule.jpg "haproxyrule")
 ![haproxyruleview](img/haproxyruleview.jpg "haproxyruleview")
@@ -88,7 +88,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 * Enable HAProxy: `Checked`
 * Maximum connections: `1000` (I use 1000, as I have enough memory, you can choose as many as you want)
 * Internal stats port: `2200` (or any port you have free)
-* <kbd>Save</kbd>
+* <kbd>💾Save</kbd>
 
 ![haproxyset1](img/haproxyset1.jpg "haproxyset1")
 

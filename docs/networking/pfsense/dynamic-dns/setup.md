@@ -18,7 +18,7 @@ Click <kbd>➕Add</kbd>
 
 ![dyndns-setup](img/dyndns-setup.png)
 
-Click <kbd>Save</kbd>
+Click <kbd>💾Save</kbd>
 
 ## Zone ID
 
