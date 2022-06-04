@@ -23,6 +23,9 @@ Click <kbd>Next</kbd>
 In this screen you can set the `Hostname` of your pfSense firewall.
 
 If you have a domain, you can type it in the `Domain` field.
+Maybe it will be better to use something like `lan.your-domain.com`.
+So you don't end up creating conflicts later in your local DNS.
+
 You can use `localdomain` if you don't own a domain.
 (Don't worry, you can change it later).
 
