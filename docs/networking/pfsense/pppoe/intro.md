@@ -22,7 +22,7 @@ Luckily, everything needed is enabled by default from my ISP on their modem/rout
 But just in case, here is a screenshot of my ISP's UI.
 
 This is under `Internet` -> `Internet Configuration`.
-![isp-ppp-config](./img/isp-ppp-config.png)
+![isp-ppp-config](img/isp-ppp-config.png)
 
 There was a time that the preferred way (for my ISP), was to use some generic credentials on the ISP's modem/router.
 And the personal credentials on `pfSense`.

@@ -9,11 +9,11 @@ This is how it will look in the end
 
 **Backend**
 
-![haproxybackview](./img/haproxybackview.jpg "haproxybackview")
+![haproxybackview](img/haproxybackview.jpg "haproxybackview")
 
 **Frontend**
 
-![haproxyfrontview](./img/haproxyfrontview.jpg "haproxyfrontview")
+![haproxyfrontview](img/haproxyfrontview.jpg "haproxyfrontview")
 
 ## Backends
 `Backends` is the local servers
@@ -30,11 +30,11 @@ Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
 * Health check method -> `Basic`
 * <kbd>Save</kbd>
 
-![haproxyback1](./img/haproxyback1.jpg "haproxyback1")
+![haproxyback1](img/haproxyback1.jpg "haproxyback1")
 
 Repeat for the other servers
 
-![haproxyback2](./img/haproxyback2.jpg "haproxyback2")
+![haproxyback2](img/haproxyback2.jpg "haproxyback2")
 
 ## Frontends
 
@@ -47,7 +47,7 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
   * Port: `443`
 * Type: `ssl / https(TCP Mode)`
 
-![haproxyfront1](./img/haproxyfront1.jpg "haproxyfront1")
+![haproxyfront1](img/haproxyfront1.jpg "haproxyfront1")
 
 * Access Control lists
   * Click ⤵️
@@ -64,7 +64,7 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
   * backend: `Backend_truenas` (Here select the backend you want to redirect when the ACL matches the domain)
   * Repeat Action steps for all your backends
 
-![haproxyfront2](./img/haproxyfront2.jpg "haproxyfront2")
+![haproxyfront2](img/haproxyfront2.jpg "haproxyfront2")
 
 ## Firewall Rules
 
@@ -78,8 +78,8 @@ Navigate to `Firewall` -> `Rules` -> ⤵️`Add`
 * Give it a Description if you want
 * <kbd>Save</kbd>
 
-![haproxyrule](./img/haproxyrule.jpg "haproxyrule")
-![haproxyruleview](./img/haproxyruleview.jpg "haproxyruleview")
+![haproxyrule](img/haproxyrule.jpg "haproxyrule")
+![haproxyruleview](img/haproxyruleview.jpg "haproxyruleview")
 
 ## Enable HAProxy
 
@@ -90,9 +90,9 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 * Internal stats port: `2200` (or any port you have free)
 * <kbd>Save</kbd>
 
-![haproxyset1](./img/haproxyset1.jpg "haproxyset1")
+![haproxyset1](img/haproxyset1.jpg "haproxyset1")
 
-![haproxyset2](./img/haproxyset2.jpg "haproxyset2")
+![haproxyset2](img/haproxyset2.jpg "haproxyset2")
 
 ## Check if everything is working
 
@@ -101,4 +101,4 @@ Navigate to `Status` -> `HAProxy Status`
 If everything is setup correctly, you should have Green Lines for each backend.
 If you see Red Line for any backend, you probably have missed something.
 
-![haproxystats](./img/haproxystats.jpg "haproxystats")
+![haproxystats](img/haproxystats.jpg "haproxystats")

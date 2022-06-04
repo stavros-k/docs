@@ -21,7 +21,7 @@ _This will help to protect against cookie hijacking and protocol downgrade_
 _Checking this, OPNsense will only serve Web GUI on `HTTPS`_
 - Change `Listen Interface` to an interface that you will use for Administration only.
 
-![opnsense-settings-webui](./img/opnsense-settings-webui.png)
+![opnsense-settings-webui](img/opnsense-settings-webui.png)
 
 ### SSH
 
@@ -29,7 +29,7 @@ _Checking this, OPNsense will only serve Web GUI on `HTTPS`_
 - Change `Listen Interface` to an interface that you will use for Administration only.
 - Keep `Permit password login` disabled and use ssh keys.
 
-![opnsense-settings-ssh](./img/opnsense-settings-ssh.png)
+![opnsense-settings-ssh](img/opnsense-settings-ssh.png)
 
 Click <kbd>Save</kbd> when you done.
 
@@ -46,12 +46,12 @@ I'm will use my domain. Later will show how to also get a valid cert for it #TOD
 - Change `Language` if you want
 - Now you only have one Theme. Later will see how to add more. #TODO:
 
-![opnsense-settings-general](./img/opnsense-settings-general.png)
+![opnsense-settings-general](img/opnsense-settings-general.png)
 
 - Leave DNS Server(s) empty. Later will configure DNS over TLS. #TODO:
 - Uncheck `Allow DNS server list to be overridden by DHCP/PPP on WAN`
 
-![opnsense-settings-general-dns](./img/opnsense-settings-general-dns.png)
+![opnsense-settings-general-dns](img/opnsense-settings-general-dns.png)
 
 Click <kbd>Save</kbd> when you done
 
@@ -75,6 +75,6 @@ Navigate to `System` > `Settings` > `Miscellaneous`
 - Change `Hardware` on `Thermal Sensors` depending on your system.
 - Backups will config later #TODO:
 
-![opnsense-settings-misc-sensor](./img/opnsense-settings-misc-sensor.png)
+![opnsense-settings-misc-sensor](img/opnsense-settings-misc-sensor.png)
 
 Click <kbd>Save</kbd> when you done

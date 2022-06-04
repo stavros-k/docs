@@ -14,7 +14,7 @@ Click <kbd>➕Add</kbd>
 - Password: `YOURPASSWORD`
 - Check `Configure NULL service name`
 
-![ppp](./img/ppp.png)
+![ppp](img/ppp.png)
 
 Click <kbd>Save</kbd>
 
@@ -23,7 +23,7 @@ Navigate to `Interfaces` -> `Assignments`
 For the `WAN` Interface select under `Network port`
 the `PPPOE0(NIC) - YOURUSERNAME`
 
-![assignments](./img/assignments.png)
+![assignments](img/assignments.png)
 
 Click <kbd>Save</kbd>
 
@@ -35,7 +35,7 @@ Navigate to `Interfaces` -> `WAN`
 - Check `Block private networks and loopback addresses`
 - Check `Block bogon networks`
 
-![wan](./img/wan.png)
+![wan](img/wan.png)
 
 Click <kbd>Save</kbd>
 
@@ -43,7 +43,7 @@ You might have to navigate to `System` -> `Routing` -> `Gateways`
 
 And make sure there is only one gateway for the `WAN` interface. Mine is named `WAN_PPPOE`.
 
-![gateways](./img/gateways.png)
+![gateways](img/gateways.png)
 
 I had a faced a problem at some point, where there was more than one gateways.
 It had something to do with how I had configured my WAN before.

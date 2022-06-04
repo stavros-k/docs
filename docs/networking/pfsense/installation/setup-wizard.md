@@ -6,7 +6,7 @@ sidebar_position: 3
 
 This is the first screen you will see after completing the [installation](./install).
 
-![pfsense-login.png](./img/pfsense-login.png)
+![pfsense-login.png](img/pfsense-login.png)
 
 Default credentials are:
 Username: `admin`
@@ -14,11 +14,11 @@ Password: `pfsense`
 
 Once you are logged in you probably will land in the setup wizard. In case you don't. Just Navigate to `System` > `Setup Wizard`
 
-![pfsense-wizard-step1.png](./img/pfsense-wizard-step1.png)
+![pfsense-wizard-step1.png](img/pfsense-wizard-step1.png)
 
 Click <kbd>Next</kbd>
 
-![pfsense-step2.png](./img/pfsense-step2.png)
+![pfsense-step2.png](img/pfsense-step2.png)
 
 In this screen you can set the `Hostname` of your pfSense firewall.
 
@@ -47,11 +47,11 @@ First thing I like to do is change the theme.
 
 Go `System` > `General Setup`
 
-![pfsense-general-setup.png](./img/pfsense-general-setup.png)
+![pfsense-general-setup.png](img/pfsense-general-setup.png)
 
 Scroll to `webConfigurator`
 
 Change `Theme` to your prefered color. I prefer `pfSense-dark`
 You can also change `Login page color` to your prefered color. I prefer again `pfSense-dark`
 
-![pfsense-theme.png](./img/pfsense-theme.png)
+![pfsense-theme.png](img/pfsense-theme.png)

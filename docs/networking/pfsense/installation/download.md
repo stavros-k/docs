@@ -14,7 +14,7 @@ Download the installer from pfSense official download [page](https://www.pfsense
 * Select the `Mirror` closest to you
 * Click <kbd>Download</kbd>
 *
-![pfSense Download](./img/pfsense-download.png)
+![pfSense Download](img/pfsense-download.png)
 
 > You can skip `Rufus` and `Prepare the installation media (USB)`
 if you plan to do a virtualized installation
@@ -23,7 +23,7 @@ if you plan to do a virtualized installation
 Download rufus from their official [site](https://rufus.ie/en/)
 Select either the portable version or the installer, both will work.
 
-![download-rufus](./img/download-rufus.png)
+![download-rufus](img/download-rufus.png)
 
 ## Prepare the installation media (USB)
 
@@ -40,7 +40,7 @@ This process will **DELETE** any data in your USB stick.
 * Click <kbd>START</kbd>
 * Accept the **WARNING** saying that will **DESTROY** your data on this device
 
-![rufus.png](./img/rufus.png)
+![rufus.png](img/rufus.png)
 
 Once the process is finished you are ready to install pfSense to your machine.
 

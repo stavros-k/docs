@@ -14,7 +14,7 @@ Navigate to `Interfaces` > `Wireless` > `Devices`
 
 Click <kbd>Save</kbd> when you done
 
-![opnsense-wifi-device](./img/opnsense-wifi-device.png)
+![opnsense-wifi-device](img/opnsense-wifi-device.png)
 
 Navigate to `Interfaces` > `Assignments`
 
@@ -24,7 +24,7 @@ Navigate to `Interfaces` > `Assignments`
 
 Click <kbd>Save</kbd> when you done
 
-![opnsense-wifi-interfaces](./img/opnsense-wifi-interfaces.png)
+![opnsense-wifi-interfaces](img/opnsense-wifi-interfaces.png)
 
 Navigate to `Interfaces` > `Assignments` > `[WLAN]`
 
@@ -33,13 +33,13 @@ Navigate to `Interfaces` > `Assignments` > `[WLAN]`
 - `IPv4 Configuration Type`: `Static IPv4`
 - `IPv4 address`: `10.11.11.1`/`24`
 
-![opnsense-wifi-wlan1](./img/opnsense-wifi-wlan1.png)
+![opnsense-wifi-wlan1](img/opnsense-wifi-wlan1.png)
 
 - `Standard`: `802.11ng` or anything greater if available
 - `Mode`: `Access Point`
 - `SSID`: `<YourSSID>`
 
-![opnsense-wifi-wlan2](./img/opnsense-wifi-wlan2.png)
+![opnsense-wifi-wlan2](img/opnsense-wifi-wlan2.png)
 
 - Check `Enable WPA`
 - `WPA Pre-Shared Key`: `<YourPassword>`
@@ -47,7 +47,7 @@ Navigate to `Interfaces` > `Assignments` > `[WLAN]`
 - `Authentication`: `Shared Key Authentication`
 - `WPA Pairwise`: `AES (recommended)`
 
-![opnsense-wifi-wlan3](./img/opnsense-wifi-wlan3.png)
+![opnsense-wifi-wlan3](img/opnsense-wifi-wlan3.png)
 
 Click <kbd>Save</kbd>
 Then Click <kbd>Apply changes</kbd>
@@ -59,7 +59,7 @@ Navigate to `Services` > `DHCPv4` > `[WLAN]`
   - `from`: 10.11.11.2
   - `to`: 10.11.11.254
 
-![opnsense-wifi-dhcp](./img/opnsense-wifi-dhcp.png)
+![opnsense-wifi-dhcp](img/opnsense-wifi-dhcp.png)
 
 Click <kbd>Save</kbd> when you done
 
@@ -72,7 +72,7 @@ Navigate to `Firewall` > `Rules` > `WLAN`
 - `TCP/IP Version`: `IPv4`
 - `Source`: `WLAN net`
 
-![opnsense-wifi-rule](./img/opnsense-wifi-rule.png)
+![opnsense-wifi-rule](img/opnsense-wifi-rule.png)
 
 Click <kbd>Save</kbd>
 Then Click <kbd>Apply changes</kbd>

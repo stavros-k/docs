@@ -14,7 +14,7 @@ Download the installer from OPNsense official download [page](https://opnsense.o
 * Select the mirror closest to you
 * Click <kbd>Download</kbd>
 
-![download-opnsense](./img/download-opnsense.png)
+![download-opnsense](img/download-opnsense.png)
 
 :::info
 
@@ -27,7 +27,7 @@ if you plan to do a virtualized installation
 Download rufus from their official [site](https://rufus.ie/en/)
 Select either the portable version or the installer, both will work.
 
-![download-rufus](./img/download-rufus.png)
+![download-rufus](img/download-rufus.png)
 
 ## Prepare the installation media (USB)
 
@@ -44,7 +44,7 @@ This process will **DELETE** any data in your USB stick.
 * Click <kbd>START</kbd>
 * Accept the **WARNING** saying that will **DESTROY** your data on this device
 
-![rufus](./img/rufus.png)
+![rufus](img/rufus.png)
 
 Once the process is finished you are ready to install OPNsense to your machine.
 

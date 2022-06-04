@@ -7,7 +7,7 @@ sidebar_position: 2
 ## Dynamic DNS
 Navigate to `Services` -> `Dynamic DNS`
 
-![dyndns-menu](./img/dyndns-menu.png)
+![dyndns-menu](img/dyndns-menu.png)
 
 Click <kbd>➕Add</kbd>
 
@@ -18,7 +18,7 @@ Click <kbd>➕Add</kbd>
 - Password: `api-token`
 - Description: `Cloudflare`
 
-![dyndns-setup](./img/dyndns-setup.png)
+![dyndns-setup](img/dyndns-setup.png)
 
 Click <kbd>Save</kbd>
 
@@ -49,7 +49,7 @@ Under `Zone Resources` you should add the following:
 
 `Include` -> `Specific zone` -> `your-domain.com`
 
-![cloudflare-api-token](./img/cloudflare-api-token.png)
+![cloudflare-api-token](img/cloudflare-api-token.png)
 
 Click <kbd>Continue to summary</kbd>
 Click <kbd>Create Token</kbd>
