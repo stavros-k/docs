@@ -1,5 +1,3 @@
-
-
 # HDD Stress Test
 
 ### First step, S.M.A.R.T. tests (Scan HDD for problems)
@@ -14,12 +12,10 @@ The progress (in percentage) of the test is in the line `Self-test execution sta
 | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
 | ![smart-progress-running](img/smart-progress-running.jpg) | ![smart-progress-zero](img/smart-progress-zero.jpg) |
 
-
 Zero (`0`) means our test is finished or no test is running.
 You can always stop a test with `smartctl -X /dev/sdX`
 
 **Replace X with your driver letter**
-
 
 ### Short test
 First test will be the `short`.
@@ -105,7 +101,6 @@ To run the test to the other HDDs, press <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>
 
 After starting badblocks for all your HDDs, you can leave the ssh open or close it. In order to reconnect later, ssh back to TrueNAS, and do `tmux attach`
 
-
 `badblocks` result example of good HDDs:
 
 ```
@@ -135,7 +130,6 @@ We get them with this:
 `smartctl -A /dev/sdX` (Note the captal `A`)
 
 The important fields are `Reallocated_Sector_Ct`, `Current_Pending_Sector`, and `Offline_Uncorrectable` lines. All these should have `RAW_VALUE` of `0`, even if the `VALUE` field is listed as `200`. Any result greater that `0` should be a cause for RMA.
-
 
 `smartctl -A /dev/sdX` result of good HDDs:
 

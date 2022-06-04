@@ -1,5 +1,3 @@
-
-
 # Configuration
 
 Navigate to `Interfaces` -> `Assignments` -> `PPPs`

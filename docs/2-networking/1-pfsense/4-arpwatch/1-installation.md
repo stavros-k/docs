@@ -1,5 +1,3 @@
-
-
 # Installation
 
 ## Install arpwatch

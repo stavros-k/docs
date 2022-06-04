@@ -1,5 +1,3 @@
-
-
 # HA Proxy
 
 We will redirect multiple domains to multiple local servers using SNI

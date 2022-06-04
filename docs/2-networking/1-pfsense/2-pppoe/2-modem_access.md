@@ -1,5 +1,3 @@
-
-
 # Modem Access
 
 As you have noticed, after setting your `WAN` interface to `PPPoE`, you don't have access to your modem/router webUI.

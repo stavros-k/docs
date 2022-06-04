@@ -1,5 +1,3 @@
-
-
 # Preparation
 
 ## Download installer and tools

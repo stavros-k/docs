@@ -1,5 +1,3 @@
-
-
 # Xiaomi Thermometer LYWSD03MMC
 
 ## Flash firmware
@@ -7,7 +5,6 @@ Using this [project](https://github.com/atc1441/ATC_MiThermometer) you can flash
 Visit the Flasher [Page](https://atc1441.github.io/TelinkFlasher.html).
 
 ![LYWSD03MMC](img/lywsd03mmc.jpeg)
-
 
 ## Use it with ESPHome
 You are gonna need an ESP32 as a bluetooth transceiver like the `Wemos LoLin32 ESP32`
@@ -23,7 +20,6 @@ esphome:
   name: bluetooth_transceiver
   platform: ESP32
   board: esp-wrover-kit
-
 
 wifi:
   ssid: "WiFi Name"
@@ -57,7 +53,6 @@ esphome:
   name: bluetooth_transceiver
   platform: ESP32
   board: esp-wrover-kit
-
 
 wifi:
   ssid: "WiFi Name"

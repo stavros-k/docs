@@ -1,5 +1,3 @@
-
-
 # Setup
 
 This is the first screen you will see after completing the [installation](./installation).

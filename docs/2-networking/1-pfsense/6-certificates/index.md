@@ -1,5 +1,3 @@
-
-
 # Certificates
 
 We will get valid SSL certificates for pfSense webUI.

@@ -1,5 +1,3 @@
-
-
 # Windows Deployment Services
 
 > Prerequisites:

@@ -1,5 +1,3 @@
-
-
 # Interfaces Assignments
 
 Navigate to `Interfaces` > `Assignments`

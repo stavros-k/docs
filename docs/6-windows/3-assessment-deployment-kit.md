@@ -1,5 +1,3 @@
-
-
 # Windows Assessment and Deployment Kit
 
 :::info Prerequisite

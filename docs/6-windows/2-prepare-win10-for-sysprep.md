@@ -1,5 +1,3 @@
-
-
 # Prepare Windows 10 for Sysprep
 
 ## Updates

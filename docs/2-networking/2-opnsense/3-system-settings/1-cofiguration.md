@@ -1,5 +1,3 @@
-
-
 # System Configuration
 
 ## Backups

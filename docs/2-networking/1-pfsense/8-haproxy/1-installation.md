@@ -1,5 +1,3 @@
-
-
 # Installation
 
 - Log in to pfSense

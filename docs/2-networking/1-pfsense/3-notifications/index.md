@@ -1,5 +1,3 @@
-
-
 # Notifications
 
 Having Notifications enabled, can alert you for many things.

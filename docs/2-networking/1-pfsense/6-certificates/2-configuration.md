@@ -1,5 +1,3 @@
-
-
 # Configuration
 
 ## Create account keys

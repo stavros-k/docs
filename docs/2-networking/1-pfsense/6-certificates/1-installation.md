@@ -1,5 +1,3 @@
-
-
 # Installation
 
 Navigate to `System` -> `Package Manager` -> `Available Packages`

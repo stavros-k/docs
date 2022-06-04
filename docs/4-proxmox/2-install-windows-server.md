@@ -1,5 +1,3 @@
-
-
 # Install Windows Server on Proxmox
 
 :::info Prerequisites

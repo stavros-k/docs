@@ -1,5 +1,3 @@
-
-
 # Upload ISO's to Proxmox
 
 - On the left sidebar select the storage location you store your ISO's

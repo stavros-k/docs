@@ -1,5 +1,3 @@
-
-
 # LAN Interface
 
 Navigate to `Interfaces` > `[LAN]`

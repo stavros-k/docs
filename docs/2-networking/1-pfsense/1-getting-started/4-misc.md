@@ -1,5 +1,3 @@
-
-
 # Miscellaneous
 
 There are few settings you can enable,

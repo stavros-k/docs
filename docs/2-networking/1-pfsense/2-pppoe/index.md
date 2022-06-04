@@ -1,5 +1,3 @@
-
-
 # PPPoE
 
 This guide is for those that their ISP utilizes `PPPoE` for connecting your modem/router to the internet.

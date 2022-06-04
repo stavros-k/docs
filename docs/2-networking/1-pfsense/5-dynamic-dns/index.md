@@ -1,5 +1,3 @@
-
-
 # Dynamic DNS
 
 Most home labs does not have a static IP address. In order to have your domain always pointing to your current public IP address,

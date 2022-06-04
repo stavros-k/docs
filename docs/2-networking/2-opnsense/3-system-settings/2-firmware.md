@@ -1,5 +1,3 @@
-
-
 # System Firmware
 
 ## Status

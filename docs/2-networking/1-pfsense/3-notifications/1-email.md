@@ -1,5 +1,3 @@
-
-
 # E-mail
 
 Let's enable Mail notifications

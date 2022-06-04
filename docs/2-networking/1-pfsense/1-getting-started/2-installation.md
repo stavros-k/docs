@@ -1,5 +1,3 @@
-
-
 # Install
 
 ## Installation on virtualized hardware

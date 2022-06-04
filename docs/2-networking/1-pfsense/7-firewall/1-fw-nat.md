@@ -1,5 +1,3 @@
-
-
 # Firewall & NAT
 
 When you want to reach a service hosted in the same network via it's FQDN,
@@ -15,7 +13,6 @@ Scroll down to `Network Address Translation`
 Set `NAT Reflection mode for port forwards` to `Pure NAT`
 
 Click <kbd>💾Save</kbd>
-
 
 Other option to do it, is by using Split DNS, which according to pfSense documentation is preferred
 

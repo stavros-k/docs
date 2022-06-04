@@ -1,5 +1,3 @@
-
-
 # Boot Windows from WDS
 
 :::info Prerequisites
