@@ -76,6 +76,11 @@ Success
 As you can see the output shows an example of how to automatically update the ethercodes.
 This file contains the mappings between mac address and vendors.
 
+You can skip both `Install Cron` and `Setup Cron` if you do not want it to update automatically.
+You can do it manual, by checking `Updates the ethernet vendor database` and clicking <kbd>💾Save</kbd>
+
+![arpwatch-vendors](img/arpwatch-vendors.png)
+
 ## Install Cron
 
 Navigate to `System` -> `Package Manager` -> `Available Packages`
