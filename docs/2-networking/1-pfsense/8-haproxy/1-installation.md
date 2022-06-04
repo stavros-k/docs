@@ -1,7 +1,15 @@
 # Installation
 
-- Log in to pfSense
+Navigate to `System` -> `Package Manager` -> `Available Packages`
 
-- Navigate to `System` -> `Package Manager` -> `Available Packages`
+Search for `haproxy` and click <kbd>➕Install</kbd>
 
-- Install `haproxy`
+![haproxy-install](img/haproxy-install.png)
+
+Click <kbd>✔️Confirm</kbd>
+
+Wait until you see `Success`
+
+```shell
+
+```
