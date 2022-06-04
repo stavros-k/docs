@@ -1,5 +1,0 @@
-label: PPPoE
-position: 2
-link:
-  type: generated-index
-  description: pfSense PPPoE

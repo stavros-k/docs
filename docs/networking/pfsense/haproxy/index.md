@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 ---
 
-# Intro
+# HA Proxy
 
-**Redirect multiple domains to multiple local servers using SNI**
+We will redirect multiple domains to multiple local servers using SNI
 
 In this guide we will configure multiple domains (`example1.com`, `example2.com`) to redirect to specific local server (`10.10.10.254`, `10.10.10.230`) using the same port (`HTTPS/443`)
 

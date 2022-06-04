@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Setup
+# Configuration
 
 Navigate to `Interfaces` -> `Assignments` -> `PPPs`
 

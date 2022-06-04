@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Intro
+# PPPoE
 
 This guide is for those that their ISP utilizes `PPPoE` for connecting your modem/router to the internet.
 Usually you will see this on DSL lines.

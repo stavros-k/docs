@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Setup
+# Configuration
 
 ## Dynamic DNS
 Navigate to `Services` -> `Dynamic DNS`

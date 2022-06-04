@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Intro
+# Dynamic DNS
 
 Most home labs does not have a static IP address. In order to have your domain always pointing to your current public IP address,
 you have to use a Dynamic DNS service.

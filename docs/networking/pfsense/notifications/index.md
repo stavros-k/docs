@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Intro
+# Notifications
 
 Having Notifications enabled, can alert you for many things.
 

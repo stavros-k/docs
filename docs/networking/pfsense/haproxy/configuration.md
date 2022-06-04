@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Setup
+# Configuration
 
 ## Overview
 This is how it will look in the end
