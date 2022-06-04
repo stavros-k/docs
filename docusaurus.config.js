@@ -47,11 +47,13 @@ const config = {
       }),
     ],
   ],
-  plugins: [
+  themes: [
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+      require.resolve("@easyops-cn/docusaurus-search-local"),
       {
+        docsRouteBasePath: '/',
         indexBlog: false,
+        hashed: true,
       },
     ],
   ],

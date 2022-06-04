@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Setup
 
-This is the first screen you will see after completing the [installation](./install).
+This is the first screen you will see after completing the [installation](./installation).
 
 ![pfsense-login.png](img/pfsense-login.png)
 
