@@ -12,6 +12,7 @@ There are few settings you can enable,
 Some of the above highly depend on your hardware (mainly the CPU)
 
 ## Power Savings
+Navigate to  `System` -> `Advanced` -> `Miscellaneous`
 
 You can also enabled power savings feature, and configure how it works when it's plugged in or on batteries.
 
