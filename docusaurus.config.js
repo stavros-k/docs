@@ -65,7 +65,7 @@ const config = {
         selector: '.markdown :not(em) > img',
         config: {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-          margin: 150,
+          margin: 100,
           background: {
             light: 'rgb(255, 255, 255)',
             dark: 'rgb(50, 50, 50)'
