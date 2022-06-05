@@ -2,7 +2,6 @@
 
 We are going to change the default ports of WebUI and SSH.
 
-
 ## WebUI
 
 Navigate to `System` -> `Advanced` -> `Admin Access`
@@ -12,7 +11,6 @@ Scroll to `webConfigurator`
 - Uncheck `WebGUI redirect`
 
 ![general-advanced-webui](img/general-advanced-webui.png)
-
 
 ## SSH
 
