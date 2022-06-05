@@ -72,6 +72,12 @@ const config = {
           },
         },
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
       navbar: {
         title: 'Docs by Stavros',
         logo: {
