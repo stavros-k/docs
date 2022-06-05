@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Docs by Stavros',
   tagline: 'Dinosaurs are cool',
-  url: 'https://docs.stavrosk.me/',
+  url: 'https://docs.kois.cc/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
