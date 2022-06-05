@@ -1,0 +1,54 @@
+{
+  // General
+  enabled: true,
+  dependencyDashboard: true,
+  dependencyDashboardTitle: "🤖 Renovate Dashboard",
+  timezone: "Europe/Athens",
+
+  // People
+  assigneesFromCodeOwners: true,
+  reviewersFromCodeOwners: true,
+  assignAutomerge: true,
+  gitAuthor: "Mr.Bot <bot@kois.cc>",
+
+  // Functinality
+  baseBranches: ["master"],
+  rebaseWhen: "conflicted",
+  pinDigests: true,
+  prConcurrentLimit: 100,
+  semanticCommits: "enabled",
+  commitMessageTopic: "{{depName}}",
+  commitMessageExtra: "to {{newVersion}}",
+  packageRules: [
+    {
+      "matchManagers": ["npm"],
+      updateTypes: ["patch" ,"minor", "major"],
+      enabled: true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    // Labels
+    {
+      matchDepTypes: ["action"],
+      addLabels: ["actions-deps"],
+    },
+    {
+      matchDatasources: ["npm"],
+      addLabels: ["npm-deps"],
+    },
+    {
+      matchUpdateTypes: ["major"],
+      addLabels: ["major"],
+    },
+    {
+      matchUpdateTypes: ["minor"],
+      addLabels: ["minor"],
+    },
+    {
+      matchUpdateTypes: ["patch"],
+      addLabels: ["patch"],
+    },
+  ],
+}
