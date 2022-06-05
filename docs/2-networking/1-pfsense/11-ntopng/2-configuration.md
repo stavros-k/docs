@@ -6,9 +6,9 @@
 This step is optional
 :::
 
-- Go to [MaxMind's website](https://www.maxmind.com/en/account/login)
+- Navigate to [MaxMind's website](https://www.maxmind.com/en/account/login)
 - Register/Login
-- Go to `Manage License Keys`
+- Navigate to `Manage License Keys`
 - Click <kbd>Generate new license key</kbd>
 
 ![maxmind-generate](img/maxmind-generate.png)
@@ -42,7 +42,7 @@ Navigate to `Diagnostics` -> `ntopng`
 Username: `admin`
 Password: `the-password-you-set-before`
 
-- Go to top right corner, click on the human icon
+- Navigate to top right corner, click on the human icon
 - Toggle Dark Theme
 - Click `Settings` -> `Preferences` on the left sidebar
   - Click `Expert View`
@@ -77,7 +77,7 @@ Password: `the-password-you-set-before`
 
 ![ntopng-retention](img/ntopng-retention.png)
 
-For every non-WAN interface, go to `Interface` on the left sidebar
+For every non-WAN interface, navigate to `Interface` on the left sidebar
 (You can change interface on the top left corner)
 
 - Click the <kbd>⚙️Gear</kbd>

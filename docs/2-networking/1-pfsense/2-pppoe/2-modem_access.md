@@ -43,6 +43,6 @@ Navigate to `Firewall` -> `NAT` -> `Outbound`
   - Network: Your modem/router network address (eg. `192.168.1.0` / `24`)
 - Translation Address: `Interface Address
 - Click <kbd>💾Save</kbd>
-- Click <kbd>Apply Changes</kbd>
+- Click <kbd>✔️Apply Changes</kbd>
 
 You should now have access to your modem/router webUI!

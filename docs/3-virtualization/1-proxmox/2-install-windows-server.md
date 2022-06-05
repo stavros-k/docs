@@ -15,7 +15,7 @@
 	- Follow the on-screen instructions.
 	- Download [Guest Agent](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso)
 	- Mount the `Guest Agent` ISO
-	- Inside the mounted ISO Navigate to `guest-agent`
+	- Inside the mounted ISO navigate to `guest-agent`
 	- Instal `qemu-ga-x84_64`
 	- Navigate to `Device Manager`
 	- Right click > `Update Driver` On each device that needs drivers

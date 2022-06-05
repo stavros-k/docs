@@ -19,17 +19,17 @@ Navigate to `Sevices` -> `Acme Certificates` -> `Account keys`
 Navigate to `Sevices` -> `Acme Certificates` -> `Certificates`
 
 Zone ID:
-  - Go to your Cloudflare account
+  - Navigate to your Cloudflare account
   - Select your domain.
   - Scroll down to `API`
 
 Account ID:
-  - Go to your Cloudflare account
+  - Navigate to your Cloudflare account
   - Select your domain.
   - Scroll down to `API` on the right sidebar
 
 Token: (You can use the API Token you created for Dynamic DNS)
-  - Go to your Cloudflare account
+  - Navigate to your Cloudflare account
   - Click on the top right corner.
   - Click `My Profile`
   - Click `API Tokens` on the left sidebar
@@ -43,7 +43,7 @@ Token: (You can use the API Token you created for Dynamic DNS)
   - Click <kbd>Create Token</kbd>
 
 Key:
-  - Go to your Cloudflare account
+  - Navigate to your Cloudflare account
   - Click on the top right corner.
   - Click `My Profile`
   - Click `API Tokens` on the left sidebar

@@ -1,7 +1,7 @@
 # Windows Deployment Services
 
 > Prerequisites:
-> [Installed Windows Server 2022.](../virtualization/proxmox/install-windows-server)
+> [Installed Windows Server 2022.](../proxmox/install-windows-server)
 
 ## Install WDS (Windows Deployment Services)
 - Change Server Name
@@ -39,17 +39,17 @@
 
 - Windows Server Images
 	1. Prepare the images
-		- Open your Windows ISO and Navigate to `sources`
+		- Open your Windows ISO and navigate to `sources`
 		- Copy `boot.wim` and `install.wim` to `C:\RemoteInstall`
 		- Rename them to `Server2022Boot.wim` and `Server2022Install.wim`
 	2. Add Boot Images
-		- Go to WDS and right click `Boot Images` on the left sidebar
+		- Navigate to WDS and right click `Boot Images` on the left sidebar
 		- Click `Add Boot Image...`
 		- Browse and select the `Server2022Boot.wim` image
 		- Change name to `Windows Server 2022 Boot`.
 		- Done
 	3. Add Install Images
-		- Go to WDS and right click `Install Images` on the left sidebar
+		- Navigate to WDS and right click `Install Images` on the left sidebar
 		- Click `Add Install Image...`
 		- Create an image group: `Server-2022`
 		- Browse and select the `Server2022Install.wim` image
@@ -63,7 +63,7 @@
 
 - Windows 10 Images
 	1. Prepare the images
-		- Open your Windows ISO and Navigate to `sources`
+		- Open your Windows ISO and navigate to `sources`
 		- Copy `boot.wim` and `install.esd` to `C:\RemoteInstall`
 		- Rename them to `Win10Boot.wim` and `Win10Install.esd`
 		- Open Powershell (Administrator) and execute the following
@@ -78,13 +78,13 @@
     ```
 
 	2. Add Boot Images
-		- Go to WDS and right click `Boot Images` on the left sidebar
+		- Navigate to WDS and right click `Boot Images` on the left sidebar
 		- Click `Add Boot Image...`
 		- Browse and select the `Win10Boot.wim` image
 		- Change name to `Windows 10 Boot`.
 		- Done
 	3. Add Install Images
-		- Go to WDS and right click `Install Images` on the left sidebar
+		- Navigate to WDS and right click `Install Images` on the left sidebar
 		- Click `Add Install Image...`
 		- Create an image group: `Windows10`
 		- Browse and select the `Win10ProInstall.wim` image
