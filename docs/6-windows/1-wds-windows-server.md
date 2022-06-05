@@ -1,7 +1,7 @@
 # Windows Deployment Services
 
 > Prerequisites:
-> [Installed Windows Server 2022.](../proxmox/install-windows-server)
+> [Installed Windows Server 2022.](../virtualization/proxmox/install-windows-server)
 
 ## Install WDS (Windows Deployment Services)
 - Change Server Name
