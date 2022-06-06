@@ -1,4 +1,4 @@
-# Firewall & NAT
+# TODO Firewall & NAT
 
 When you want to reach a service hosted in the same network via it's FQDN,
 you have to enable NAT reflection (also known as NAT Hairpinning).
