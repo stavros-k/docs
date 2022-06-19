@@ -91,7 +91,7 @@ Navigate to `➕New > `🖥️VMs`
 ![xoa-source-vm1](img/xoa-source-vm1.png)
 ![xoa-source-vm2](img/xoa-source-vm2.png)
 
-### Install os to VM
+### Install OS to VM
 
 Navigate to `🏠Home` > `🖥️VMs`
 
