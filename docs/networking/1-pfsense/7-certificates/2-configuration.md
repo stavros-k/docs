@@ -19,35 +19,39 @@ Navigate to `Sevices` -> `Acme Certificates` -> `Account keys`
 Navigate to `Sevices` -> `Acme Certificates` -> `Certificates`
 
 Zone ID:
-  - Navigate to your Cloudflare account
-  - Select your domain.
-  - Scroll down to `API`
+
+- Navigate to your Cloudflare account
+- Select your domain.
+- Scroll down to `API`
 
 Account ID:
-  - Navigate to your Cloudflare account
-  - Select your domain.
-  - Scroll down to `API` on the right sidebar
+
+- Navigate to your Cloudflare account
+- Select your domain.
+- Scroll down to `API` on the right sidebar
 
 Token: (You can use the API Token you created for Dynamic DNS)
-  - Navigate to your Cloudflare account
-  - Click on the top right corner.
-  - Click `My Profile`
-  - Click `API Tokens` on the left sidebar
-  - Click <kbd>Create Token</kbd>
-  - Click <kbd>Use template</kbd> on `Edit zone DNS
-    - Permissions:
-      - `Zone` - `DNS` - `Edit
-    - Zone Resources
-      - `Include` - `Specific zone` - `your-domain.com`
-  - Click <kbd>Continue to summary</kbd>
-  - Click <kbd>Create Token</kbd>
+
+- Navigate to your Cloudflare account
+- Click on the top right corner.
+- Click `My Profile`
+- Click `API Tokens` on the left sidebar
+- Click <kbd>Create Token</kbd>
+- Click <kbd>Use template</kbd> on `Edit zone DNS
+  - Permissions:
+    - `Zone` - `DNS` - `Edit
+  - Zone Resources
+    - `Include` - `Specific zone` - `your-domain.com`
+- Click <kbd>Continue to summary</kbd>
+- Click <kbd>Create Token</kbd>
 
 Key:
-  - Navigate to your Cloudflare account
-  - Click on the top right corner.
-  - Click `My Profile`
-  - Click `API Tokens` on the left sidebar
-  - Click <kbd>View</kbd> on `Global API Key`
+
+- Navigate to your Cloudflare account
+- Click on the top right corner.
+- Click `My Profile`
+- Click `API Tokens` on the left sidebar
+- Click <kbd>View</kbd> on `Global API Key`
 
 - Click <kbd>➕Add</kbd>
 - Name: `WebUI_Cert`
@@ -65,11 +69,11 @@ Key:
 
 ![acme-cloudflare](img/acme-cloudflare.png)
 
-  - Actions list:
-    - Click <kbd>➕Add</kbd>
-    - Mode: `Enabled`
-    - Command: `/etc/rc.restart_webgui`
-    - Method: `Shell Command`
+- Actions list:
+  - Click <kbd>➕Add</kbd>
+  - Mode: `Enabled`
+  - Command: `/etc/rc.restart_webgui`
+  - Method: `Shell Command`
 - Click <kbd>💾Save</kbd>
 
 ![acme-actions](img/acme-actions.png)

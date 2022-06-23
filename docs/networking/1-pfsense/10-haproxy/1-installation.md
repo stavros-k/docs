@@ -20,8 +20,8 @@ All repositories are up to date.
 The following 2 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	haproxy18: 1.8.30 [pfSense]
-	pfSense-pkg-haproxy: 0.61_7 [pfSense]
+  haproxy18: 1.8.30 [pfSense]
+  pfSense-pkg-haproxy: 0.61_7 [pfSense]
 
 Number of packages to be installed: 2
 

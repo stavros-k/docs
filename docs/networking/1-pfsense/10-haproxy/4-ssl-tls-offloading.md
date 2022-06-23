@@ -49,8 +49,8 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
 - Actions
   - Click <kbd>⤵️</kbd>
   - Action: `Use Backend`
-  - Condition acl names: `webserver` (Here you have to use the exact name of one of the ACL's you configured)
-  - backend: `webserver` (Here select the backend you want to redirect when the ACL matches the host)
+  - Condition acl names: `webserver` (Use the exact name of one of the ACL's)
+  - backend: `webserver` (Select the backend to redirect when the ACL matches)
 - Stats options
   - Enable collection & providing separate statistics for each socket: `Checked`
 - Advanced Settings
@@ -71,10 +71,10 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
 ![haproxy-ssloffload-frontend4](img/haproxy-ssloffload-frontend4.png)
 ![haproxy-ssloffload-frontend5](img/haproxy-ssloffload-frontend5.png)
 
-
 Now you should be able to visit `webserver.mydomain.com` and get a valid certificate.
 
-There is chances that you will be able to reach this webserver from external netoworks, but not from internal.
+There is chances that you will be able to reach this webserver from external networks,
+but not from internal networks.
 
 To solve that, Navigate to `Services` -> `DNS Resolver`
 
@@ -82,6 +82,6 @@ To solve that, Navigate to `Services` -> `DNS Resolver`
   - Click <kbd>➕Add</kbd>
   - Host: `webserver`
   - Domain: `mydomain.com`
-  - IP Address: `10.1.1.1` (Here you have to put the IP address of HAProxy, it's the same as pfSense)
+  - IP Address: `10.1.1.1` (Here you have to put the IP address of HAProxy)
   - Click <kbd>💾Save</kbd>
   - Click <kbd>✔️Apply Changes</kbd>

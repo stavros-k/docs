@@ -2,10 +2,10 @@
 
 ## Installation on virtualized hardware
 
-*TODO: Installlation Instructions*
+TODO: Installation Instructions
 
 ## Installation on bare metal
 
-* Boot your machine from the prepared USB stick.
+- Boot your machine from the prepared USB stick.
 
-*TODO: Installlation Instructions*
+TODO: Installation Instructions

@@ -20,37 +20,37 @@ All repositories are up to date.
 The following 31 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	fontconfig: 2.13.94_1,1 [pfSense]
-	freetype2: 2.11.0 [pfSense]
-	gdbm: 1.22 [pfSense]
-	giflib: 5.2.1 [pfSense]
-	graphviz: 2.44.1_17 [pfSense]
-	groff: 1.22.4_4 [pfSense]
-	jbigkit: 2.1_1 [pfSense]
-	jpeg-turbo: 2.1.1_1 [pfSense]
-	libfontenc: 1.1.4 [pfSense]
-	libgd: 2.3.1,1 [pfSense]
-	libmaxminddb: 1.6.0 [pfSense]
-	libpaper: 1.1.28 [pfSense]
-	libsodium: 1.0.18 [pfSense]
-	libzmq4: 4.3.4 [pfSense]
-	lua53: 5.3.6 [pfSense]
-	mkfontscale: 1.2.1 [pfSense]
-	mysql57-client: 5.7.36 [pfSense]
-	ndpi: 4.0.d20210818,1 [pfSense]
-	norm: 1.5r6_1 [pfSense]
-	ntopng: 5.0.d20210923,1 [pfSense]
-	openpgm: 5.2.122_6 [pfSense]
-	pfSense-pkg-ntopng: 0.8.13_10 [pfSense]
-	png: 1.6.37_1 [pfSense]
-	protobuf: 3.17.3,1 [pfSense]
-	psutils: 1.17_5 [pfSense]
-	redis: 6.2.6 [pfSense]
-	tiff: 4.3.0 [pfSense]
-	uchardet: 0.0.7 [pfSense]
-	webfonts: 0.30_14 [pfSense]
-	webp: 1.2.1 [pfSense]
-	zstd: 1.5.0 [pfSense]
+  fontconfig: 2.13.94_1,1 [pfSense]
+  freetype2: 2.11.0 [pfSense]
+  gdbm: 1.22 [pfSense]
+  giflib: 5.2.1 [pfSense]
+  graphviz: 2.44.1_17 [pfSense]
+  groff: 1.22.4_4 [pfSense]
+  jbigkit: 2.1_1 [pfSense]
+  jpeg-turbo: 2.1.1_1 [pfSense]
+  libfontenc: 1.1.4 [pfSense]
+  libgd: 2.3.1,1 [pfSense]
+  libmaxminddb: 1.6.0 [pfSense]
+  libpaper: 1.1.28 [pfSense]
+  libsodium: 1.0.18 [pfSense]
+  libzmq4: 4.3.4 [pfSense]
+  lua53: 5.3.6 [pfSense]
+  mkfontscale: 1.2.1 [pfSense]
+  mysql57-client: 5.7.36 [pfSense]
+  ndpi: 4.0.d20210818,1 [pfSense]
+  norm: 1.5r6_1 [pfSense]
+  ntopng: 5.0.d20210923,1 [pfSense]
+  openpgm: 5.2.122_6 [pfSense]
+  pfSense-pkg-ntopng: 0.8.13_10 [pfSense]
+  png: 1.6.37_1 [pfSense]
+  protobuf: 3.17.3,1 [pfSense]
+  psutils: 1.17_5 [pfSense]
+  redis: 6.2.6 [pfSense]
+  tiff: 4.3.0 [pfSense]
+  uchardet: 0.0.7 [pfSense]
+  webfonts: 0.30_14 [pfSense]
+  webp: 1.2.1 [pfSense]
+  zstd: 1.5.0 [pfSense]
 
 Number of packages to be installed: 31
 
@@ -124,8 +124,8 @@ Checking integrity... done (0 conflicting)
 [17/31] Extracting fontconfig-2.13.94_1,1: .......... done
 Running fc-cache to build fontconfig cache...
 Font directories:
-	/usr/local/share/fonts
-	/usr/local/lib/X11/fonts
+  /usr/local/share/fonts
+  /usr/local/lib/X11/fonts
 /usr/local/share/fonts: skipping, no such directory
 /usr/local/lib/X11/fonts: skipping, no such directory
 /var/db/fontconfig: cleaning cache directory
@@ -191,8 +191,8 @@ The environment variable "FREETYPE_PROPERTIES" can be used to control the
 driver properties. Example:
 
 FREETYPE_PROPERTIES=truetype:interpreter-version=35 \
-	cff:no-stem-darkening=1 \
-	autofitter:warping=1
+  cff:no-stem-darkening=1 \
+  autofitter:warping=1
 
 This allows to select, say, the subpixel hinting mode at runtime for a given
 application.
@@ -252,11 +252,11 @@ to the EULA, you can start using the fonts by following these instructions:
 Make sure that the freetype module is loaded.  If it is not, add the following
 line to the "Modules" section of xorg.conf or XF86Config:
 
-	Load "freetype"
+  Load "freetype"
 
 Add the following line to the "Files" section of xorg.conf or XF86Config:
 
-	FontPath "/usr/local/share/fonts/webfonts/"
+  FontPath "/usr/local/share/fonts/webfonts/"
 
 NOTE: Due to known freetype bug some glyphs (N, W) of y2006 Verdana Bold
       font are not rendered correctly in anti-aliased mode within the range

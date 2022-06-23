@@ -11,7 +11,7 @@ Navigate to `Services` -> `Cron`
 - Month of the Year: `*`
 - Day of the Week:`*`
 - User: `root`
-- Command: `sleep `jot -r 1 0 600` ; /usr/local/arpwatch/update-ethercodes`
+- Command: ``sleep `jot -r 1 0 600` ; /usr/local/arpwatch/update-ethercodes``
 - Click <kbd>💾Save</kbd>
 
 ![arpwatch-configuration](img/arpwatch-configuration.png)

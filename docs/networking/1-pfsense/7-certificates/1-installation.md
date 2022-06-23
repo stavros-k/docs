@@ -20,10 +20,10 @@ All repositories are up to date.
 The following 4 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	pfSense-pkg-acme: 0.7.1_1 [pfSense]
-	php74-ftp: 7.4.26 [pfSense]
-	php74-pecl-ssh2: 1.3.1 [pfSense]
-	socat: 1.7.4.2 [pfSense]
+  pfSense-pkg-acme: 0.7.1_1 [pfSense]
+  php74-ftp: 7.4.26 [pfSense]
+  php74-pecl-ssh2: 1.3.1 [pfSense]
+  socat: 1.7.4.2 [pfSense]
 
 Number of packages to be installed: 4
 

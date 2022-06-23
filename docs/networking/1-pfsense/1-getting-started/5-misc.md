@@ -1,6 +1,7 @@
 # Miscellaneous
 
 There are few settings you can enable,
+
 - Power Savings
 - Hardware acceleration for cryptographic operations, such as VPN
 - Thermal Sensors
@@ -8,6 +9,7 @@ There are few settings you can enable,
 Some of the above highly depend on your hardware (mainly the CPU)
 
 ## Power Savings
+
 Navigate to  `System` -> `Advanced` -> `Miscellaneous`
 
 You can also enabled power savings feature, and configure how it works when it's plugged in or on batteries.

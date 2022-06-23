@@ -1,6 +1,7 @@
 # Configuration
 
 ## Dynamic DNS
+
 Navigate to `Services` -> `Dynamic DNS`
 
 Click <kbd>➕Add</kbd>

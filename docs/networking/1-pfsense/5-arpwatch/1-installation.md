@@ -22,9 +22,9 @@ All repositories are up to date.
 The following 3 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	arpwatch: 3.1 [pfSense]
-	libpcap: 1.10.1_2 [pfSense]
-	pfSense-pkg-arpwatch: 0.2.0_6 [pfSense]
+  arpwatch: 3.1 [pfSense]
+  libpcap: 1.10.1_2 [pfSense]
+  pfSense-pkg-arpwatch: 0.2.0_6 [pfSense]
 
 Number of packages to be installed: 3
 
@@ -99,7 +99,7 @@ All repositories are up to date.
 The following 1 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	pfSense-pkg-Cron: 0.3.7_5 [pfSense]
+  pfSense-pkg-Cron: 0.3.7_5 [pfSense]
 
 Number of packages to be installed: 1
 

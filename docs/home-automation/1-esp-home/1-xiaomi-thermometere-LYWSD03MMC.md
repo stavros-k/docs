@@ -1,12 +1,14 @@
 # Xiaomi Thermometer LYWSD03MMC
 
 ## Flash firmware
+
 Using this [project](https://github.com/atc1441/ATC_MiThermometer) you can flash your `Xiaomi Thermometer LYWSD03MMC`
 Visit the Flasher [Page](https://atc1441.github.io/TelinkFlasher.html).
 
 ![LYWSD03MMC](img/lywsd03mmc.jpeg)
 
 ## Use it with ESPHome
+
 You are gonna need an ESP32 as a bluetooth transceiver like the `Wemos LoLin32 ESP32`
 
 ![esp32](img/esp32.jpg)
@@ -45,8 +47,9 @@ esp32_ble_tracker:
 ```
 
 ## Configuration (Example)
-* You can find thermometer's MAC address while flashing the firmware or let ESPHome discover it after the first flash.
-* You can put any bind key you want (Assuming you used <kbd>Mi Like</kbd> as `Advertising Type`.
+
+- You can find thermometer's MAC address while flashing the firmware or let ESPHome discover it after the first flash.
+- You can put any bind key you want (Assuming you used <kbd>Mi Like</kbd> as `Advertising Type`.
 
 ```yaml
 esphome:
@@ -96,8 +99,8 @@ sensor:
       name: "Lab Humidity"
     battery_level:
       name: "Lab Battery Level"
-
 ```
+
 Repeat `- platform: xiaomi_lywsd03mmc` code block for every sensor you want to add.
 
 More in-depth info about configuration you can find [here](https://esphome.io/components/sensor/xiaomi_ble.html?highlight=atc#lywsd03mmc)
