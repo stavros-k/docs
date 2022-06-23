@@ -35,7 +35,7 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
 
 - Name your frontend (eg. `Frontend`)
 - External Address
-  - Listen Address: `any (IPv4)`
+  - Listen Address: `any(IPv4)`
   - Port: `443`
   - SSL Offloading: `Checked`
 - Type: `http/https (offloading)`

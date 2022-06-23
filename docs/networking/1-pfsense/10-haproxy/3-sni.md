@@ -9,9 +9,6 @@ In this guide we will configure multiple domains (`example1.com`, `example2.com`
 For this example our local servers are using reverse proxies and each server issue it's own certs using let's encrypt, and only accepting HTTPS traffic.
 (Let's encrypt uses DNS validation (Cloudflare) so we don't need `HTTP/80` port open)
 
-
-This is how it will look in the end
-
 ## Backend
 
 ![haproxybackview](img/haproxybackview.jpg)
