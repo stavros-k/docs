@@ -8,7 +8,7 @@ Navigate to `System` > `Settings` > `Administration`
 
 - Check `Enable HTTP Strict Transport Security` (HSTS)
 
-_This will help to protect against cookie hijacking and protocol downgrade_
+This will help to protect against cookie hijacking and protocol downgrade
 
 ### Web GUI
 

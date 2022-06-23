@@ -1,6 +1,7 @@
 # HDD Stress Test
 
-### First step, S.M.A.R.T. tests (Scan HDD for problems)
+## First step, S.M.A.R.T. tests (Scan HDD for problems)
+
 We will use `smartctl` for this step, to get the state of the HDD before we stress it.
 
 You can view the progress of any of the following tests with this:
@@ -15,9 +16,10 @@ The progress (in percentage) of the test is in the line `Self-test execution sta
 Zero (`0`) means our test is finished or no test is running.
 You can always stop a test with `smartctl -X /dev/sdX`
 
-**Replace X with your driver letter**
+> Replace X with your driver letter
 
 ### Short test
+
 First test will be the `short`.
 
 `smartctl -t short /dev/sdX`
@@ -27,6 +29,7 @@ First test will be the `short`.
 Approximately 2 minutes on a 4TB HDD.
 
 ### Conveyance test
+
 Second test will be the `conveyance`.
 
 `smartctl -t conveyance /dev/sdX`
@@ -47,7 +50,9 @@ Approximately 500 minutes on a 4TB HDD.
 This test can take a lot of time, depending on your HDD size.
 
 ## Second step, stressing the HDD
+
 ### Preparation
+
 This step should be down with SSH, using `tmux`. This will help to keep test running even if the connection is lost.
 Enable `SSH` service on `TrueNAS` (<kbd>System Settings</kbd> -> <kbd>Services</kbd> -> <kbd>SSH</kbd>)
 
@@ -70,7 +75,7 @@ This step will **DELETE** any data on the HDD
 
 :::
 
-**Now lets stress the HDD**
+> Now lets stress the HDD
 
 `badblocks -b 4096 -wvs /dev/sdX`
 
@@ -93,7 +98,7 @@ This step will **DELETE** any data on the HDD
 ```
 
 <!-- ![badblocks-running](img/badblocks-running.jpg) -->
-*Missing image of badblocks running here, Sorry*
+Missing image of *badblocks running*, Sorry
 
 To run the test to the other HDDs, press <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>"</kbd>, this will split the screen, there you can run `badblocks` on the next HDD. You can split as many times as you want.
 
@@ -103,7 +108,7 @@ After starting badblocks for all your HDDs, you can leave the ssh open or close 
 
 `badblocks` result example of good HDDs:
 
-```
+```shell
 truenas# badblocks -b 4096 -wvs /dev/sda
 Checking for bad blocks in read-write mode
 From block 0 to 976754645

@@ -59,21 +59,21 @@ Password: `the-password-you-set-before`
 ![ntopng-timeseries1](img/ntopng-timeseries1.png)
 ![ntopng-timeseries2](img/ntopng-timeseries2.png)
 
-  - Click `Alerts`
-    - Toggle `Emit Alerts` to `OFF`
-    - Click <kbd>Save</kbd>
+- Click `Alerts`
+  - Toggle `Emit Alerts` to `OFF`
+  - Click <kbd>Save</kbd>
 
 ![ntopng-alerts](img/ntopng-alerts.png)
 
-  - Click `Telemetry`
-    - Click `Do not contribute`
-    - Click <kbd>Save</kbd>
+- Click `Telemetry`
+  - Click `Do not contribute`
+  - Click <kbd>Save</kbd>
 
 ![ntopng-telemetry](img/ntopng-telemetry.png)
 
-  - Click `Data Retention`
-    - Set to `120` Days
-    - Click <kbd>Save</kbd>
+- Click `Data Retention`
+  - Set to `120` Days
+  - Click <kbd>Save</kbd>
 
 ![ntopng-retention](img/ntopng-retention.png)
 

@@ -4,6 +4,7 @@ This guide is for those that their ISP utilizes `PPPoE` for connecting your mode
 Usually you will see this on DSL lines.
 
 There are 2 solutions here,
+
 1. Turn your modem/router (the one from your ISP) to bridge mode.
 2. Turn your modem/router (the one from your ISP) to PPPoE Passthrough mode.
 

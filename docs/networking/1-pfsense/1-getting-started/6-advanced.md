@@ -7,6 +7,7 @@ We are going to change the default ports of WebUI and SSH.
 Navigate to `System` -> `Advanced` -> `Admin Access`
 
 Scroll to `webConfigurator`
+
 - TCP port: `8443` (Or any random port you want)
 - Uncheck `WebGUI redirect`
 

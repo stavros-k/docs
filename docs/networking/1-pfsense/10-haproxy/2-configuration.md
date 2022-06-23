@@ -13,9 +13,9 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>💾Save</kbd>
 - Click <kbd>✔️Apply Changes</kbd>
 
-![haproxy-set1](img/haproxy-set1.png "haproxy-set1")
-![haproxy-set2](img/haproxy-set2.png "haproxy-set2")
-![haproxy-set3](img/haproxy-set3.png "haproxy-set3")
+![haproxy-set1](img/haproxy-set1.png)
+![haproxy-set2](img/haproxy-set2.png)
+![haproxy-set3](img/haproxy-set3.png)
 
 TODO: Look into mail notifications
 
@@ -32,5 +32,5 @@ Navigate to `Firewall` -> `Rules` -> `WAN` -> `⤵️Add`
 - Click <kbd>💾Save</kbd>
 - Click <kbd>✔️Apply Changes</kbd>
 
-![haproxy-rule](img/haproxy-rule.png "haproxy-rule")
-![haproxy-ruleview](img/haproxy-ruleview.png "haproxy-ruleview")
+![haproxy-rule](img/haproxy-rule.png)
+![haproxy-rule-view](img/haproxy-rule-view.png)

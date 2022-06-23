@@ -11,9 +11,9 @@ For this example our local servers are using reverse proxies and each server iss
 
 ## Backend
 
-![haproxybackview](img/haproxybackview.jpg)
+![haproxy-back-view](img/haproxy-back-view.jpg)
 
-Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
+Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
 
 - Name your backend (eg. `Backend_truenas`)
 - Click ⤵️ on Server List
@@ -26,17 +26,17 @@ Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
   - Health check method: `Basic`
 - Click <kbd>💾Save</kbd>
 
-![haproxyback1](img/haproxyback1.jpg)
+![haproxy-back1](img/haproxy-back1.jpg)
 
 Repeat for the other servers
 
-![haproxyback2](img/haproxyback2.jpg)
+![haproxy-back2](img/haproxy-back2.jpg)
 
 ## Frontend
 
-![haproxyfrontview](img/haproxyfrontview.jpg)
+![haproxy-front-view](img/haproxy-front-view.jpg)
 
-Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
+Navigate to `Services` -> `HAProxy` -> `Frontend` -> `Add`
 
 - Name your frontend (eg. `Frontend-SNI`)
 - External Address
@@ -44,7 +44,7 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
   - Port: `443`
 - Type: `ssl / https(TCP Mode)`
 
-![haproxyfront1](img/haproxyfront1.jpg)
+![haproxy-front1](img/haproxy-front1.jpg)
 
 - Access Control lists
   - Click ⤵️
@@ -61,7 +61,7 @@ Navigate to `Services` -> `HAProxy` -> `Frontends` -> `Add`
   - backend: `Backend_truenas` (Here select the backend you want to redirect when the ACL matches the domain)
   - Repeat Action steps for all your backends
 
-![haproxyfront2](img/haproxyfront2.jpg)
+![haproxy-front2](img/haproxy-front2.jpg)
 
 ## Check if everything is working
 
@@ -70,4 +70,4 @@ Navigate to `Status` -> `HAProxy Status`
 If everything is setup correctly, you should have Green Lines for each backend.
 If you see Red Line for any backend, you probably have missed something.
 
-![haproxystats](img/haproxystats.jpg)
+![haproxy-stats](img/haproxy-stats.jpg)
