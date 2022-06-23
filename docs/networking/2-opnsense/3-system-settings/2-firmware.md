@@ -23,4 +23,3 @@ On the top usually is your installed plugins.
 ![opnsense-firmware-plugins](img/opnsense-firmware-plugins.png)
 
 From here you can install packages like themes, wireguard, haproxy
-#TODO: haproxy
