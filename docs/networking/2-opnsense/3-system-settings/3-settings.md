@@ -37,14 +37,14 @@ Navigate to `System` > `Settings` > `General`
 I like to change it to something like `fw` or `firewall`
 So it's easier to type it's address
 - Change `Domain` if you want to use your domain, or leave it `localhost`
-I'm will use my domain. Later will show how to also get a valid cert for it #TODO:
+I'm will use my domain. Later will show how to also get a valid cert for it
 - Change `Time zone` to your local timezone, this will also be used by log times
 - Change `Language` if you want
-- Now you only have one Theme. Later will see how to add more. #TODO:
+- Now you only have one Theme. Later will see how to add more.
 
 ![opnsense-settings-general](img/opnsense-settings-general.png)
 
-- Leave DNS Server(s) empty. Later will configure DNS over TLS. #TODO:
+- Leave DNS Server(s) empty. Later will configure DNS over TLS.
 - Uncheck `Allow DNS server list to be overridden by DHCP/PPP on WAN`
 
 ![opnsense-settings-general-dns](img/opnsense-settings-general-dns.png)
@@ -69,7 +69,7 @@ Click <kbd>Save</kbd> when you done
 Navigate to `System` > `Settings` > `Miscellaneous`
 
 - Change `Hardware` on `Thermal Sensors` depending on your system.
-- Backups will config later #TODO:
+- Backups will config later
 
 ![opnsense-settings-misc-sensor](img/opnsense-settings-misc-sensor.png)
 

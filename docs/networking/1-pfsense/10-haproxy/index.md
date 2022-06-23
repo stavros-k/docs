@@ -1,8 +1,17 @@
 # HA Proxy
 
-We will redirect multiple domains to multiple local servers using SNI
+## Terms
 
-In this guide we will configure multiple domains (`example1.com`, `example2.com`) to redirect to specific local server (`10.10.10.254`, `10.10.10.230`) using the same port (`HTTPS/443`)
+### Backend
 
-For this example our local servers are using reverse proxies and each server issue it's own certs using let's encrypt, and only accepting HTTPS traffic.
-(Let's encrypt uses DNS validation (Cloudflare) so we don't need `HTTP/80` port open)
+Backend where you setup the services which is behind HAProxy.
+
+For example a web server
+
+Usually this connection is un-encrypted or encrypted but without valid certs.
+This applies only between the service and HAProxy.
+
+
+### Frontend
+
+Frontend is where you setup how and where HAProxy will send the traffic.
