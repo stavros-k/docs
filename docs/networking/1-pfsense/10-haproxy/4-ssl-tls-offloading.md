@@ -18,7 +18,8 @@ Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
   - Encrypt(SSL): `Checked` (Unchecked if your webserver does not use https)
   - SSL Checks: `Unchecked`
 - Health checking
-  - Health check method: `Basic`
+  - Health check method: `HTTP`
+  - HTTP check method: `OPTIONS`
 - Click <kbd>💾Save</kbd>
 - Click <kbd>✔️Apply Changes</kbd>
 
