@@ -17,7 +17,7 @@ Login with your new user, initialize `totp` again.
 
 Now navigate again to `⚙️` -> `Users`
 
-- Click <kbd>🗑️</kbd> next to `admin`
+- Click Recycle bin<kbd>🗑️</kbd> next to `admin`
 
 Navigate to `⚙️` -> `Vault`
 
