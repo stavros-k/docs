@@ -81,6 +81,8 @@ user@tactical:~$ ip a
        valid_lft forever preferred_lft forever
 ```
 
+Configuration:
+
 ```yaml
 network:
   version: 2
