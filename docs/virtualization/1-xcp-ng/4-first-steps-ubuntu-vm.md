@@ -4,10 +4,10 @@ After installing an Ubuntu VM, this is some things I personally do first.
 
 ## Update the system
 
-  ```shell
-  sudo apt update
-  sudo apt upgrade -y
-  ```
+```shell
+sudo apt update
+sudo apt upgrade -y
+```
 
 ## Install guest tools (Optional)
 
