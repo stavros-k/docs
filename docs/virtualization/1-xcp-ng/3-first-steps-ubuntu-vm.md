@@ -60,20 +60,20 @@ Paste the following inside and change to match your network setup
 
 ```yaml
 network:
-version: 2
-renderer: networkd
-ethernets:
-  eth0:
-    dhcp4: no
-    dhcp6: no
-    addresses:
-      - 10.1.1.233/24
-    routes:
-      - to: default
-        via: 10.1.1.1
-    nameservers:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: no
+      dhcp6: no
       addresses:
-        - 10.1.1.1
+        - 10.1.1.233/24
+      routes:
+        - to: default
+          via: 10.1.1.1
+      nameservers:
+        addresses:
+          - 10.1.1.1
 ```
 
 Apply the network configuration...
