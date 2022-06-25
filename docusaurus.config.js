@@ -1,48 +1,47 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docs by Stavros',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://docs.kois.cc/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Docs by Stavros",
+  tagline: "Dinosaurs are cool",
+  url: "https://docs.kois.cc/",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'stavros-k', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: "stavros-k", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/stavros-k/docs/tree/master/',
+          editUrl: "https://github.com/stavros-k/docs/tree/master/",
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -51,7 +50,7 @@ const config = {
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        docsRouteBasePath: '/',
+        docsRouteBasePath: "/",
         indexBlog: false,
         hashed: true,
       },
@@ -62,13 +61,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       zoom: {
-        selector: '.markdown :not(em) > img',
+        selector: ".markdown :not(em) > img",
         config: {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           margin: 100,
           background: {
-            light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
+            light: "rgb(255, 255, 255)",
+            dark: "rgb(50, 50, 50)",
           },
         },
       },
@@ -79,39 +78,39 @@ const config = {
         },
       },
       navbar: {
-        title: 'Docs by Stavros',
+        title: "Docs by Stavros",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentation',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Documentation",
           },
           {
-            href: 'https://github.com/stavros-k/docs',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/stavros-k/docs",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Intro',
-                to: '/',
+                label: "Intro",
+                to: "/",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               // {
               //   label: 'Stack Overflow',
@@ -122,17 +121,17 @@ const config = {
               //   href: 'https://discordapp.com/invite/docusaurus',
               // },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/stavroskois',
+                label: "Twitter",
+                href: "https://twitter.com/stavroskois",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/stavros-k/docs',
+                label: "GitHub",
+                href: "https://github.com/stavros-k/docs",
               },
             ],
           },
