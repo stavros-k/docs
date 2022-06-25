@@ -3,7 +3,9 @@
 ## Get GeoLite2 DB Key
 
 :::note
+
 This step is optional
+
 :::
 
 - Navigate to [MaxMind's website](https://www.maxmind.com/en/account/login)

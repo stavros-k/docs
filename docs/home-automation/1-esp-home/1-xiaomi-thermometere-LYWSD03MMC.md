@@ -26,7 +26,7 @@ esphome:
 wifi:
   ssid: "WiFi Name"
   password: "WiFi Password"
-  domain: .localdomain
+  domain: ".localdomain"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -62,7 +62,7 @@ wifi:
   password: "WiFi Password"
   domain: .localdomain
 
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  # Enable fallback hot spot (captive portal) in case wifi connection fails
   ap:
     ssid: "Bluetooth Transceiver"
     password: "fallbackPassword"

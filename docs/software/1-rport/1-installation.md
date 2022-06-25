@@ -3,15 +3,19 @@
 ## Install Ubuntu
 
 You will need a linux VM (or bare metal), I tested this on `Ubuntu 22.04`.
-I just did a basic [install](../../virtualization/1-xcp-ng/3-install-ubuntu-vm.md).
+You can use this [guide](../../virtualization/1-xcp-ng/2-install-ubuntu-vm.md).
 
 ## Install `RPort`
 
 I opted for `topt` instead of email login.
 If you plan to use this with clients on remote locations,
-you will need to port forward ports 20000-20050/tcp and 8000/tcp on your firewall
+you will need to do some port forwarding on your firewall.
+
+- 20000-20050/tcp
+- 8000/tcp
+
 Port 5000 is also the WebUI, if you also want this to be accessible remotely,
-I'd recommend using a reverse proxy like `HAProxy`
+I'd recommend SSL/TLS offloading with [HAProxy](../../networking/1-pfsense/10-haproxy/4-ssl-tls-offloading.md)
 
 ```shell
 cd $HOME
