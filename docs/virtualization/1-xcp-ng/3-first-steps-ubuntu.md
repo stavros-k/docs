@@ -1,4 +1,4 @@
-# First things to do - Ubuntu VM
+# Ubuntu - First things to do
 
 After installing an Ubuntu VM, this is some things I personally do first.
 
