@@ -23,7 +23,7 @@ Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
   - Encrypt(SSL): `Unchecked`
   - SSL Checks: `Unchecked`
 - Health checking
-  - Health check method: `Basic`
+  - Health check method: `Basic` (You can try `SSL` also)
 - Click <kbd>💾Save</kbd>
 
 ![haproxy-back1](img/haproxy-back1.jpg)
