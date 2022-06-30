@@ -58,9 +58,9 @@ services:
       - ./prometheus/etc:/etc/prometheus
 ```
 
-[`prometheus.yml`](3-configuration-server.md)
+[`prometheus.yml`](3-configuration.md)
 
-[`web.yml`](3-configuration-server.md)
+[`web.yml`](3-configuration.md)
 
 Once you have the above files created, start prometheus.
 
