@@ -36,50 +36,31 @@ touch /home/USER/docker/prometheus/etc/web.yml
 ```yaml
 version: "3"
 services:
-    prometheus:
-        container_name: prometheus
-        restart: unless-stopped
-        image: prometheus:TAG
-        command:
-            - "--enable-feature=remote-write-receiver"
-            - "--config.file=/etc/prometheus/prometheus.yml"
-            - "--web.config.file=/etc/prometheus/web.yml"
-            - "--storage.tsdb.retention.time=30d"
-            - "--storage.tsdb.path=/prometheus"
-        ports:
-            - 9090:9090
-        volumes:
-            - ./prometheus/data:/data
-            - ./prometheus/etc:/etc/prometheus
+  prometheus:
+    container_name: prometheus
+    restart: unless-stopped
+    image: prometheus:TAG
+    command:
+      # Enable feature
+      - "--web.enable-remote-write-receiver"
+      # Where the config is stored inside the container
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      # Where wht web config is stored inside the container
+      - "--web.config.file=/etc/prometheus/web.yml"
+      # How long to keep metrics
+      - "--storage.tsdb.retention.time=30d"
+      # Where to store metrics
+      - "--storage.tsdb.path=/prometheus"
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus/data:/data
+      - ./prometheus/etc:/etc/prometheus
 ```
 
-`prometheus.yml`
+[`prometheus.yml`](3-configuration-server.md)
 
-```yaml
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'prometheus-job'
-    static_configs:
-      - targets: ['localhost:9090']
-    basic_auth:
-      username: "user"
-      password: "actual-non-hashed-password"
-```
-
-`web.yml`
-
-```yaml
-http_server_config:
-    http2: true
-
-basic_auth_users:
-    user: bcrypt_hash
-```
-
-You can generate a bcrypt hash [here](https://bcrypt-generator.com/).
-More rounds equals stronger encryption, but also more CPU usage on decryption.
+[`web.yml`](3-configuration-server.md)
 
 Once you have the above files created, start prometheus.
 
