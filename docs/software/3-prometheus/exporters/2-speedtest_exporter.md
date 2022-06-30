@@ -1,5 +1,8 @@
 # Speedtest Exporter
 
+Speedtest [exporter](https://github.com/MiguelNdeCarvalho/speedtest-exporter) is a Prometheus exporter
+written in Python using the official Speedtest CLI made by Ookla.
+
 ## Installation
 
 Let's see how to install it!
@@ -30,9 +33,6 @@ services:
 ```
 
 ## Configuration
-
-Speedtest [exporter](https://github.com/MiguelNdeCarvalho/speedtest-exporter) is a Prometheus exporter
-written in Python using the official Speedtest CLI made by Ookla.
 
 Add below job under `scrape_configs` on your prometheus configuration.
 
