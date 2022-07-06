@@ -45,3 +45,8 @@ I had a faced a problem at some point, where there was more than one gateways.
 It had something to do with how I had configured my WAN before.
 Deleted the extra one, gone back to the interfaces we addded/edited,
 hit <kbd>💾Save</kbd> one more time and everything worked.
+
+Also, I had to set `Default gateway IPv4` to `WAN_PPPOE` <kbd>Save</kbd>
+and reset it back to `Automatic` and <kbd>Save</kbd> again.
+
+![gateway-default](img/gateway-default.png)
