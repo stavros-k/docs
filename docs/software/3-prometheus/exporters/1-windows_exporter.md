@@ -36,7 +36,6 @@ A Prometheus [exporter](https://github.com/prometheus-community/windows_exporter
 
 You can see a list of available collectors [here](https://github.com/prometheus-community/windows_exporter#collectors)
 
-
 `wmi.yaml`
 
 ```yaml
