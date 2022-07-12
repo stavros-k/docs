@@ -54,7 +54,7 @@ Add below job under `scrape_configs` on your prometheus configuration.
 `prometheus.yaml`
 
 ```yaml
-    - job_name: "windows_exporter"
-      static_configs:
-        - targets: ["localhost:9182"]
+  - job_name: "windows_exporter"
+    static_configs:
+      - targets: ["localhost:9182"]
 ```
