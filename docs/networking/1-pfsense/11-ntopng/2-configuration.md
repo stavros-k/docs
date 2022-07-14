@@ -95,3 +95,7 @@ For every non-WAN interface, navigate to `Interface` on the left sidebar
 - Click <kbd>Save Settings</kbd>
 
 ![ntopng-dhcp](img/ntopng-dhcp.png)
+
+> If you get an error like below, simply restart the ntopng service.
+
+![ntop-error](img/ntop-error.png)
