@@ -29,8 +29,8 @@ This step is optional
 Navigate to `Diagnostics` -> `ntopng Settings`
 
 - Check `Enable ntopng`
-- Set `ntong Admin Password`
-- Set `Confirm ntong Admin Password`
+- Set `ntopng Admin Password`
+- Set `Confirm ntopng Admin Password`
 - Select `Interface`(s) you want to monitor
 - Optionally, enter `GeoLite2 DB License Key`
 - Click <kbd>💾Save</kbd>

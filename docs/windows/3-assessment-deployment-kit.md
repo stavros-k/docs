@@ -120,7 +120,7 @@ Do NOT boot on Windows at this point.
 - When you see the language selection, press <kbd>Shift</kbd> + <kbd>F10</kbd>
 - Connect to a network share and capture image with the following commands
 
-	```bat
+  ```bat
   net user Z: \\NASIP\SHARE /user:USERNAME PASSWORD
   Z:\
   cd DIRECTORY

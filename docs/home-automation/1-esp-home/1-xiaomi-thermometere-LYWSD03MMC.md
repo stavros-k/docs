@@ -2,7 +2,8 @@
 
 ## Flash firmware
 
-Using this [project](https://github.com/atc1441/ATC_MiThermometer) you can flash your `Xiaomi Thermometer LYWSD03MMC`
+Using this [project](https://github.com/atc1441/ATC_MiThermometer) you can flash your
+`Xiaomi Thermometer LYWSD03MMC`
 Visit the Flasher [Page](https://atc1441.github.io/TelinkFlasher.html).
 
 ![LYWSD03MMC](img/lywsd03mmc.jpeg)

@@ -9,7 +9,7 @@ Navigate to `Status` -> `Traffic Totals`
 
 ![traffic-enable-graph](img/traffic-enable-graph.png)
 
-## Set Default Interaces
+## Set Default Interfaces
 
 - Select the interfaces you want to view graphs (Select multiple by pressing <kbd>CTRL</kbd>)
 - Click <kbd>⚙️Display Advanced</kbd>
