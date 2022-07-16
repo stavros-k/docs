@@ -19,8 +19,6 @@ I also use TLS-PSK
 > Note: For Docker and FreeBSD templates, I had to clone the default, and convert every agent type
 > from `Zabbix agent` to `Zabbix agent (active)`.
 > Make sure to atleast check `Items`, `Discovery`, `Item Prototypes`.
-> You might have later to edit some `keys`. eg For FreeBSD I edited `Zabbix agent availability` and changed
-> from `zabbix[host,agent,available]` to `zabbix[host,active_agent,available]`.
 
 ## Docker
 
