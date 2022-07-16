@@ -1,32 +1,28 @@
 version: "0.2"
 words:
   - adksetup
-  - dism
-  - donwloaded
-  - fontconfig
-  - geoipupdate
-  - lywsd03mmc
-  - maxmind
-  - nasip
-  - ndpi
-  - ntopng
-  - ooobe
-  - timeseries
-  - unattend
-  - vnstat
-  - wemos
-  - xiaomi
-  - esphome
-  - wrover
-  - ssid
-  - localdomain
-  - hotspot
+  - autofitter
   - bindkey
+  - browserslist
+  - Bubuntu
+  - clsx
+  - dchp
+  - dism
+  - distro
+  - donwloaded
+  - easyops
+  - esphome
+  - fontconfig
   - freetype
   - gdbm
+  - geoip
+  - geoipupdate
+  - geolocation
+  - ghostscript
   - giflib
   - graphviz
   - groff
+  - hotspot
   - jbigkit
   - libfontenc
   - libgd
@@ -34,33 +30,41 @@ words:
   - libpaper
   - libsodium
   - libzmq
+  - localdomain
+  - lywsd03mmc
+  - macaddress
+  - maintainership
+  - maxmind
+  - maxminddb
+  - mkdir
   - mkfontscale
+  - msiexec
+  - nasip
+  - ndpi
+  - netpbm
+  - ntop
+  - ntopng
+  - ooobe
   - openpgm
+  - pfsense
+  - ppem
   - protobuf
+  - smartctl
+  - smartmontools
+  - ssid
+  - thermalzone
+  - timeseries
+  - truetype
+  - tsdb
   - uchardet
+  - unattend
+  - verdana
+  - vnstat
   - webfonts
   - webp
-  - zstd
-  - freetype
-  - truetype
-  - autofitter
-  - maintainership
-  - ghostscript
-  - netpbm
+  - wemos
+  - wrover
+  - xiaomi
   - xorg
-  - verdana
-  - ppem
-  - geolocation
-  - geoip
-  - maxminddb
-  - macaddress
-  - dchp
-  - ntop
-  - pfsense
-  - mkdir
-  - tsdb
-  - msiexec
-  - thermalzone
-  - easyops
-  - clsx
-  - browserslist
+  - Zabbix
+  - zstd
