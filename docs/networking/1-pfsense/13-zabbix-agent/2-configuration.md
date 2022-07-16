@@ -8,7 +8,7 @@ Navigate to `Services` -> `Zabbix Agent 6`
 - Server: `YOUR.ZABBIX.SERVER.IP:10051`
 - ServerActive: `YOUR.ZABBIX.SERVER.IP:10051`
 - Hostname: `pfSense`
-- ListenIP: `0.0.0.0`
+- ListenIP: `YOUR.FIREWALL.IP`
 
 ![zabbix-config1](img/zabbix-config1.png)
 
