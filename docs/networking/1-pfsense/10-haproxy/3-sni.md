@@ -23,8 +23,10 @@ Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
   - Encrypt(SSL): `Unchecked`
   - SSL Checks: `Unchecked`
 - Health checking
-  - Health check method: `Basic` (You can try `SSL` also)
+  - Health check method: `none`
 - Click <kbd>💾Save</kbd>
+
+> While Health Check Method `Basic` or `SSL` might work, I've seen it cause problems, like dropped connections
 
 ![haproxy-back1](img/haproxy-back1.jpg)
 
