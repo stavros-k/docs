@@ -15,7 +15,6 @@ I also use TLS-PSK
 - TLSPSKIdentity: `YOUR PSK ID`
 - TLSPSKFile: `Path to your PSK key file`
 
-
 > Note: For Docker and FreeBSD templates, I had to clone the default, and convert every agent type
 > from `Zabbix agent` to `Zabbix agent (active)`.
 > Make sure to atleast check `Items`, `Discovery`, `Item Prototypes`.
