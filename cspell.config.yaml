@@ -54,6 +54,7 @@ words:
   - ssid
   - thermalzone
   - timeseries
+  - TOTP
   - truetype
   - tsdb
   - uchardet

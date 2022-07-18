@@ -46,6 +46,10 @@ Create the 3 `subdomains` now.
 If you are running more services on port 443, you can use [HAProxy with SNI](../../networking/1-pfsense/10-haproxy/3-sni.md)
 to map the traffic to the correct internal service.
 
+> Note: If you use HAProxy in TCP mode, you need to set the timeouts as follows:
+> Backend: Connection timeout: `300000`, Server timeout: `300000`, Retries: `3`
+> Frontend: Client timeout: `300000`
+
 ### Let's begin the installation
 
 Update system and check that required packages are installed
