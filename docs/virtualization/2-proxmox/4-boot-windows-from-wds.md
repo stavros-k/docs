@@ -22,7 +22,7 @@ Just make sure you selected `Do not use any media` when creating the VM
 - Choose the Boot Image you want.
 - Click `Next`
 - Enter Credentials
-	- Username: `WDS-Server\Administrator`
-	- Password: `YOURPASSWORD`
+  - Username: `WDS-Server\Administrator`
+  - Password: `YOURPASSWORD`
 - Select the Image you want to install
 - Follow on-screen instructions

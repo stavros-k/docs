@@ -147,12 +147,15 @@ PORT="443"
 # Base dir for installation and future updates
 INSTALLDIR="/opt/xo"
 
-# Script will update itself if there's a newer version available. This assumes that script inside a git directory and remote is ronivay/XenOrchestraInstallerUpdater
+# Script will update itself if there's a newer version available. This assumes that script inside a git directory and
+# remote is ronivay/XenOrchestraInstallerUpdater
 # options: true/false
 SELFUPGRADE=true
 
-# Xen Orchestra configuration file is stored in XOUSER's home directory ($HOME/.config/xo-server/config.toml) and by default will be overwritten with every update done by this script.
-# You may disable this if you edit configuration by hand and don't want an update to overwrite it. Note that some of the options defined here won't be applied even if changed if this is set to false.
+# Xen Orchestra configuration file is stored in XOUSER's home directory ($HOME/.config/xo-server/config.toml) and
+# by default will be overwritten with every update done by this script.
+# You may disable this if you edit configuration by hand and don't want an update to overwrite it.
+# Note that some of the options defined here won't be applied even if changed if this is set to false.
 # options: true/false
 # no effect to Xen Orchestra proxy
 CONFIGUPDATE=true
@@ -167,9 +170,11 @@ BRANCH="master"
 # default: ./logs
 #LOGPATH=
 
-# Only one PLUGINS variable can be used at a time. Comment out the other one if you change these below. Comment out both if you don't want any plugins to be installed.
+# Only one PLUGINS variable can be used at a time. Comment out the other one if you change these below.
+# Comment out both if you don't want any plugins to be installed.
 
-# Comma separated list of plugins to be installed, check README for more information. Note that 3rd party plugins defined below should be listed here as well with their name eq. repo1,repo2 etc.
+# Comma separated list of plugins to be installed, check README for more information. Note that 3rd party plugins
+# defined below should be listed here as well with their name eq. repo1,repo2 etc.
 #PLUGINS="xo-server-transport-email,xo-server-usage-report,xo-server-perf-alert"
 
 # (default) all plugins will be installed, including possible 3rd-party plugins if defined.
@@ -178,25 +183,31 @@ PLUGINS="all"
 # Additional 3rd-party plugins to fetch. Keep the .git suffix.
 #ADDITIONAL_PLUGINS="https://github.com/user/repo.git,https://github.com/user/repo2.git"
 
-# NodeJS and Yarn are automatically updated when running update/install. Can be disabled but not recommended (installation might fail because of too old node.js or yarn)
-# Note that if nodejs is updated when script's update feature is used, it might not be possible to use rollback option anymore without manually downgrading nodejs version to previous one
+# NodeJS and Yarn are automatically updated when running update/install. Can be disabled but not recommended
+# (installation might fail because of too old node.js or yarn)
+# Note that if nodejs is updated when script's update feature is used, it might not be possible to use rollback option
+# anymore without manually downgrading nodejs version to previous one
 # options: true/false
 AUTOUPDATE="true"
 
-# enable/disable OS check. Installation refuses to run on any other than supported OS versions if this is enabled. Can be disabled for experimental purposes.
+# enable/disable OS check. Installation refuses to run on any other than supported OS versions if this is enabled.
+# Can be disabled for experimental purposes.
 # options: true/false
 OS_CHECK="true"
 
-# enable/disable architecture check. Installation refuses to run on any other than x86_64 if enabled. Can be disabled for experimental purposes.
+# enable/disable architecture check. Installation refuses to run on any other than x86_64 if enabled.
+# Can be disabled for experimental purposes.
 # options: true/false
 ARCH_CHECK="true"
 
-# Define the number of previous successful installations you want to keep. Needs to be at least 1. Determines how far the rollback feature can be used.
+# Define the number of previous successful installations you want to keep. Needs to be at least 1.
+# Determines how far the rollback feature can be used.
 PRESERVE="3"
 
 # certificate settings have no effect to Xen Orchestra proxy, it'll generate it's own self-signed certificates always
 
-# Location of pem certificate/key files. Installation will automatically configure HTTPS if these are defined. Remember to change PORT variable as well.
+# Location of pem certificate/key files. Installation will automatically configure HTTPS if these are defined.
+# Remember to change PORT variable as well.
 PATH_TO_HTTPS_CERT=$INSTALLDIR/xo.crt
 PATH_TO_HTTPS_KEY=$INSTALLDIR/xo.key
 
@@ -211,7 +222,8 @@ AUTOCERT="true"
 
 # If set to true, this will install the rpm/deb repositories necessary for the Xen Orchestra install.
 # If set to false, these repositories will not be installed. Also automatic nodejs upgrade will be disabled.
-# Note that installation will fail if all needed packages aren't available from configured repositories. See README for list of packages.
+# Note that installation will fail if all needed packages aren't available from configured repositories.
+# See README for list of packages.
 # options: true/false
 # default: true
 #INSTALL_REPOS="true"

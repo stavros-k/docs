@@ -21,7 +21,7 @@
   - Server Roles
     - Select `Windows Deployment Services`
     - Click `Add Features`
-  - Role Serivces
+  - Role Services
     - Select `Deployment Server`
     - Select `Transport Server`
   - Click `Install`
@@ -103,7 +103,7 @@
 After you added an image, you can attach an answer file you [created](./assessment-deployment-kit).
 
 - Right Click the Install Image and click `Properties`
-- Select `Allow iamge to isntall in unattended mode`
+- Select `Allow image to install in unattended mode`
 - Click `Select File...`
 - Click `Browse`
 - Select the Answer File you saved earlier
