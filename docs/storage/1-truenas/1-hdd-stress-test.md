@@ -87,24 +87,26 @@ This step will **DELETE** any data on the HDD
 `badblocks` do `4` passes:
 
 ```shell
--First pass testing with patern 0xaa (10101010)
+-First pass testing with pattern 0xaa (10101010)
 -Then Reading and comparing
--Second pass testing with patern 0x55 (01010101)
+-Second pass testing with pattern 0x55 (01010101)
 -Then Reading and comparing
--Third pass testing with patern 0xff (11111111)
+-Third pass testing with pattern 0xff (11111111)
 -Then Reading and comparing
--Fourth pass testing with patern 0x00 (00000000)
+-Fourth pass testing with pattern 0x00 (00000000)
 -Then Reading and comparing
 ```
 
 <!-- ![badblocks-running](img/badblocks-running.jpg) -->
 Missing image of *badblocks running*, Sorry
 
-To run the test to the other HDDs, press <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>"</kbd>, this will split the screen, there you can run `badblocks` on the next HDD. You can split as many times as you want.
+To run the test to the other HDDs, press <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>"</kbd>, this will split the screen,
+there you can run `badblocks` on the next HDD. You can split as many times as you want.
 
 ![tmux-split](img/tmux-split.jpg)
 
-After starting badblocks for all your HDDs, you can leave the ssh open or close it. In order to reconnect later, ssh back to TrueNAS, and do `tmux attach`
+After starting badblocks for all your HDDs, you can leave the ssh open or close it. In order to reconnect later,
+ssh back to TrueNAS, and do `tmux attach`
 
 `badblocks` result example of good HDDs:
 
@@ -123,7 +125,7 @@ Reading and comparing: done
 Pass completed, 0 bad blocks found. (0/0/0 errors)
 ```
 
-## Trird step, Results
+## Third step, Results
 
 When `badblocks` stresses is over. We need to do another `long` test on each HDD.
 
@@ -132,9 +134,11 @@ When `badblocks` stresses is over. We need to do another `long` test on each HDD
 After `long` is done, is time for our results.
 We get them with this:
 
-`smartctl -A /dev/sdX` (Note the captal `A`)
+`smartctl -A /dev/sdX` (Note the capital `A`)
 
-The important fields are `Reallocated_Sector_Ct`, `Current_Pending_Sector`, and `Offline_Uncorrectable` lines. All these should have `RAW_VALUE` of `0`, even if the `VALUE` field is listed as `200`. Any result greater that `0` should be a cause for RMA.
+The important fields are `Reallocated_Sector_Ct`, `Current_Pending_Sector`, and `Offline_Uncorrectable` lines.
+All these should have `RAW_VALUE` of `0`, even if the `VALUE` field is listed as `200`.
+Any result greater that `0` should be a cause for RMA.
 
 `smartctl -A /dev/sdX` result of good HDDs:
 

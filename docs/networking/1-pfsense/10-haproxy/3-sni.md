@@ -26,10 +26,12 @@ Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
   - Encrypt(SSL): `Unchecked`
   - SSL Checks: `Unchecked`
 - Health checking
-  - Health check method: `none`
+  - Health check method: `SSL` (or `Basic`, or `none`)
 - Click <kbd>💾Save</kbd>
 
-> While Health Check Method `Basic` or `SSL` might work, I've seen it cause problems, like dropped connections
+> Set health check to `none`, until you got it working, then come back and change if you want to.
+> I encountered some timeouts with services running with web sockets.
+> Increasing Connection timeout to `3000000`, Server timeout to `3000000` and Retries to `3` fixed it.
 
 ![haproxy-back1](img/haproxy-back1.jpg)
 
@@ -67,6 +69,9 @@ Navigate to `Services` -> `HAProxy` -> `Frontend` -> `Add`
   - Repeat Action steps for all your backends
 
 ![haproxy-front2](img/haproxy-front2.jpg)
+
+> I encountered some timeouts with services running with web sockets.
+> Increasing Client timeout to `3000000`
 
 ## Check if everything is working
 

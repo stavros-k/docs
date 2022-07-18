@@ -1,11 +1,16 @@
 version: "0.2"
 words:
   - adksetup
+  - AUTOCERT
   - autofitter
+  - AUTOUPDATE
+  - badblocks
   - bindkey
   - browserslist
   - Bubuntu
   - clsx
+  - CNAME
+  - CONFIGUPDATE
   - dchp
   - dism
   - distro
@@ -15,6 +20,7 @@ words:
   - fontconfig
   - freetype
   - gdbm
+  - GENSUDO
   - geoip
   - geoipupdate
   - geolocation
@@ -23,6 +29,7 @@ words:
   - graphviz
   - groff
   - hotspot
+  - INSTALLDIR
   - jbigkit
   - libfontenc
   - libgd
@@ -31,11 +38,13 @@ words:
   - libsodium
   - libzmq
   - localdomain
+  - LOGPATH
   - lywsd03mmc
   - macaddress
   - maintainership
   - maxmind
   - maxminddb
+  - Memstick
   - mkdir
   - mkfontscale
   - msiexec
@@ -48,16 +57,24 @@ words:
   - openpgm
   - pfsense
   - ppem
+  - proto
   - protobuf
+  - ronivay
+  - SELFUPGRADE
   - smartctl
   - smartmontools
   - ssid
   - thermalzone
   - timeseries
+  - TOTP
+  - traefik
+  - truenas
   - truetype
   - tsdb
   - uchardet
+  - umounting
   - unattend
+  - USESUDO
   - verdana
   - vnstat
   - webfonts
@@ -66,5 +83,8 @@ words:
   - wrover
   - xiaomi
   - xorg
+  - XOUSER
+  - yourdomain
+  - YOURPASSWORD
   - Zabbix
   - zstd
