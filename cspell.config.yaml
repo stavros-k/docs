@@ -59,12 +59,14 @@ words:
   - ppem
   - proto
   - protobuf
+  - publickey
   - ronivay
   - SELFUPGRADE
   - smartctl
   - smartmontools
   - ssid
   - thermalzone
+  - thisisa
   - timeseries
   - TOTP
   - traefik
@@ -74,6 +76,7 @@ words:
   - uchardet
   - umounting
   - unattend
+  - untunneled
   - USESUDO
   - verdana
   - vnstat

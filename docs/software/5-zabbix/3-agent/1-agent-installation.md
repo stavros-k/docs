@@ -1,4 +1,4 @@
-# Agent
+# Installation
 
 I usually configure all my agents in `Active` mode.
 This way it will work either it is behind NAT or not
@@ -17,7 +17,7 @@ I also use TLS-PSK
 
 > Note: For Docker and FreeBSD templates, I had to clone the default, and convert every agent type
 > from `Zabbix agent` to `Zabbix agent (active)`.
-> Make sure to atleast check `Items`, `Discovery`, `Item Prototypes`.
+> Make sure to at least check `Items`, `Discovery`, `Item Prototypes`.
 
 ## Docker
 
@@ -45,7 +45,7 @@ Download the agent 2 zip file from [here](https://www.zabbix.com/download_agents
 
 - Extract the zip in `C:\zabbix`
 - Open `C:\zabbix\conf\zabbix_agent2.conf`
-- Edit config to your needs
+- [Edit](2-agent-configuration.md) config to your needs
 
 Open `Command Prompt`
 
