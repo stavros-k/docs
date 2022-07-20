@@ -7,7 +7,7 @@
 This is a very basic config file. You will still get a ton of metrics with that one.
 Plus linking some templates in the Zabbix Web Interface
 
-```conf
+```bash
 # Host Settings
 Hostname=MyAgentUniqueName
 HostMetadata=MyAgentMetadata
@@ -30,7 +30,7 @@ Include=.\zabbix_agent2.d\plugins.d\*.conf
 
 If your agents are remote, you should consider using at least PSK for encryption.
 
-```conf
+```bash
 # TLS Settings
 TLSConnect=psk
 TLSPSKIdentity=PSK_ID (Can be anything)
@@ -41,7 +41,7 @@ TLSPSKFile=path/to/the/psk/file
 
 I wanted to get some extra data, which needed to create some extra keys.
 
-```conf
+```bash
 # Custom Data
 # Get Public IP
 UserParameter=net.public,powershell -nologo -command "(Invoke-WebRequest https://ifconfig.io/ip -UseBasicParsing).Content.Trim()"
@@ -67,7 +67,7 @@ UserParameter=sockstat.udp.inuse.count, netstat -ano | find /C "UDP"
 I usually add the SMART plugin to get disk stats.
 Don't forget to link the template.
 
-```conf
+```bash
 #Plugin Settings
 Plugins.Smart.Path="C:\Program Files\smartmontools\bin\smartctl.exe"
 ```
