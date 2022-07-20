@@ -33,8 +33,6 @@ PrivateKey = +BTMy8yLkq/yDQYFXZW1HGs7YqCFmG+gAxxS7uhWeGA=
 # Put the IP you entered on Allowed IPs when creating the peer.
 # Note that here we use "/24" instead of "/32"
 Address = 10.30.0.2/24
-# This is the DNS of your pfSense
-DNS = 10.1.1.1
 
 [Peer]
 # This is the Public Key from your pfSense Tunnel.
