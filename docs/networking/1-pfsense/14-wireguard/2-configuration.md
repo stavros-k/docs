@@ -7,6 +7,8 @@ Navigate to `VPN` -> `Wireguard` -> `Settings`
 - Check `Enable WireGuard`
 - Click <kbd>💾Save</kbd>
 
+![wireguard-enable](img/wireguard-enable.png)
+
 ## Create Firewall Rules
 
 Navigate to `Firewall` -> `Rules` -> `WireGuard`
