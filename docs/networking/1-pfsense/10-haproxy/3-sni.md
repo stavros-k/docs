@@ -10,7 +10,7 @@ In this guide we will configure multiple domains (`example1.com`, `example2.com`
 For this example our local servers are using reverse proxies and each server issue it's own certs using let's encrypt
 and only accepting HTTPS traffic.
 
-(Let's encrypt uses DNS validation (Cloudflare) so we don't need `HTTP/80` port open)
+(I have setup Let's encrypt to use DNS validation (Cloudflare) so I don't need `HTTP/80` port open)
 
 ## Backend
 
@@ -29,6 +29,8 @@ Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
   - Health check method: `SSL` (or `Basic`, or `none`)
 - Click <kbd>💾Save</kbd>
 
+> You can enable `Transparent ClientIP` under `Advanced settings`, but keep in mind that for me, it cause more problems
+> than it fixed. Also, if you have this enabled, and disable HAProxy, it still applies some rules and can keep causing trouble.
 > Set health check to `none`, until you got it working, then come back and change if you want to.
 > I encountered some timeouts with services running with web sockets.
 > Increasing Connection timeout to `3000000`, Server timeout to `3000000` and Retries to `3` fixed it.
