@@ -4,7 +4,10 @@ Some of the scripts I use
 
 ## Add Desktop Icons
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -80,9 +83,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Customize Explorer
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -153,9 +161,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Customize TaskBar
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -239,9 +252,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Disable Cortana
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -308,9 +326,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Disable Notifications
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -392,9 +415,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Disable Personalization Menus
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -464,9 +492,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Remove OneDrive Setup
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #   David Segura
 #   http://osdeploy.com
 #
@@ -544,9 +577,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Power profile Customizations
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -632,9 +670,14 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Enable Storage Sense
 
-```powershell
+<details>
+    <summary> Script </summary>
+
+```bash
 #======================================================================================
 #   Load Registry Hives
 #======================================================================================
@@ -713,11 +756,13 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
+</details>
+
 ## Disable Teams Auto Install
 
 Tried editing the following registry value, but does not work on new installs.
 
-```powershell
+```bash
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v ConfigureChatAutoInstall /t REG_DWORD /d 0 /f
 ```
 
@@ -726,7 +771,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v Confi
 Tried editing the following registry values, but does not work on new installs.
 It does work on live systems
 
-```powershell
+```bash
 # Current User Dark Theme for Apps
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f
 # Current User Dark Theme for System

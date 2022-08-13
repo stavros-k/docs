@@ -5,17 +5,20 @@ words:
   - autofitter
   - AUTOUPDATE
   - badblocks
+  - bbwe
   - bindkey
   - browserslist
   - Bubuntu
   - clsx
   - CNAME
   - CONFIGUPDATE
+  - Cortana
   - dchp
   - Diffie
   - dism
   - distro
   - donwloaded
+  - DWORD
   - easyops
   - esphome
   - fontconfig
@@ -29,8 +32,11 @@ words:
   - giflib
   - graphviz
   - groff
+  - HKCU
+  - HKLM
   - hotspot
   - INSTALLDIR
+  - Intellimenus
   - jbigkit
   - libfontenc
   - libgd
@@ -54,6 +60,7 @@ words:
   - netpbm
   - ntop
   - ntopng
+  - ntuser
   - ooobe
   - openpgm
   - pfsense
@@ -62,11 +69,14 @@ words:
   - protobuf
   - publickey
   - ronivay
+  - Segura
   - SELFUPGRADE
   - smartctl
   - smartmontools
   - ssid
+  - STANDBYIDLE
   - Sticktable
+  - Systray
   - thermalzone
   - thisisa
   - timeseries
@@ -81,9 +91,11 @@ words:
   - untunneled
   - USESUDO
   - verdana
+  - VIDEOIDLE
   - vnstat
   - webfonts
   - webp
+  - wekyb
   - wemos
   - wrover
   - xiaomi
