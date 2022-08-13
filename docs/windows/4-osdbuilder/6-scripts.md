@@ -632,29 +632,6 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   [void](Read-Host 'Press Enter to continue')
 ```
 
-## Setup Timezone on Setup
-
-```powershell
-#   David Segura
-#   http://osdeploy.com
-#
-#   OSBuilder Script
-#   Global Set-TimeZone GTBStandardTime.ps1
-#   Version 19.1.22
-#
-#   Displays Variables and Prompts for Enter
-#   Set Time Zone to GTB Standard Time for Install.wim
-#======================================================================================
-if (Test-Path $MountDirectory) {
-    # Sets Timezone for Installation process
-    Dism /Image:"$MountDirectory" /Set-TimeZone:"GTB Standard Time" /LogPath:"$Logs\$((Get-Date).ToString('yyyy-MM-dd-HHmmss'))-Dism-SetTimeZone.log"
-}
-#======================================================================================
-#   Testing
-#======================================================================================
-#   [void](Read-Host 'Press Enter to continue')
-```
-
 ## Enable Storage Sense
 
 ```powershell
@@ -734,11 +711,6 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 #   Testing
 #======================================================================================
 #   [void](Read-Host 'Press Enter to continue')
-```
-
-## Set Time and Date Format
-
-```powershell
 ```
 
 ## Disable Teams Auto Install
