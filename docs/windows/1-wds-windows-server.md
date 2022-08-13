@@ -1,7 +1,7 @@
 # Windows Deployment Services
 
 > Prerequisites:
-> [Installed Windows Server 2022.](../virtualization/proxmox/install-windows-server)
+> [Installed Windows Server 2022](../virtualization/2-proxmox/2-install-windows-server.md)
 
 ## Install WDS (Windows Deployment Services)
 
@@ -10,7 +10,7 @@
   - Navigate to `System and Security`
   - Navigate to `System`
   - Click `Rename this PC`
-  - Enter a name. eg `WDS-Server`
+  - Enter a name. eg `WDS-SERVER`
   - Reboot
 - Open `Server Manager` App
   - Click Manage on top right corner
@@ -35,6 +35,34 @@
   - Set the Path for the `PXE` boot files.
   - Select `Respond to all client computers` (Or whatever suits your needs).
   - Unselect `Add images to server now`.
+
+## Install MDT
+
+- Visit [Microsoft Deployment Toolkit (MDT) Download Page](https://www.microsoft.com/en-us/download/details.aspx?id=54259)
+  - Download the  `x64` version
+- Visit [Windows ADK Download Page](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
+  - Download `Windows ADK`
+  - Download `Windows PE add-on`
+- Run the Installers
+
+## Configure MDT
+
+- Open `Deployment Workbench` (Find it on the Start Menu)
+  - Right click `Deployment Shares`
+  - Select `New Deployment Share`
+  - Select a path
+  - Click `Next` to the rest of the screens
+
+## Import OS to MDT
+
+- Mount your default Windows 11 Image
+- Go to `Deployment Shares` > `MDT Deployment Share` > `Operating Systems`
+  - Right click `Operating Systems`
+  - Select `Import Operating System`
+  - Select `Full set of source files`
+  - Select for `Source Directory` the mounted Win 11 Image
+  - Set a name
+  - Click `Next` to the rest of the screens
 
 ## Add Images to WDS
 
