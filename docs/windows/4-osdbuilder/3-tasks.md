@@ -1,5 +1,8 @@
 # Tasks
 
+You can combine all the tasks into one. Simply by adding all the flags into the same command.
+Run the same command multiple times to add multiple scripts.
+
 ## Create Tasks
 
 You need at least one task created, so you can start an image build.

@@ -11,3 +11,9 @@ You can Download new updates before the build by running
 ```powershell
 New-OSBuild -Download -Execute -CreateISO
 ```
+
+If you have multiple tasks (not template tasks), you can select which task you want to run with:
+
+```bash
+New-OSBuild -ByTaskName "Unattend-Cube" -Download -Execute -CreateISO
+```

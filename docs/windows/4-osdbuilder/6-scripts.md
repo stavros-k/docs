@@ -579,7 +579,7 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 
 </details>
 
-## Power profile Customizations
+## Power Profile Customizations
 
 <details>
     <summary> Script </summary>
@@ -757,23 +757,3 @@ Start-Process reg -ArgumentList "unload HKLM\MountSystem" -Wait -WindowStyle Hid
 ```
 
 </details>
-
-## Disable Teams Auto Install
-
-Tried editing the following registry value, but does not work on new installs.
-
-```bash
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v ConfigureChatAutoInstall /t REG_DWORD /d 0 /f
-```
-
-## Enable Dark Mode
-
-Tried editing the following registry values, but does not work on new installs.
-It does work on live systems
-
-```bash
-# Current User Dark Theme for Apps
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f
-# Current User Dark Theme for System
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f
-```
