@@ -1,12 +1,24 @@
-# Installation
+# General
+
+## Settings
+
+- Hostname: Set your preferred host name
+- Domain: Set your preferred domain
+- Time zone: Select your region
+- Language: Select your preferred language
+- Theme: Select a theme (if you have any installed)
+
+![system-general](img/system-general.png)
+
+Click <kbd>Save</kbd>
+
+## Theme Installation
 
 Navigate to `System` -> `Firmware` -> `Plugins`
 
 Search for `theme` and click <kbd>➕</kbd> next to the theme you want to install
 
 ![theme-install](img/theme-install.png)
-
-Click <kbd>✔️Confirm</kbd>
 
 Wait until you see `**DONE**`
 
@@ -20,7 +32,7 @@ Checking integrity... done (0 conflicting)
 The following 1 package(s) will be affected (of 0 checked):
 
 New packages to be INSTALLED:
-	os-theme-cicada: 1.29
+  os-theme-cicada: 1.29
 
 Number of packages to be installed: 1
 

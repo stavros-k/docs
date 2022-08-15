@@ -1,6 +1,7 @@
 version: "0.2"
 words:
   - adksetup
+  - amdtemp
   - AUTOCERT
   - autofitter
   - AUTOUPDATE
@@ -12,6 +13,7 @@ words:
   - clsx
   - CNAME
   - CONFIGUPDATE
+  - coretemp
   - Cortana
   - dchp
   - Diffie
@@ -32,6 +34,7 @@ words:
   - giflib
   - graphviz
   - groff
+  - hiadaptive
   - HKCU
   - HKLM
   - hotspot
@@ -58,12 +61,14 @@ words:
   - nasip
   - ndpi
   - netpbm
+  - Nextcloud
   - ntop
   - ntopng
   - ntuser
   - ooobe
   - openpgm
   - pfsense
+  - powersave
   - ppem
   - proto
   - protobuf
