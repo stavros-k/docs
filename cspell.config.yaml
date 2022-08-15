@@ -1,6 +1,7 @@
 version: "0.2"
 words:
   - adksetup
+  - aily
   - amdtemp
   - AUTOCERT
   - autofitter
@@ -82,9 +83,11 @@ words:
   - protobuf
   - publickey
   - ronivay
+  - SATA
   - Segura
   - SELFUPGRADE
   - smartctl
+  - smartd
   - smartmontools
   - ssid
   - STANDBYIDLE
