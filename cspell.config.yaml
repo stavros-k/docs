@@ -92,6 +92,9 @@ words:
   - ssid
   - STANDBYIDLE
   - Sticktable
+  - SYNACK
+  - syncookie
+  - syncookies
   - Systray
   - thermalzone
   - thisisa
