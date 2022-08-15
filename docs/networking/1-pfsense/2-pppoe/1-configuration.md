@@ -5,7 +5,7 @@ Navigate to `Interfaces` -> `Assignments` -> `PPPs`
 Click <kbd>➕Add</kbd>
 
 - Link Type: `PPPoE`
-- Link Interface(s): (Select the NIC where the cable from your ISP's modem/rotuer is connected)
+- Link Interface(s): (Select the NIC where the cable from your ISP's modem/router is connected)
 - Username: `YOURUSERNAME`
 - Password: `YOURPASSWORD`
 - Check `Configure NULL service name`
