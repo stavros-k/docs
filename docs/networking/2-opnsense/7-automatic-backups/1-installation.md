@@ -2,7 +2,7 @@
 
 Navigate to `System` > `Firmware` > `Plugins`
 
-Search for `nextcloud` and click <kbd>➕</kbd> next to the theme you want to install
+Search for `nextcloud` and click <kbd>➕</kbd>
 
 ![nextcloud-install](img/nextcloud-install.png)
 

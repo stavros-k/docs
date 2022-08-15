@@ -12,16 +12,21 @@ words:
   - Bubuntu
   - clsx
   - CNAME
+  - configd
   - CONFIGUPDATE
   - coretemp
   - Cortana
   - dchp
+  - ddclient
+  - ddns
   - Diffie
   - dism
   - distro
   - donwloaded
   - DWORD
+  - dyndns
   - easyops
+  - EEST
   - esphome
   - fontconfig
   - freetype
@@ -38,9 +43,11 @@ words:
   - HKCU
   - HKLM
   - hotspot
+  - INET
   - INSTALLDIR
   - Intellimenus
   - jbigkit
+  - Leay
   - libfontenc
   - libgd
   - libmaxminddb
