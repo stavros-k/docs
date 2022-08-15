@@ -29,6 +29,9 @@ On each interface the `Interface` and `Destination Type`, will be different.
 
 ![redirect-dns](img/redirect-dns.png)
 
+- Click <kbd>💾Save</kbd>
+- Click <kbd>✔️Apply Changes</kbd>
+
 Navigate to `Firewall` -> `Rules` -> `LAN`
 
 Do this for all non-WAN interfaces as well.
@@ -47,6 +50,3 @@ If clients use DNS over TLS, this will not have any effect
 
 You can block DNS queries to port `853`, but this also will not work in all scenarios.
 There are many ways that a client can bypass the DNS queries.
-
-Redirecting DNS is mostly there to provide some performance from caching DNS on pfSense,
-allowing clients in the network to resolve internal DNS Names, etc.
