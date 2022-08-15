@@ -12,13 +12,13 @@ internal resources.
 
 ## NAT Reflection
 
-Navigate to  `System` -> `Advanced` -> `Firewall & NAT`
+Navigate to `Firewall` -> `Settings` -> `Advanced`
 
-Scroll down to `Network Address Translation`
+- Check `Reflection for port forwards`
 
-Set `NAT Reflection mode for port forwards` to `Pure NAT`
+![nat-reflection](img/nat-reflection.png)
 
-Click <kbd>💾Save</kbd>
+- Click <kbd>Save</kbd>
 
 ## Split DNS
 

@@ -1,6 +1,8 @@
 version: "0.2"
 words:
   - adksetup
+  - aily
+  - amdtemp
   - AUTOCERT
   - autofitter
   - AUTOUPDATE
@@ -11,15 +13,21 @@ words:
   - Bubuntu
   - clsx
   - CNAME
+  - configd
   - CONFIGUPDATE
+  - coretemp
   - Cortana
   - dchp
+  - ddclient
+  - ddns
   - Diffie
   - dism
   - distro
   - donwloaded
   - DWORD
+  - dyndns
   - easyops
+  - EEST
   - esphome
   - fontconfig
   - freetype
@@ -32,12 +40,16 @@ words:
   - giflib
   - graphviz
   - groff
+  - Hairpinning
+  - hiadaptive
   - HKCU
   - HKLM
   - hotspot
+  - INET
   - INSTALLDIR
   - Intellimenus
   - jbigkit
+  - Leay
   - libfontenc
   - libgd
   - libmaxminddb
@@ -58,20 +70,24 @@ words:
   - nasip
   - ndpi
   - netpbm
+  - Nextcloud
   - ntop
   - ntopng
   - ntuser
   - ooobe
   - openpgm
   - pfsense
+  - powersave
   - ppem
   - proto
   - protobuf
   - publickey
   - ronivay
+  - SATA
   - Segura
   - SELFUPGRADE
   - smartctl
+  - smartd
   - smartmontools
   - ssid
   - STANDBYIDLE

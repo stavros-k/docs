@@ -41,7 +41,7 @@ Navigate to `Firewall` -> `NAT` -> `Outbound`
 - Destination:
   - Type: `Network`
   - Network: Your modem/router network address (eg. `192.168.1.0` / `24`)
-- Translation Address: `Interface Address
+- Translation Address: `Interface Address`
 - Click <kbd>💾Save</kbd>
 - Click <kbd>✔️Apply Changes</kbd>
 
