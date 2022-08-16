@@ -3,8 +3,11 @@
 You can force all clients to use OPNSense as the DNS server,
 even if they manually set a different DNS on their machine.
 
+## Single Interface
+
 For every non-WAN interface you want to force this, do the following.
 On each interface the `Interface` and `Destination`, will be different.
+Or you can follow the guide bellow for `Firewall Groups`
 
 Navigate to `Firewall` -> `NAT` -> `Port Forward`
 
@@ -13,7 +16,7 @@ Navigate to `Firewall` -> `NAT` -> `Port Forward`
 - TCP/IP Version: `IPv4`
 - Protocol: `TCP/UDP`
 - Check `Destination / Invert`
-- Destination: `LAN Address`
+- Destination: `LAN net`
 - Destination port rage: `DNS`
 - Redirect target IP: `Single host or Network - 127.0.0.1`
 - Redirect target port: `DNS`
@@ -36,6 +39,43 @@ Navigate to `Firewall` -> `Rules` -> `LAN`
 Repeat for all non-WAN interfaces.
 
 - Click <kbd>Apply Changes</kbd>
+
+## Multiple Interfaces
+
+Navigate to `Firewall` -> `Groups`
+
+- Name: `RedirectDNS`
+- Description: `Redirect DNS`
+- Members: Select the interfaces you want to force OPNSense as DNS server.
+
+![redirect-groups](img/redirect-groups.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply Changes</kbd>
+
+Navigate to `Firewall` -> `NAT` -> `Port Forward`
+
+- Click <kbd>➕</kbd>
+- Interface: `RedirectDNS`
+- TCP/IP Version: `IPv4`
+- Protocol: `TCP/UDP`
+- Check `Destination / Invert`
+- Destination: `RedirectDNS net`
+- Destination port rage: `DNS`
+- Redirect target IP: `Single host or Network - 127.0.0.1`
+- Redirect target port: `DNS`
+- Description `Redirect DNS`
+- NAT Reflection `Disable`
+
+![redirect-groups-rule](img/redirect-groups-rule.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply Changes</kbd>
+
+Group firewall rules are higher in hierarchy than the specific interface rules.
+So in this case you don't need to move any rules first.
+
+## Notes
 
 :::note
 
