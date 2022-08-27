@@ -50,7 +50,7 @@ Navigate to `Firewall` -> `Rules` -> `WAN`
   - To: `HTTPS`
 - Description: `HAProxy HTTPS`
 
-![haproxy-rule](img/haproxy-rule.png)
+![haproxy-fw-rule](img/haproxy-fw-rule.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply Changes</kbd>

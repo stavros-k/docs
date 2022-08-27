@@ -16,6 +16,8 @@ and only accepting HTTPS traffic.
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
 
+### Server 1
+
 - Click `Real Servers`
 - Click <kbd>➕</kbd>
 - Name or Prefix: `docker-vm`
@@ -23,17 +25,32 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Port `443`
 - Uncheck `SSL`
 - Uncheck `Verify SSL Certificate`
-- SSL SNI: `example1.com`
 
 ![haproxy-server1](img/haproxy-server1.png)
 
 - Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
 
-## Virtual Servers
+### Server 2
+
+- Click <kbd>➕</kbd>
+- Name or Prefix: `other-docker-vm`
+- Type: `static`
+- Port `443`
+- Uncheck `SSL`
+- Uncheck `Verify SSL Certificate`
+
+![haproxy-server2](img/haproxy-server2.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+## Virtual Services - Backend Pools
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
 
-- Click `Virtual Servers`
+- Click <kbd>🔽</kbd> next to `Virtual Services`
+- Click `Backend Pools`
 - Click <kbd>➕</kbd>
 - Check `Enabled`
 - Name: `example1_pool`
@@ -42,11 +59,14 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Uncheck `Health Checking`
 - Retries: `3`
 
-![haproxy-virtualpool1](img/haproxy-virtualpool1.png)
+![haproxy-virtual-pool1](img/haproxy-virtual-pool1.png)
 
 - Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
 
-## Conditions
+## Rules & Checks
+
+### Conditions
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
 
@@ -61,12 +81,41 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 ![haproxy-sni-condition1](img/haproxy-sni-condition1.png)
 
 - Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
 
-## Rules
+### Rules
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
 
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Rules`
 - Click <kbd>➕</kbd>
+- Name: `rule-example1_com`
 - Select conditions: `sni-example1_com`
+- Execute function: `Use specified Backend Pool`
+- Use backend pool: `example1_pool`
+
+![haproxy-rule1](img/haproxy-rule1.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+## Virtual Services - Public Services
+
+Navigate to `Services` -> `HAProxy` -> `Settings`
+
+- Click <kbd>🔽</kbd> next to `Virtual Services`
+- Click `Public Services`
+- Click <kbd>➕</kbd>
+- Name: `public`
+- Listen Addresses: `127.0.0.1:443`
+- Type: `SSL/HTTPS (TCP Mode)`
+- Default Backend Pool: `none`
+- Uncheck `Enable SSL offloading`
+- Select Rules: `rule-example1_com`
+
+![haproxy-public1](img/haproxy-public1.png)
+![haproxy-public2](img/haproxy-public2.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
