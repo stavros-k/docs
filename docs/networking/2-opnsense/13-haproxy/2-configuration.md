@@ -32,7 +32,9 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 You can visit the statistics page on `http://YOUR.FIREWALL.LOCAL.IP:8822/haproxy?stats`
 
-## Firewall Rules
+## Firewall
+
+### Rules
 
 We need to open `HTTPS/443` port
 
@@ -56,3 +58,22 @@ Navigate to `Firewall` -> `Rules` -> `WAN`
 - Click <kbd>Apply Changes</kbd>
 
 ![haproxy-rules-view](img/haproxy-rules-view.png)
+
+### Port Forward
+
+Navigate to `Firewall` -> `NAT` -> `Port Forward`
+
+- Click <kbd>➕</kbd>
+- Interface: `WAN`
+- TCP/IP Version: `IPv4`
+- Protocol: `TCP`
+- Destination: `WAN address`
+- Destination port rage:
+  - From: `HTTPS`
+  - To: `HTTPS`
+- Redirect target IP: `127.0.0.1`
+- Redirect target port: `HTTPS`
+- Description: `Forward HTTPS to HAProxy`
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply Changes</kbd>

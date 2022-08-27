@@ -92,7 +92,18 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Conditions`
 
-### Condition 1
+### Condition Traffic is SSL
+
+- Click <kbd>➕</kbd>
+- Name: `Traffic is SSL`
+- Condition Type: `Traffic is SSL (TCP request content inspection)`
+
+![haproxy-sni-condition-traffic-ssl](img/haproxy-sni-condition-traffic-ssl.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+### Condition SNI 1
 
 - Click <kbd>➕</kbd>
 - Name: `sni-example1_com`
@@ -100,12 +111,12 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Condition type: `SNI TLS extension contains (TCP request content inspection)`
 - SNI Contains: `example1.com`
 
-![haproxy-sni-condition1](img/haproxy-sni-condition1.png)
+![haproxy-sni-condition-sni1](img/haproxy-sni-condition-sni1.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Condition 2
+### Condition SNI 2
 
 - Click <kbd>➕</kbd>
 - Name: `sni-example1_com`
@@ -113,7 +124,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Condition type: `SNI TLS extension contains (TCP request content inspection)`
 - SNI Contains: `example2.com`
 
-![haproxy-sni-condition2  ](img/haproxy-sni-condition2.png)
+![haproxy-sni-condition-sni2](img/haproxy-sni-condition2-sni.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -125,7 +136,31 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Rules`
 
-### Rule 1
+### Rule TCP Inspect Delay
+
+- Click <kbd>➕</kbd>
+- Name: `TCP Inspect Delay`
+- Execute function: `tcp-request inspect-delay`
+- TCP inspection delay: `5s`
+
+![haproxy-sni-tcp-inspect-delay](img/haproxy-sni-tcp-inspect-delay.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+### Rule Accept Content if Traffic is SSL
+
+- Click <kbd>➕</kbd>
+- Name: `Accept Content if Traffic is SSL`
+- Select conditions: `Traffic is SSL`
+- Execute function: `tcp-request content accept`
+
+![haproxy-sni-accept-traffic-ssl](img/haproxy-sni-accept-traffic-ssl.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+### Rule Backend 1
 
 - Click <kbd>➕</kbd>
 - Name: `rule-example1_com`
@@ -133,12 +168,12 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Execute function: `Use specified Backend Pool`
 - Use backend pool: `example1_pool`
 
-![haproxy-rule1](img/haproxy-rule1.png)
+![haproxy-rule-backend1](img/haproxy-rule-backend1.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Rule 2
+### Rule Backend 2
 
 - Click <kbd>➕</kbd>
 - Name: `rule-example1_com`
@@ -146,7 +181,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Execute function: `Use specified Backend Pool`
 - Use backend pool: `example2_pool`
 
-![haproxy-rule2](img/haproxy-rule2.png)
+![haproxy-rule-backend2](img/haproxy-rule-backend2.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -159,7 +194,6 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click `Public Services`
 - Click <kbd>➕</kbd>
 - Name: `public`
-- TODO: Need to bind to public IP
 - Listen Addresses: `127.0.0.1:443`
 - Type: `SSL/HTTPS (TCP Mode)`
 - Default Backend Pool: `none`
