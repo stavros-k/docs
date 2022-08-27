@@ -46,6 +46,26 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
+## Rules & Checks - Health Monitors
+
+Navigate to `Services` -> `HAProxy` -> `Settings`
+
+- Click <kbd>🔽</kbd> next to `Rules & Checks`
+- Click `Health Monitors`
+
+### SSL Check
+
+- Click <kbd>➕</kbd>
+- Name: `SSL Check`
+- Check type: `SSL`
+- SSL preferences: `Use server settings`
+- Check interval: `2s`
+
+![haproxy-sni-ssl-check](img/haproxy-sni-ssl-check.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
 ## Virtual Services - Backend Pools
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
@@ -60,10 +80,12 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Name: `example1_pool`
 - Mode: `TCP (Layer4)`
 - Servers: `docker-vm`
-- Uncheck `Health Checking`
+- Check `Enable Health Checking`
+- Health Monitor: `SSL Check`
 - Retries: `3`
 
-![haproxy-virtual-pool1](img/haproxy-virtual-pool1.png)
+![haproxy-virtual-pool1a](img/haproxy-virtual-pool1a.png)
+![haproxy-virtual-pool1b](img/haproxy-virtual-pool1b.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -75,10 +97,12 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Name: `example1_pool`
 - Mode: `TCP (Layer4)`
 - Servers: `other-docker-vm`
-- Uncheck `Health Checking`
+- Check `Enable Health Checking`
+- Health Monitor: `SSL Check`
 - Retries: `3`
 
-![haproxy-virtual-pool2](img/haproxy-virtual-pool2.png)
+![haproxy-virtual-pool2a](img/haproxy-virtual-pool2a.png)
+![haproxy-virtual-pool2b](img/haproxy-virtual-pool2b.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -92,18 +116,19 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Conditions`
 
-### Condition Traffic is SSL
+#### Condition Contains SSL Hello Message
 
 - Click <kbd>➕</kbd>
-- Name: `Traffic is SSL`
-- Condition Type: `Traffic is SSL (TCP request content inspection)`
+- Name: `Contains SSL Hello Message`
+- Condition Type: `Custom condition (option pass-through`
+- Option pass-through: `req.ssl_hello_type 1`
 
-![haproxy-sni-condition-traffic-ssl](img/haproxy-sni-condition-traffic-ssl.png)
+![haproxy-sni-condition-contains-ssl-hello](img/haproxy-sni-condition-contains-ssl-hello.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Condition SNI 1
+#### Condition SNI 1
 
 - Click <kbd>➕</kbd>
 - Name: `sni-example1_com`
@@ -116,7 +141,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Condition SNI 2
+#### Condition SNI 2
 
 - Click <kbd>➕</kbd>
 - Name: `sni-example1_com`
@@ -136,7 +161,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Rules`
 
-### Rule TCP Inspect Delay
+#### Rule TCP Inspect Delay
 
 - Click <kbd>➕</kbd>
 - Name: `TCP Inspect Delay`
@@ -148,19 +173,19 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Rule Accept Content if Traffic is SSL
+#### Rule Accept Content if Contains SSL Hello
 
 - Click <kbd>➕</kbd>
-- Name: `Accept Content if Traffic is SSL`
-- Select conditions: `Traffic is SSL`
+- Name: `Accept Content if Contains SSL Hello`
+- Select conditions: `Contains SSL Hello Message`
 - Execute function: `tcp-request content accept`
 
-![haproxy-sni-accept-traffic-ssl](img/haproxy-sni-accept-traffic-ssl.png)
+![haproxy-sni-rule-accept-hello-message](img/haproxy-sni-rule-accept-hello-message.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Rule Backend 1
+#### Rule Backend 1
 
 - Click <kbd>➕</kbd>
 - Name: `rule-example1_com`
@@ -173,7 +198,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
-### Rule Backend 2
+#### Rule Backend 2
 
 - Click <kbd>➕</kbd>
 - Name: `rule-example1_com`

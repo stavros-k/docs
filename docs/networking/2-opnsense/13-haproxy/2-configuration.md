@@ -11,10 +11,23 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 ![haproxy-service](img/haproxy-service.png)
 
-- Click `Apply`
+- Click <kbd>Apply</kbd>
 - Verify on the top right corner the <kbd>▶️</kbd> icon is `Green`
 
 ![haproxy-green](img/haproxy-green.png)
+
+## Global Parameters
+
+Navigate to `Services` -> `HAProxy` -> `Settings`
+
+- Click on <kbd>🔽</kbd> next to `Settings` tab
+- Click `Global Parameters`
+- Maximum connections: `10000`
+- Maximum SSL DH Size: `4096`
+
+![haproxy-global-parameters](img/haproxy-global-parameters.png)
+
+- Click <kbd>Apply</kbd>
 
 ## Enable Statistics
 
