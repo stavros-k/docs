@@ -17,20 +17,21 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 ![haproxy-set2](img/haproxy-set2.png)
 ![haproxy-set3](img/haproxy-set3.png)
 
-TODO: Look into mail notifications
-
 ## Firewall Rules
 
 We need to open `HTTPS/443` port
 
-Navigate to `Firewall` -> `Rules` -> `WAN` -> `⤵️Add`
+Navigate to `Firewall` -> `Rules` -> `WAN`
 
+- Click <kbd>⤵️Add</kbd>
 - Destination: `This firewall (self)`
 - Destination Port Range From: `HTTPS(443)`
 - Destination Port Range To: `HTTPS(443)`
 - Give it a Description if you want
+
+![haproxy-rule](img/haproxy-rule.png)
+
 - Click <kbd>💾Save</kbd>
 - Click <kbd>✔️Apply Changes</kbd>
 
-![haproxy-rule](img/haproxy-rule.png)
 ![haproxy-rule-view](img/haproxy-rule-view.png)

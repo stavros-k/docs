@@ -2,9 +2,9 @@
 
 ## Terminology
 
-### Backend
+### Real Servers
 
-Backend is where you setup the services which is behind HAProxy.
+Real Servers is where you setup the services which is behind HAProxy.
 
 For example a web server
 
