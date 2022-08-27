@@ -14,7 +14,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Check `Enabled`
 - Name: `example1_pool`
 - Mode: `TCP (Layer4)`
-- Servers: `docker-vm`
+- [Servers](1-real-servers.md#server-1): `docker-vm`
 - Check `Enable Health Checking`
 - [Health Monitor](2-rules-checks.md#health-monitors): `SSL Check`
 - Retries: `3`
@@ -31,7 +31,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Check `Enabled`
 - Name: `example1_pool`
 - Mode: `TCP (Layer4)`
-- Servers: `other-docker-vm`
+- [Servers](1-real-servers.md#server-2): `other-docker-vm`
 - Check `Enable Health Checking`
 - [Health Monitor](2-rules-checks.md#health-monitors): `SSL Check`
 - Retries: `3`
@@ -44,17 +44,17 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 ## Public Services
 
-Navigate to `Services` -> `HAProxy` -> `Settings`
-
-- Click <kbd>🔽</kbd> next to `Virtual Services`
 - Click `Public Services`
+
+### Frontend
+
 - Click <kbd>➕</kbd>
 - Name: `public`
 - Listen Addresses: `127.0.0.1:443`
 - Type: `SSL/HTTPS (TCP Mode)`
 - Default Backend Pool: `none`
 - Uncheck `Enable SSL offloading`
-- Select Rules:
+- [Select Rules](2-rules-checks.md#rules):
   - `Accept Content if Contains SSL Hello`
   - `TCP Inspect Delay`
   - `rule-example1_com`
