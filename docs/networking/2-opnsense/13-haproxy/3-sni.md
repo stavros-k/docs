@@ -223,7 +223,17 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Type: `SSL/HTTPS (TCP Mode)`
 - Default Backend Pool: `none`
 - Uncheck `Enable SSL offloading`
-- Select Rules: `rule-example1_com` `rule-example1_com`
+- Select Rules:
+  - `Accept Content if Contains SSL Hello`
+  - `TCP Inspect Delay`
+  - `rule-example1_com`
+  - `rule-example2_com`
+
+:::note
+
+Order on rules matter!
+
+:::
 
 ![haproxy-public1](img/haproxy-public1.png)
 ![haproxy-public2](img/haproxy-public2.png)
