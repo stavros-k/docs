@@ -16,9 +16,10 @@ and only accepting HTTPS traffic.
 
 Navigate to `Services` -> `HAProxy` -> `Settings`
 
+- Click `Real Servers`
+
 ### Server 1
 
-- Click `Real Servers`
 - Click <kbd>➕</kbd>
 - Name or Prefix: `docker-vm`
 - Type: `static`
@@ -51,6 +52,9 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 - Click <kbd>🔽</kbd> next to `Virtual Services`
 - Click `Backend Pools`
+
+### Backend Pool 1
+
 - Click <kbd>➕</kbd>
 - Check `Enabled`
 - Name: `example1_pool`
@@ -64,6 +68,21 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
 
+### Backend Pool 2
+
+- Click <kbd>➕</kbd>
+- Check `Enabled`
+- Name: `example1_pool`
+- Mode: `TCP (Layer4)`
+- Servers: `other-docker-vm`
+- Uncheck `Health Checking`
+- Retries: `3`
+
+![haproxy-virtual-pool2](img/haproxy-virtual-pool2.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
 ## Rules & Checks
 
 ### Conditions
@@ -72,13 +91,29 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Conditions`
+
+### Condition 1
+
 - Click <kbd>➕</kbd>
 - Name: `sni-example1_com`
 - Description: `SNI Match all example1.com domain`
 - Condition type: `SNI TLS extension contains (TCP request content inspection)`
-- SNI Contains: `example.com`
+- SNI Contains: `example1.com`
 
 ![haproxy-sni-condition1](img/haproxy-sni-condition1.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+### Condition 2
+
+- Click <kbd>➕</kbd>
+- Name: `sni-example1_com`
+- Description: `SNI Match all example1.com domain`
+- Condition type: `SNI TLS extension contains (TCP request content inspection)`
+- SNI Contains: `example2.com`
+
+![haproxy-sni-condition2  ](img/haproxy-sni-condition2.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -89,6 +124,9 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 - Click <kbd>🔽</kbd> next to `Rules & Checks`
 - Click `Rules`
+
+### Rule 1
+
 - Click <kbd>➕</kbd>
 - Name: `rule-example1_com`
 - Select conditions: `sni-example1_com`
@@ -96,6 +134,19 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Use backend pool: `example1_pool`
 
 ![haproxy-rule1](img/haproxy-rule1.png)
+
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+### Rule 2
+
+- Click <kbd>➕</kbd>
+- Name: `rule-example1_com`
+- Select conditions: `sni-example2_com`
+- Execute function: `Use specified Backend Pool`
+- Use backend pool: `example2_pool`
+
+![haproxy-rule2](img/haproxy-rule2.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
@@ -108,11 +159,12 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Click `Public Services`
 - Click <kbd>➕</kbd>
 - Name: `public`
+- TODO: Need to bind to public IP
 - Listen Addresses: `127.0.0.1:443`
 - Type: `SSL/HTTPS (TCP Mode)`
 - Default Backend Pool: `none`
 - Uncheck `Enable SSL offloading`
-- Select Rules: `rule-example1_com`
+- Select Rules: `rule-example1_com` `rule-example1_com`
 
 ![haproxy-public1](img/haproxy-public1.png)
 ![haproxy-public2](img/haproxy-public2.png)
