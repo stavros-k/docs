@@ -124,7 +124,7 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 - Condition type: `SNI TLS extension contains (TCP request content inspection)`
 - SNI Contains: `example2.com`
 
-![haproxy-sni-condition-sni2](img/haproxy-sni-condition2-sni.png)
+![haproxy-sni-condition-sni2](img/haproxy-sni-condition-sni2.png)
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
