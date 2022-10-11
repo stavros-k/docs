@@ -128,7 +128,7 @@
 
 ## Attach `Answer File` to an Image
 
-After you added an image, you can attach an answer file you [created](./assessment-deployment-kit).
+After you added an image, you can attach an answer file you [created](./3-assessment-deployment-kit.md).
 
 - Right Click the Install Image and click `Properties`
 - Select `Allow image to install in unattended mode`
