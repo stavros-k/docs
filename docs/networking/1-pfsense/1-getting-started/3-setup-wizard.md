@@ -1,6 +1,6 @@
 # Setup
 
-This is the first screen you will see after completing the [installation](./2-installation).
+This is the first screen you will see after completing the [installation](./2-installation.md).
 
 ![pfsense-login.png](img/pfsense-login.png)
 

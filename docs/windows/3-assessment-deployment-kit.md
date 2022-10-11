@@ -3,7 +3,7 @@
 :::info Prerequisite
 
 - Download ADK (Assessment and Deployment Kit) from [Microsoft](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
-- You have a `.wim` Image extracted. See [here](./1-wds-windows-server) how to do that
+- You have a `.wim` Image extracted. See [here](./1-wds-windows-server.md) how to do that
 
 :::
 
