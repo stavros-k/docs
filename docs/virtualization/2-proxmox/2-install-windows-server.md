@@ -2,8 +2,8 @@
 
 :::info Prerequisites
 
-- Have [uploaded](./upload-iso) ISO's to proxmox (including [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
-- You have [Created](./create-windows-vm) the VM
+- Have [uploaded](./1-upload-iso) ISO's to proxmox (including [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
+- You have [Created](./3-create-windows-vm) the VM
 
 :::
 
