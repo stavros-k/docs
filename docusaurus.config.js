@@ -56,7 +56,19 @@ const config = {
       },
     ],
   ],
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    [
+      "docusaurus-plugin-includes",
+      {
+        injectedHtmlTags: {
+          postBodyTags: [
+            `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "24e07ed07f524f71875f03db7939c56a"}'></script><!-- End Cloudflare Web Analytics -->`,
+          ],
+        },
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
