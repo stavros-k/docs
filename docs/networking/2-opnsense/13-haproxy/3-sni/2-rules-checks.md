@@ -32,8 +32,8 @@ Navigate to `Services` -> `HAProxy` -> `Settings`
 
 - Click <kbd>➕</kbd>
 - Name: `Contains SSL Hello Message`
-- Condition Type: `Custom condition (option pass-through`
-- Option pass-through: `req.ssl_hello_type 1`
+- Condition Type: `SSL Hello Type`
+- SSL Hello Type: `1-client-hello`
 
 ![haproxy-sni-condition-contains-ssl-hello](img/haproxy-sni-condition-contains-ssl-hello.png)
 
