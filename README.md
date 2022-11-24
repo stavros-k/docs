@@ -2,6 +2,6 @@
 
 PR's are always welcome, to add, improve or even correct things.
 
-I'm no expert on anything here.
+I'm no expert on anything here. SO use at your own risk
 
 This is just some docs I wrote myself for things I've done over the years.
