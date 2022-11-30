@@ -2,7 +2,7 @@
 
 :::info Prerequisites
 
-- You have [Created](./3-create-windows-vm.md) the VM
+- You have [Created](./5-create-windows-vm.md) the VM
 
 :::
 
