@@ -32,7 +32,7 @@ This process will **DELETE** any data in your USB stick.
 
 - Run `Rufus`
 - Select your USB Stick on the `Device` drop down list
-- On `Boot selection` Click <kbd>SELECT</kbd> and select the OPNsense installer we downloaded earlier
+- On `Boot selection` Click <kbd>SELECT</kbd> and select the pfSense ISO we downloaded earlier
 - Check again that you selected the correct `Device` on previous step
 - Click <kbd>START</kbd>
 - Accept the **WARNING** saying that will **DESTROY** your data on this device
