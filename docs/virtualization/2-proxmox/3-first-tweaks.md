@@ -170,6 +170,20 @@ nano /etc/modules
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
 
+  ```shell
+  update-initramfs -u -k all
+  ```
+
+  Example output:
+
+  ```shell
+  root@pve:~# update-initramfs -u -k all
+  update-initramfs: Generating /boot/initrd.img-5.15.74-1-pve
+  Running hook script 'zz-proxmox-boot'..
+  Re-executing '/etc/kernel/postinst.d/zz-proxmox-boot' in new private mount namespace..
+  No /etc/kernel/proxmox-boot-uuids found, skipping ESP sync.
+  ```
+
 Once you are done with the above, `Reboot`
 
 Verify that `IOMMU` is enabled
