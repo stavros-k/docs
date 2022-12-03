@@ -1,5 +1,4 @@
-# Install Windows Server on Proxmox
-
+# Install Windows Server
 :::info Prerequisites
 
 - Have [uploaded](./5-upload-iso.md) ISO's to proxmox (including [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)

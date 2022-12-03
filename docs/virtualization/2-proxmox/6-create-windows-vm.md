@@ -1,4 +1,4 @@
-# Create Windows VM on Proxmox
+# Create Windows VM
 
 :::info Prerequisites
 
