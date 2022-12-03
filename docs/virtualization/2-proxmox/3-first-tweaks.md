@@ -112,3 +112,62 @@ Navigate to under your Node -> `System` -> `Network`
 - Click <kbd>Yes</kbd>
   ![vlan-aware](img/proxmox-vlan-aware.png)
   ![vlan-aware-apply](img/proxmox-vlan-aware-apply.png)
+
+## Enable IOMMU
+
+SSH into the `Proxmox` Server.
+
+### Update GRUB
+
+```shell
+nano /etc/default/grub
+```
+
+- Edit `GRUB_CMDLINE_LINUX_DEFAULT` line
+  - Intel: `GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"`
+  - AMD: `GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on"`
+- Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
+- Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
+  ![etc-grub](img/proxmox-etc-grub.png)
+
+  ```shell
+  update-grub
+  ```
+
+  Example output:
+
+  ```shell
+  root@pve:~#   update-grub
+  Generating grub configuration file ...
+  Found linux image: /boot/vmlinuz-5.15.74-1-pve
+  Found initrd image: /boot/initrd.img-5.15.74-1-pve
+  Found memtest86+ image: /boot/memtest86+.bin
+  Found memtest86+ multiboot image: /boot/memtest86+_multiboot.bin
+  Warning: os-prober will not be executed to detect other bootable partitions.
+  Systems on them will not be added to the GRUB boot configuration.
+  Check GRUB_DISABLE_OS_PROBER documentation entry.
+  Adding boot menu entry for UEFI Firmware Settings ...
+  done
+  ```
+
+### Add the required modules
+
+```shell
+nano /etc/modules
+```
+
+- Add the following
+
+  ```shell
+  vfio
+  vfio_iommu_type1
+  vfio_pci
+  vfio_virqfd
+  ```
+
+  ![etc-modules](img/proxmox-etc-modules.png)
+
+- Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
+- Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
+
+Once you are done with the above, `Reboot`
