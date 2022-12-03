@@ -137,7 +137,7 @@ nano /etc/default/grub
   Example output:
 
   ```shell
-  root@pve:~#   update-grub
+  root@pve:~# update-grub
   Generating grub configuration file ...
   Found linux image: /boot/vmlinuz-5.15.74-1-pve
   Found initrd image: /boot/initrd.img-5.15.74-1-pve

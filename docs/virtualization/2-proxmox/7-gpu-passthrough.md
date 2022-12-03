@@ -89,10 +89,7 @@ This is useful if you want that VM to pass slices of iGPU to docker containers f
 
 Once you are done with the above, `Reboot`
 
-## iGPU as Mediate Device (GVT-g)
+## iGPU with SR-IOV
 
-This will allow to pass slices of iGPU into multiple VM's
-
-[TODO:](https://pve.proxmox.com/wiki/PCI(e)_Passthrough)
-
-> Not tested yet
+It needs at least kernel 5.19 and a modified [driver](https://github.com/strongtz/i915-sriov-dkms)
+I'll be waiting for it to hit mainline kernel. Tracking this [issue](https://github.com/intel/linux-intel-lts/issues/33)
