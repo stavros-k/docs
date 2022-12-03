@@ -2,7 +2,7 @@
 
 :::info Prerequisites
 
-- Have [uploaded](./4-upload-iso.md) ISO's to proxmox
+- Have [uploaded](./5-upload-iso.md) ISO's to proxmox
 
 :::
 
