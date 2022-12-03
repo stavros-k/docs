@@ -1,6 +1,6 @@
 # Upload ISO's
 
-Navigate to your Node -> `local(pve)` -> `ISO Images`
+Navigate to your `Node` -> `local(pve)` -> `ISO Images`
 
 ## Local ISO
 

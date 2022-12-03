@@ -20,7 +20,7 @@ The process bellow will **wipe** data of the disk!
 
 Prepare the disk(s) by wiping them.
 
-Navigate under your Node to `Disks`
+Navigate under your `Node` to `Disks`
 
 - Select your disk you want to add
 - Click <kbd>Wipe Disk</kbd>
@@ -32,7 +32,7 @@ Navigate under your Node to `Disks`
 `LVM Thin` cannot be used for ISOs. Only for VM Disks and CT Volumes.
 But it will allow thin provisioning for disks and volumes.
 
-Navigate under your Node to `Disks` -> `LVM-Thin`
+Navigate under your `Node` to `Disks` -> `LVM-Thin`
 
 - Click <kbd>Create: Thinpool</kbd>
 - Select the disk(s) you want to add
@@ -44,7 +44,7 @@ Navigate under your Node to `Disks` -> `LVM-Thin`
 
 `ZFS` cannot be used for ISOs. Only for VM Disks and CT Volumes.
 
-Navigate under your Node to `Disks` -> `ZFS`
+Navigate under your `Node` to `Disks` -> `ZFS`
 
 - Click <kbd>Create: ZFS</kbd>
 - Give it a name

@@ -102,7 +102,7 @@ which does not work without a valid subscription.
 
 You can make `Proxmox` NIC(s) VLAN Aware.
 
-Navigate to under your Node -> `System` -> `Network`
+Navigate under your `Node` -> `System` -> `Network`
 
 - Select your NIC
 - Click <kbd>Edit</kbd>
