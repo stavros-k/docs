@@ -117,7 +117,7 @@ Navigate to under your Node -> `System` -> `Network`
 
 SSH into the `Proxmox` Server.
 
-### Update GRUB
+### Adjust GRUB
 
 ```shell
 nano /etc/default/grub
