@@ -100,7 +100,7 @@ which does not work without a valid subscription.
 
 ## VLAN Aware
 
-You can make proxmox NIC(s) VLAN Aware.
+You can make `Proxmox` NIC(s) VLAN Aware.
 
 Navigate to under your Node -> `System` -> `Network`
 

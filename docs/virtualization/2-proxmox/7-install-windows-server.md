@@ -10,7 +10,7 @@
 ## Installation
 
 - Start/Install Windows Server 2022
-  - Click `Console` button on the top right corner on proxmox
+  - Click `Console` button on the top right corner on `Proxmox`
   - Press any button to start the installation.
   - Follow the on-screen instructions.
   - Download [Guest Agent](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso)

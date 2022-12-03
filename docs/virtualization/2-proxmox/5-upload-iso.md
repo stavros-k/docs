@@ -23,7 +23,7 @@ Download an ISO from a URL
 
 ## Download VirtIO ISO
 
-Visit `ProxMox`'s VirtIO wiki in [download section](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers#Installation).
+Visit `Proxmox`'s VirtIO wiki in [download section](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers#Installation).
 
 Direct ISO link: `https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso`
 
