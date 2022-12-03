@@ -1,19 +1,24 @@
-# Add additional disk
+# Add Storage
 
-We will be adding an additional SSD for Proxmox to use.
+## Network Storage
+
+### NFS
+
+TODO:
+
+## Disk Storage
+
+We will be adding disk(s) for Proxmox to use.
 
 There are a few options to go.
 
 :::danger
 
-Any process bellow will **wipe** data of the disk!
+The process bellow will **wipe** data of the disk!
 
 :::
 
-## LVM Thin
-
-LVM Thin cannot be used for ISOs. Only for VM Disks and CT Volumes.
-But it will allow thin provisioning for disks and volumes.
+Prepare the disk(s) by wiping them.
 
 Navigate under your Node to `Disks`
 
@@ -21,15 +26,29 @@ Navigate under your Node to `Disks`
 - Click <kbd>Wipe Disk</kbd>
 - Click <kbd>Yes</kbd>
   ![proxmox-wipe-disk](img/proxmox-wipe-disk.png)
-- Select your disk again
-- Click <kbd>Initialize Disk with GPT</kbd>
+
+### LVM Thin
+
+`LVM Thin` cannot be used for ISOs. Only for VM Disks and CT Volumes.
+But it will allow thin provisioning for disks and volumes.
 
 Navigate under your Node to `Disks` -> `LVM-Thin`
 
 - Click <kbd>Create: Thinpool</kbd>
-- Select your disk you want to add
+- Select the disk(s) you want to add
 - Give it a name
 - Click <kbd>Create</kbd>
   ![proxmox-add-thinpool](img/proxmox-add-thinpool.png)
 
-You are done!
+### ZFS
+
+`ZFS` cannot be used for ISOs. Only for VM Disks and CT Volumes.
+
+Navigate under your Node to `Disks` -> `ZFS`
+
+- Click <kbd>Create: ZFS</kbd>
+- Give it a name
+- Select RAID Level
+- Select the disk(s) you want to add
+- Click <kbd>Create</kbd>
+  ![proxmox-add-zfs](img/proxmox-add-zfs.png)

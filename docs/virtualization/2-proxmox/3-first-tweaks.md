@@ -36,7 +36,7 @@ We will be using this [project](https://github.com/Weilbyte/PVEDiscordDark)
   ```
 
 - Refresh your `Proxmox` webUI. (Might need to clear the cache)
-  ![tweak1](img/proxmox-tweaks-1.png)
+  ![dark-theme](img/proxmox-dark-theme.png)
 
 ## Remove Subscription pop-up
 
@@ -50,7 +50,7 @@ if you have an enterprise license, do **NOT** follow the next steps
 We will be using this [project](https://github.com/foundObjects/pve-nag-buster)
 
 It will remove this pop-up
-![tweak2](img/proxmox-tweaks-2.png)
+![remove-nag](img/proxmox-remove-nag.png)
 
 Also it will remove the enterprise update repository,
 which does not work without a valid subscription.
@@ -97,3 +97,18 @@ which does not work without a valid subscription.
   pve-nag-buster.sh: Disabling PVE paid repo list ...
   Cleaning up temporary files ...
   ```
+
+## VLAN Aware
+
+You can make proxmox NIC(s) VLAN Aware.
+
+Navigate to under your Node -> `System` -> `Network`
+
+- Select your NIC
+- Click <kbd>Edit</kbd>
+- Check `VLAN Aware`
+- Click <kbd>OK</kbd>
+- Click <kbd>Apply Configuration</kbd>
+- Click <kbd>Yes</kbd>
+  ![vlan-aware](img/proxmox-vlan-aware.png)
+  ![vlan-aware-apply](img/proxmox-vlan-aware-apply.png)
