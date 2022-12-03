@@ -1,7 +1,7 @@
 # Windows Deployment Services
 
 > Prerequisites:
-> [Installed Windows Server 2022](../virtualization/2-proxmox/6-install-windows-server.md)
+> [Installed Windows Server 2022](../virtualization/2-proxmox/7-install-windows-server.md)
 
 ## Install WDS (Windows Deployment Services)
 
