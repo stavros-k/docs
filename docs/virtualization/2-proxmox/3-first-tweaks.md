@@ -102,7 +102,7 @@ which does not work without a valid subscription.
 
 You can make `Proxmox` NIC(s) VLAN Aware.
 
-Navigate to under your Node -> `System` -> `Network`
+Navigate under your `Node` -> `System` -> `Network`
 
 - Select your NIC
 - Click <kbd>Edit</kbd>
@@ -129,6 +129,7 @@ nano /etc/default/grub
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
   ![etc-grub](img/proxmox-etc-grub.png)
+- Update grub
 
   ```shell
   update-grub
@@ -137,7 +138,7 @@ nano /etc/default/grub
   Example output:
 
   ```shell
-  root@pve:~#   update-grub
+  root@pve:~# update-grub
   Generating grub configuration file ...
   Found linux image: /boot/vmlinuz-5.15.74-1-pve
   Found initrd image: /boot/initrd.img-5.15.74-1-pve
@@ -169,6 +170,21 @@ nano /etc/modules
 
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
+- Update `initramfs`
+
+  ```shell
+  update-initramfs -u -k all
+  ```
+
+  Example output:
+
+  ```shell
+  root@pve:~# update-initramfs -u -k all
+  update-initramfs: Generating /boot/initrd.img-5.15.74-1-pve
+  Running hook script 'zz-proxmox-boot'..
+  Re-executing '/etc/kernel/postinst.d/zz-proxmox-boot' in new private mount namespace..
+  No /etc/kernel/proxmox-boot-uuids found, skipping ESP sync.
+  ```
 
 Once you are done with the above, `Reboot`
 
