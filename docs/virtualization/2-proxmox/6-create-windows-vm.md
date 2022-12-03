@@ -1,8 +1,8 @@
-# Create Windows VM on Proxmox
+# Create Windows VM
 
 :::info Prerequisites
 
-- Have [uploaded](./5-upload-iso.md) ISO's to proxmox
+- Have [uploaded](./5-upload-iso.md) ISO's to `Proxmox`
 
 :::
 

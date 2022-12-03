@@ -6,7 +6,7 @@ We will prepare a boot-able USB for installing Proxmox.
 
 ### Proxmox
 
-- Visit `Proxmox` [download](https://www.proxmox.com/en/downloads) page.
+- Visit `Proxmox`'s [download](https://www.proxmox.com/en/downloads) page.
 - Click `Proxmox Virtual Environment`
   ![step1](img/proxmox-download-step1.png)
 - Click `ISO Images`
