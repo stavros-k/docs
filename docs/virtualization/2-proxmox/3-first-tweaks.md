@@ -124,8 +124,8 @@ nano /etc/default/grub
 ```
 
 - Edit `GRUB_CMDLINE_LINUX_DEFAULT` line
-  - Intel: `GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"`
-  - AMD: `GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on"`
+  - Intel: `GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"`
+  - AMD: `GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt"`
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
   ![etc-grub](img/proxmox-etc-grub.png)
