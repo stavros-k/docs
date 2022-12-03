@@ -1,5 +1,7 @@
 # GPU for Apps
 
+## iGPU
+
 Some Intel GPU's that use `i915` driver, in `TrueNAS SCALE`,
 does not show up on apps out of the box. To fix that we need to force probe the GPU driver.
 
