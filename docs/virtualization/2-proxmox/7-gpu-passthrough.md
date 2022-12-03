@@ -1,6 +1,9 @@
 # Prepare for GPU Passthrough
 
-## iGPU
+## iGPU as Host Device Passthrough
+
+This will pass the whole iGPU to a single VM.
+This is useful if you want that VM to pass slices of iGPU to docker containers for example.
 
 > Tested on a `Lenovo M70q Gen3`
 
@@ -85,3 +88,11 @@
   ```
 
 Once you are done with the above, `Reboot`
+
+## iGPU as Mediate Device (GVT-g)
+
+This will allow to pass slices of iGPU into multiple VM's
+
+[TODO:](https://pve.proxmox.com/wiki/PCI(e)_Passthrough)
+
+> Not tested yet
