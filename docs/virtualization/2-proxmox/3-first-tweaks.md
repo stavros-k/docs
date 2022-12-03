@@ -129,6 +129,7 @@ nano /etc/default/grub
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
   ![etc-grub](img/proxmox-etc-grub.png)
+- Update grub
 
   ```shell
   update-grub
