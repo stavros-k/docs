@@ -169,6 +169,7 @@ nano /etc/modules
 
 - Press <kbd>CTRL</kbd> + <kbd>S</kbd> to save
 - Press <kbd>CTRL</kbd> + <kbd>X</kbd> to exit
+- Update `initramfs`
 
   ```shell
   update-initramfs -u -k all
