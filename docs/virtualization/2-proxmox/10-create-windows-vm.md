@@ -148,5 +148,6 @@ Navigate under the Node -> Select the VM -> `Hardware`
   ![windows-remove-iso](img/proxmox-windows-remove-iso.png)
 - Click <kbd>Remove</kbd>
 - Click <kbd>Yes</kbd>
+  ![windows-removed-iso](img/proxmox-windows-removed-iso.png)
 
 You can now start the VM again.
