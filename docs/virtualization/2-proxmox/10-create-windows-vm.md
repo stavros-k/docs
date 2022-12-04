@@ -119,3 +119,34 @@ Navigate under the Node -> Select the VM
   ![windows-drive](img/proxmox-windows-drive.png)
 - Click <kbd>Next</kbd>
 - Wait for installation for finish
+- Follow normal on screen installation instructions from `Windows`
+
+## Complete the driver installation
+
+Once you are booted into the Desktop
+
+- Open `This PC`
+- Open `CD Drive virtio`
+  ![windows-virtio-drive](img/proxmox-windows-virtio-drive.png)
+- Double Click `virtio-win-gt-x64`
+  ![windows-virtio-gt-x64](img/proxmox-windows-virtio-gt-x64.png)
+- Click <kbd>Yes</kbd> / <kbd>Next</kbd> when asked
+- Finish Installation
+- Open `guest-agent` in the same directory
+- Double Click `qemu-ga-x64`
+  ![windows-virtio-ga-x64](img/proxmox-windows-virtio-ga-x64.png)
+- Click <kbd>Yes</kbd> / <kbd>Next</kbd> when asked
+- Finish Installation
+
+## Remove hardware from VM
+
+Shutdown the VM
+
+Navigate under the Node -> Select the VM -> `Hardware`
+
+- Select `CD/DVD Drive` (The one with the `Windows` ISO)
+  ![windows-remove-iso](img/proxmox-windows-remove-iso.png)
+- Click <kbd>Remove</kbd>
+- Click <kbd>Yes</kbd>
+
+You can now start the VM again.
