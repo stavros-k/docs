@@ -2,8 +2,8 @@
 
 ## iGPU
 
-Some Intel GPU's that use `i915` driver, in `TrueNAS SCALE`,
-does not show up on apps out of the box. To fix that we need to force probe the GPU driver.
+Some Intel GPU's that use the `i915` driver, in `TrueNAS SCALE`,
+do not show up on apps out of the box. To fix that we need to force probe the GPU driver.
 
 > Make sure you have:
 >
@@ -30,4 +30,4 @@ Grab the ID, for me it is `4692` and run this
 midclt call system.advanced.update '{"kernel_extra_options": "i915.force_probe=4692"}'
 ```
 
-Reboot your server. You should be now be able to use it for apps
+Reboot your server. You should now be able to use it for apps.
