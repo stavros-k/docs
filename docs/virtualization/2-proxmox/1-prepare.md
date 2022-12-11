@@ -23,7 +23,7 @@ Select either the portable version or the installer, both will work.
 
 ## Prepare the installation media (USB)
 
-:::danger Destructive move
+:::danger Destructive action
 
 This process will **DELETE** any data in your USB stick.
 
