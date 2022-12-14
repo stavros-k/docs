@@ -29,11 +29,40 @@ Navigate to `Services` -> `HAProxy` -> `Backend` -> `Add`
   - Health check method: `SSL` (or `Basic`, or `none`)
 - Click <kbd>💾Save</kbd>
 
-> You can enable `Transparent ClientIP` under `Advanced settings`, but keep in mind that for me, it cause more problems
-> than it fixed. Also, if you have this enabled, and disable HAProxy, it still applies some rules and can keep causing trouble.
-> Set health check to `none`, until you got it working, then come back and change if you want to.
-> I encountered some timeouts with services running with web sockets.
-> Increasing Connection timeout to `3000000`, Server timeout to `3000000` and Retries to `3` fixed it.
+### Transparent ClientIP
+
+One way to get real client IP on the backend is to use `Transparent ClientIP`.
+
+:::caution
+
+But this can cause more issues that the ones that will solve.
+For example, I couldn't get devices from other VLANS to reach the server.
+Also, if you have this enabled, and disable HAProxy, it still applies some rules and can keep causing trouble.
+
+:::
+
+![haproxy-transparent-client-ip](img/haproxy-transparent-client-ip.png)
+
+### Proxy Protocol
+
+The other way (preferred) is to use the `Proxy Protocol`.
+To enable this, add `send-proxy-v2` on `Per server pass thru`, in `Advanced Settings`.
+
+:::caution
+
+For this to work, your backend reverse proxy server must support also the `Proxy Protocol`.
+
+:::
+
+![haproxy-proxy-protocol](img/haproxy-proxy-protocol.png)
+
+:::tip
+
+Set health check to `none`, until you got it working, then come back and change if you want to.
+
+I encountered some timeouts with services running with web sockets.
+Increasing Connection timeout to `3000000`, Server timeout to `3000000` and Retries to `3` fixed it.
+:::
 
 ![haproxy-back1](img/haproxy-back1.jpg)
 

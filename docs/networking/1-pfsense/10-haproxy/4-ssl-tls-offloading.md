@@ -26,8 +26,6 @@ Navigate to `Services` -> `HAProxy` -> `Backends` -> `Add`
 ![haproxy-ssloffload-backend](img/haproxy-ssloffload-backend.png)
 ![haproxy-ssloffload-backend-health](img/haproxy-ssloffload-backend-health.png)
 
-TODO: test notifications
-
 ## Frontend
 
 ![haproxy-ssloffload-frontend-view](img/haproxy-ssloffload-frontend-view.png)
