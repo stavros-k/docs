@@ -41,7 +41,6 @@
     {
       matchUpdateTypes: ["major"],
       addLabels: ["major"],
-      "groupName": "major",
     },
     {
       matchUpdateTypes: ["minor"],
