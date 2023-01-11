@@ -20,7 +20,7 @@ Example output:
 
 ```shell
 root@truenas[~]# dmesg | grep i915
-[    5.980845] i915 0000:00:10.0: Your graphics device 4692 is not properly supporter by the driver in this
+[    5.980845] i915 0000:00:10.0: Your graphics device 4692 is not properly supported by the driver in this
                kernel version. To force driver probe anyway, use i915.force_probe=4692
 ```
 
