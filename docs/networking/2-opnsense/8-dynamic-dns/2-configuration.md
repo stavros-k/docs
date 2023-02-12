@@ -1,12 +1,9 @@
 # Configuration
 
-:::warning Currently working only with Global API Key
+:::tip
 
-Due to an upstream bug, it only works using the Global API Key
+Since `ddclient` version `1.11_1`, it supports API tokens.
 
-For more info follow this [issue](https://github.com/opnsense/plugins/issues/2842) on github
-
-I won't cover how to use it with the Global API Key. Once this is fixed, follow the guide bellow.
 :::
 
 Navigate to `Services` -> `Dynamic DNS` -> `Settings`
@@ -17,7 +14,6 @@ Navigate to `Services` -> `Dynamic DNS` -> `Settings`
 
 - Check `Enabled`
 - Service: `Cloudflare`
-- Username: `your-zone-id`
 - Password: `api-token`
 - Zone: `your-domain.com`
 - Hostname(s): `your-domain.com`
@@ -29,14 +25,6 @@ Navigate to `Services` -> `Dynamic DNS` -> `Settings`
 
 - Click <kbd>Save</kbd>
 - Click <kbd>Apply</kbd>
-
-## Zone ID
-
-To get the `Zone ID`, login to your Cloudflare account.
-Navigate to `Account Home` (Top right corner, on the human icon)
-Select `your-domain.com`.
-On the right sidebar, near the bottom. Under `API`, there is the `Zone ID`.
-Copy and paste it into `Username` field in OPNSense
 
 ## API Token
 
