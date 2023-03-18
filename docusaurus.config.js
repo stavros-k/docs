@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Docs by Stavros",
-  tagline: "Dinosaurs are cool",
+  tagline: "Dinosaurs are cool!",
   url: "https://docs.kois.cc/",
   baseUrl: "/",
   onBrokenLinks: "throw",
