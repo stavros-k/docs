@@ -2,41 +2,12 @@
 
 ## Dark Theme
 
-We will be using this [project](https://github.com/Weilbyte/PVEDiscordDark)
-
 - Login to `Proxmox` webUI.
-- Select your node on the left side
-- Click <kbd>>_Shell</kbd> on the top right
-- Run the following
+- Select your user name on the top right
+- Click `Color Theme`
+- Enjoy your dark theme
 
-  ```shell
-  bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
-  ```
-
-  You will see an output similar to this
-
-  ```shell
-  Linux pve 5.15.74-1-pve #1 SMP PVE 5.15.74-1 (Mon, 14 Nov 2022 20:17:15 +0100) x86_64
-
-  The programs included with the Debian GNU/Linux system are free software;
-  the exact distribution terms for each program are described in the
-  individual files in /usr/share/doc/*/copyright.
-
-  Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-  permitted by applicable law.
-  Last login: Wed Nov 30 22:39:54 EET 2022 on pts/0
-  root@pve:~# bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
-  ✔ Backing up template file
-  ✔ Downloading stylesheet
-  ✔ Downloading patcher
-  ✔ Applying changes to template file
-  ✔ Downloading images (29/29)
-  Theme installed.
-  root@pve:~#
-  ```
-
-- Refresh your `Proxmox` webUI. (Might need to clear the cache)
-  ![dark-theme](img/proxmox-dark-theme.png)
+![dark-theme](img/proxmox-dark-theme.png)
 
 ## Remove Subscription pop-up
 
