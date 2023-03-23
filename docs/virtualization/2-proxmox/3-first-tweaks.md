@@ -6,8 +6,7 @@
 - Select your user name on the top right
 - Click `Color Theme`
 - Enjoy your dark theme
-
-![dark-theme](img/proxmox-dark-theme.png)
+  ![dark-theme](img/proxmox-dark-theme.png)
 
 ## Remove Subscription pop-up
 
