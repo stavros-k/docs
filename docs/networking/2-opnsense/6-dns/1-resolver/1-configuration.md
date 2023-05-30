@@ -36,7 +36,6 @@ Navigate to `Services` -> `Unbound DNS` -> `Advanced`
 - Check `Prefetch Support`
 - Check `Prefetch DNS Key Support`
 - Check `Harden DNSSEC data`
-- Check `Serve expired responses`
 - Message Cache Size: `50m`
 - RRset cache size: `100m`
 - Outgoing TCP Buffers: `10`
