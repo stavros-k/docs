@@ -69,6 +69,7 @@ words:
   - msiexec
   - nasip
   - ndpi
+  - netflow
   - netpbm
   - Nextcloud
   - ntop
