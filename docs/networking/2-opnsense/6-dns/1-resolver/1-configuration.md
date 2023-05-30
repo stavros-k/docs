@@ -37,11 +37,19 @@ Navigate to `Services` -> `Unbound DNS` -> `Advanced`
 - Check `Prefetch DNS Key Support`
 - Check `Harden DNSSEC data`
 - Check `Serve expired responses`
-- Message Cache Size: `50MB`
+- Message Cache Size: `50m`
+- RRset cache size: `100m`
+- Outgoing TCP Buffers: `10`
+- Incoming TCP Buffers: `10`
+- Number of queries per thread: `4096`
+- Outgoing Range: `8192`
+- Jostle Timeout: `200`
+- TTL for Host Cache entries: `900`
 - Number of hosts to cache: `20000`
 - Click <kbd>Save</kbd>
 
-![unbound-advanced](img/unbound-advanced.png)
+![unbound-advanced](img/unbound-advanced-1.png)
+![unbound-advanced](img/unbound-advanced-2.png)
 
 ## DNS over TLS
 
