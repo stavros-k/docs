@@ -45,8 +45,9 @@ Repeat for all non-WAN interfaces.
 Navigate to `Firewall` -> `Groups`
 
 - Name: `RedirectDNS`
-- Description: `Redirect DNS`
+- Description: `Force DNS Requests`
 - Members: Select the interfaces you want to force OPNSense as DNS server.
+- Check `Prevent grouping these members in the interfaces menu section`
 
 ![redirect-groups](img/redirect-groups.png)
 
