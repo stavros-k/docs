@@ -22,7 +22,7 @@ Make sure your clients are using the OPNsense as their DNS server.
 
 Navigate to `Services` -> `Unbound DNS` -> `Overrides`
 
-- Click <kbd>+</kbd> to add a new override
+- Click <kbd>➕</kbd> to add a new override
 - Host: `myservice`
 - Domain: `example.com`
 - Type: `A`
