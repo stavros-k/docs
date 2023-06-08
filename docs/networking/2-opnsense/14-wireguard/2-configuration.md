@@ -25,7 +25,7 @@ Navigate to `VPN` -> `WireGuard` -> `Local`
 - Public Key: (Leave empty, it will be generated automatically)
 - Private Key: (Leave empty, it will be generated automatically)
 - Listen Port: `51820`
-- Tunnel Address: `10.200.0.0/24`
+- Tunnel Address: `10.200.0.1/24`
 - Peers: (Leave empty, we will add them later)
 - Uncheck `Disable routes`
 - Click <kbd>Save</kbd>
@@ -56,14 +56,17 @@ Navigate to `Interfaces` -> `Assignments`
 
 ## Firewall
 
-Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
-
 :::warning
 
 These rules will allow all traffic from wireguard interface to
 the firewall. You might want to change this to your needs.
 
 :::
+
+### Wireguard Inbound Rule
+
+Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
+
 
 - Click <kbd>➕</kbd>
 - Action: `Pass`
@@ -75,10 +78,29 @@ the firewall. You might want to change this to your needs.
 - Destination: `any`
 - Click <kbd>Save</kbd>
 
-![wireguard-rule-1](img/wireguard-rule-1.png)
-![wireguard-rule-2](img/wireguard-rule-2.png)
+![wireguard-rule-wg-in-1](img/wireguard-rule-wg-in-1.png)
+![wireguard-rule-wg-in-2](img/wireguard-rule-wg-in-2.png)
+
+### Wireguard Outbound Rule
+
+Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
+
+- Click <kbd>➕</kbd>
+- Action: `Pass`
+- Interface: `WIREGUARD`
+- Direction: `out`
+- Address Family: `IPv4`
+- Protocol: `any`
+- Source: `any`
+- Destination: `any`
+- Click <kbd>Save</kbd>
+
+![wireguard-rule-wg-out-1](img/wireguard-rule-wg-out-1.png)
+![wireguard-rule-wg-out-2](img/wireguard-rule-wg-out-2.png)
 
 - Click <kbd>Apply changes</kbd>
+
+### WAN Rule
 
 Navigate to `Firewall` -> `Rules` -> `WAN`
 
@@ -95,18 +117,22 @@ Navigate to `Firewall` -> `Rules` -> `WAN`
   - to: `(other) 51820`
 - Click <kbd>Save</kbd>
 
-![wireguard-rule-3](img/wireguard-rule-3.png)
-![wireguard-rule-4](img/wireguard-rule-4.png)
+![wireguard-rule-wan-1](img/wireguard-rule-wan-1.png)
+![wireguard-rule-wan-2](img/wireguard-rule-wan-2.png)
 
 - Click <kbd>Apply changes</kbd>
 
 ## Endpoints
+
+### Copy Server Public Key
 
 Navigate to `VPN` -> `WireGuard` -> `Local`
 
 - Click <kbd>✏️</kbd>
 - Copy `Public Key`, we will need it later
 - Click <kbd>Save</kbd>
+
+### Create Endpoint(s)
 
 Navigate to `VPN` -> `WireGuard` -> `Endpoints`
 
@@ -125,6 +151,17 @@ Navigate to `VPN` -> `WireGuard` -> `Endpoints`
 - Click <kbd>Apply</kbd>
 
 ![wireguard-endpoint](img/wireguard-endpoint.png)
+
+### Add Endpoint(s) to Local Configuration
+
+Navigate to `VPN` -> `WireGuard` -> `Local`
+
+- Click <kbd>✏️</kbd>
+- Peers: Select the endpoints you created
+- Click <kbd>Save</kbd>
+- Click <kbd>Apply</kbd>
+
+![wireguard-peers-select](img/wireguard-peers-select.png)
 
 ## Generate Public and Private Keys and import them to clients
 
@@ -164,7 +201,7 @@ AllowedIPs = 0.0.0.0/0
 AllowedIPs = 10.0.0.0/16, 192.168.12.0/24, 192.168.11.0/24
 ```
 
-Save the above in a file, for example `wg0.conf`.
+Save the above in a file, for example `/etc/wireguard/wg0.conf`.
 
 Then run:
 
