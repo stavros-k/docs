@@ -67,7 +67,6 @@ the firewall. You might want to change this to your needs.
 
 Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
 
-
 - Click <kbd>➕</kbd>
 - Action: `Pass`
 - Interface: `WIREGUARD`
