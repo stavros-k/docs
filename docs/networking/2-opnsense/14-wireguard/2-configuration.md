@@ -102,4 +102,76 @@ Navigate to `Firewall` -> `Rules` -> `WAN`
 
 ## Endpoints
 
-TODO:
+Navigate to `VPN` -> `WireGuard` -> `Local`
+
+- Click <kbd>✏️</kbd>
+- Copy `Public Key`, we will need it later
+- Click <kbd>Save</kbd>
+
+Navigate to `VPN` -> `WireGuard` -> `Endpoints`
+
+- Click <kbd>➕</kbd>
+- Name: (Choose a name for your endpoint)
+- Public Key: (Generate `Public Key`, see below)
+- Shared Secret: Leave empty
+- Allowed IPs: `10.200.0.2/32`
+  - Enter the IP of the client in CIDR notation
+  - Press <kbd>Enter</kbd>
+- Endpoint Address: (Enter the public IP address or DNS of your server)
+- Endpoint Port: (Enter the port of your server)
+- Keep alive interval: `25`
+- Click <kbd>Save</kbd>
+- Repeat for each client
+- Click <kbd>Apply</kbd>
+
+![wireguard-endpoint](img/wireguard-endpoint.png)
+
+## Generate Public and Private Keys and import them to clients
+
+You can generate keys for a client from any OS that has `Wireguard` installed.
+Use whatever you have available.
+
+### Linux
+
+```shell
+wg genkey | tee >(awk '{print "Private Key:", $0}') |\
+            wg pubkey | awk '{print "Public Key:", $0}'
+```
+
+It should print something like this:
+
+```shell
+Private Key: KCqn8yEUsiJKWrXk8cfjW9liYGprmBs79gZ9hhHLIVA=
+Public Key: HGmMJdr9iZAatwAQkwLAIW6r710RNwrVNV/PszL5CiI=
+```
+
+Config file should look like this:
+
+```ini
+[Interface]
+# (Client Private Key that you generated earlier)
+PrivateKey = KCqn8yEUsiJKWrXk8cfjW9liYGprmBs79gZ9hhHLIVA=
+Address = 10.200.0.2/32
+DNS = 10.0.0.1/16
+
+[Peer]
+PublicKey = (Server Public Key that you copied earlier)
+Endpoint = (Server Public IP or DNS):(51820 or the port you chose)
+# - AllowedIPs = (Network(s) that you want to route through the VPN in CIDR notation)
+# Full Tunnel (All traffic through VPN)
+AllowedIPs = 0.0.0.0/0
+# Split Tunnel (Only traffic specific networks through VPN)
+AllowedIPs = 10.0.0.0/16, 192.168.12.0/24, 192.168.11.0/24
+```
+
+Save the above in a file, for example `wg0.conf`.
+
+Then run:
+
+```shell
+sudo wg-quick up wg0
+```
+
+You should now be connected to the VPN.
+
+### Windows
