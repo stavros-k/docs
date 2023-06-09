@@ -82,6 +82,8 @@ Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
 
 ### Wireguard Outbound Rule
 
+TODO: verify if this is needed
+
 Navigate to `Firewall` -> `Rules` -> `WIREGUARD`
 
 - Click <kbd>➕</kbd>
@@ -213,3 +215,6 @@ You should now be connected to the VPN.
 ### Windows
 
 TODO:
+
+
+TODO: split into subpages
