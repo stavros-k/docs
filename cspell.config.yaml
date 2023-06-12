@@ -109,6 +109,7 @@ words:
   - truetype
   - tsdb
   - uchardet
+  - UEFI
   - umounting
   - unattend
   - untunneled
@@ -119,6 +120,7 @@ words:
   - Virt
   - virtio
   - vnstat
+  - wdsnbp
   - webfonts
   - webp
   - wekyb
