@@ -4,7 +4,7 @@ You can setup WiFi on OPNsense. Generally is not recommended, but sometimes migh
 
 Navigate to `Interfaces` > `Wireless` > `Devices`
 
-- Click <kbd>+</kbd>
+- Click <kbd>➕</kbd>
 - `Parent interface`: `run0 ()`
 - `Description`: `WLAN`
 
@@ -15,7 +15,7 @@ Click <kbd>Save</kbd> when you done
 Navigate to `Interfaces` > `Assignments`
 
 - `New interface`: `run0_wlan1 (WLAN)`
-- Click <kbd>+</kbd>
+- Click <kbd>➕</kbd>
 - `Description`: `WLAN`
 
 Click <kbd>Save</kbd> when you done
@@ -61,7 +61,7 @@ Click <kbd>Save</kbd> when you done
 
 Navigate to `Firewall` > `Rules` > `WLAN`
 
-- Click <kbd>+</kbd>
+- Click <kbd>➕</kbd>
 - `Action`: `Pass`
 - `Interface`: `WLAN`
 - `Direction`: `in`

@@ -19,10 +19,10 @@ Hardware: `AMD K8, K10 and K11 CPU on-die thermal sensor (amdtemp)`
 - Periodic RRD Backup: `1 Hour`
 - Periodic DHCP Leases Backup: `1 Hour`
 - Periodic NetFlow Backup: `1 Hour`
-- Periodic Captive Portal Backup: `Power off`
+- Periodic Captive Portal Backup: `Disabled`
 
 I use the above values, you can choose whatever you prefer.
-I don't use Captive Portal, so I have this set to `Power Off`
+I don't use Captive Portal, so I have this set to `Disabled`
 
 ![system-periodic-backups](img/system-periodic-backups.png)
 

@@ -32,6 +32,7 @@ words:
   - fontconfig
   - freetype
   - gdbm
+  - genkey
   - GENSUDO
   - geoip
   - geoipupdate
@@ -49,6 +50,7 @@ words:
   - INSTALLDIR
   - Intellimenus
   - jbigkit
+  - kmod
   - Leay
   - libfontenc
   - libgd
@@ -69,6 +71,7 @@ words:
   - msiexec
   - nasip
   - ndpi
+  - netflow
   - netpbm
   - Nextcloud
   - ntop
@@ -81,6 +84,7 @@ words:
   - ppem
   - proto
   - protobuf
+  - pubkey
   - publickey
   - ronivay
   - SATA
@@ -105,15 +109,18 @@ words:
   - truetype
   - tsdb
   - uchardet
+  - UEFI
   - umounting
   - unattend
   - untunneled
+  - unvetted
   - USESUDO
   - verdana
   - VIDEOIDLE
   - Virt
   - virtio
   - vnstat
+  - wdsnbp
   - webfonts
   - webp
   - wekyb
