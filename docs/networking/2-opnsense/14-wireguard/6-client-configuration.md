@@ -60,3 +60,13 @@ sudo wg-quick down wg0
 :::
 
 ### Windows
+
+TODO: Add instructions
+
+### Android
+
+TODO: Add instructions
+
+### iOS
+
+TODO: Add instructions
