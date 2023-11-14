@@ -24,11 +24,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "_issue": "https://github.com/easyops-cn/docusaurus-search-local/issues/345",
-  "overrides": {
-    "@docusaurus/core": "3.0.0",
-    "@docusaurus/theme-common": "3.0.0"
-  },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.0"
   },
