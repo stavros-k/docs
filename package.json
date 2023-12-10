@@ -1,15 +1,15 @@
 {
   "name": "docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start --host 0.0.0.0",
+    "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve --host 0.0.0.0",
+    "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
@@ -25,7 +25,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.0.1"
+    "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/types": "3.0.1"
   },
   "browserslist": {
     "production": [
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }

@@ -1,4 +1,7 @@
-# Xiaomi Thermometer LYWSD03MMC
+---
+title: Xiaomi Thermometer LYWSD03MMC
+sidebar_position: 1
+---
 
 ## Flash firmware
 
