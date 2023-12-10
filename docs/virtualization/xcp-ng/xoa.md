@@ -79,7 +79,7 @@ Installing XOA from source gives you all the pro features available.
 
 ### Install Ubuntu VM
 
-Follow the guide [here](./2-install-ubuntu-vm.md)
+Follow the guide [here](install-ubuntu-vm.md)
 
 ### Build XOA from source
 

@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info Prerequisites
 
-- Have [`VirtIO`](upload-iso.md#download-virtio-iso) and `windows` ISO's [uploaded](./upload-iso.md) to `Proxmox`
+- Have [`VirtIO`](upload-iso.md#download-virtio-iso) and `windows` ISO's [uploaded](upload-iso.md) to `Proxmox`
 
 :::
 
