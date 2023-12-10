@@ -7,15 +7,13 @@ export const imageZoom: PluginConfig = [
 
 // https://github.com/francoischalifour/medium-zoom?tab=readme-ov-file#options
 export const zoomConfig = {
-  zoom: {
-    selector: ".markdown :not(em) > img",
-    config: {
-      margin: 100,
-      scrollOffset: 40,
-      background: {
-        light: "rgb(255, 255, 255)",
-        dark: "rgb(50, 50, 50)",
-      },
+  selector: ".markdown :not(em) > img",
+  config: {
+    margin: 100,
+    scrollOffset: 40,
+    background: {
+      light: "rgb(255, 255, 255)",
+      dark: "rgb(50, 50, 50)",
     },
   },
-}
+};
