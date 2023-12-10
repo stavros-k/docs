@@ -1,4 +1,7 @@
-# Windows Deployment Services
+---
+title: Windows Deployment Services
+sidebar_position: 1
+---
 
 > Prerequisites:
 > [Installed Windows Server 2022](../virtualization/2-proxmox/11-install-windows-server.md)
@@ -103,7 +106,8 @@
       # Note the index numbers of the images you want to extract.
       # Run the following command for each of the indexes you want to extract, remember to change
       # the name of the DestinationImageFile for each index.
-      dism /Export-Image /SourceImageFile:Win10Install.esd /SourceIndex:6 /DestinationImageFile:C:\RemoteInstall\Win10ProInstall.wim /Compress:max /CheckIntegrity
+      dism /Export-Image /SourceImageFile:Win10Install.esd /Compress:max /CheckIntegrity `
+      /SourceIndex:6 /DestinationImageFile:C:\RemoteInstall\Win10ProInstall.wim
       ```
 
   2. Add Boot Images

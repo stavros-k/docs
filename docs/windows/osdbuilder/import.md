@@ -1,4 +1,7 @@
-# Import Image
+---
+title: Import Image
+sidebar_position: 2
+---
 
 You need to import a Windows Image, so `OSDBuilder` has a base to work with.
 Mount an ISO by double clicking it or using the following command.

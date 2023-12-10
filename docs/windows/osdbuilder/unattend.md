@@ -1,4 +1,7 @@
-# Unattended (Answer File)
+---
+title: Unattended (Answer File)
+sidebar_position: 7
+---
 
 I used this file to change few things like timezone, dark theme, locale
 

@@ -1,4 +1,7 @@
-# Scripts
+---
+title: Scripts
+sidebar_position: 6
+---
 
 Some of the scripts I use
 

@@ -1,4 +1,7 @@
-# Update Imported Image
+---
+title: Update Imported Image
+sidebar_position: 4
+---
 
 ```powershell
 Update-OSMedia -Name 'Windows 11 Pro N x64 21H2 22000.318' -Download -Execute

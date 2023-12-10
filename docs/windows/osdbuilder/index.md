@@ -1,4 +1,7 @@
-# OSDBuilder
+---
+title: OSDBuilder
+sidebar_position: 4
+---
 
 [OSDBuilder](https://osdbuilder.osdeploy.com/) is a powershell script that help you to
 create reference Windows Images and more

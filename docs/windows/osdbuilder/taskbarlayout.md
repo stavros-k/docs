@@ -1,4 +1,7 @@
-# Task Bar Layout
+---
+title: Task Bar Layout
+sidebar_position: 8
+---
 
 I used this file for customizing task bar layout
 

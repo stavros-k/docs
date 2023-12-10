@@ -1,4 +1,7 @@
-# Prepare Windows 10 for Sysprep
+---
+title: Prepare Windows 10 for Sysprep
+sidebar_position: 2
+---
 
 ## Updates
 

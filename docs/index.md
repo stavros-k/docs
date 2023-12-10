@@ -1,8 +1,7 @@
 ---
+title: Home
 sidebar_position: 1
 ---
-
-# Home
 
 This is a personal documentation site, generated with Docusaurus.
 

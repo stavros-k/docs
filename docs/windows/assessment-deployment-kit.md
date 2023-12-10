@@ -1,4 +1,7 @@
-# Windows Assessment and Deployment Kit
+---
+title: Windows Assessment and Deployment Kit
+sidebar_position: 3
+---
 
 :::info Prerequisite
 

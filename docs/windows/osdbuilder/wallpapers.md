@@ -1,4 +1,7 @@
-# Wallpapers
+---
+title: Wallpapers
+sidebar_position: 9
+---
 
 You can replace the default windows wallpapers
 

@@ -1,4 +1,7 @@
-# Tasks
+---
+title: Tasks
+sidebar_position: 3
+---
 
 You can combine all the tasks into one. Simply by adding all the flags into the same command.
 Run the same command multiple times to add multiple scripts.

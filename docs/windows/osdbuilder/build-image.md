@@ -1,4 +1,7 @@
-# Build the new image
+---
+title: Build the new image
+sidebar_position: 5
+---
 
 ```powershell
 New-OSBuild -Execute -CreateISO
