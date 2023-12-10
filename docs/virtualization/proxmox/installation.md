@@ -25,7 +25,7 @@ Boot the USB drive you [prepared](prepare.md) and once you reach the Proxmox Ins
 - Network
   - Select the management interface
   - Enter a hostname, for example `pve.localdomain`
-  - Enter IP address for Proxomox, for exmaple `10.1.1.254`
+  - Enter IP address for Proxmox, for example `10.1.1.254`
   - Enter Gateway
   - Enter DNS Server
     ![step4](img/proxmox-install-step4.png)
