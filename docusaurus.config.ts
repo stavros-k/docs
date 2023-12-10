@@ -7,7 +7,7 @@ import { imageZoom } from "./config/zoomPlugin";
 const config: Config = {
   title: "Stavros' Docs",
   tagline: "Dinosaurs are cool",
-  url: "https://kois.cc/",
+  url: "https://docs.kois.cc/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
