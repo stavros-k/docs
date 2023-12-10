@@ -1,5 +1,6 @@
 import type { ThemeConfig } from "@docusaurus/preset-classic";
 import { themes } from "prism-react-renderer";
+import { zoomConfig } from "./zoomPlugin";
 
 export const themesConfig: ThemeConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Stavros' Docs, Built with Docusaurus.`,
@@ -9,16 +10,10 @@ export const themesConfig: ThemeConfig = {
       hideable: true,
     },
   },
-  zoom: {
-    selector: ".markdown :not(em) > img",
-    config: {
-      // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-      margin: 100,
-      background: {
-        light: "rgb(255, 255, 255)",
-        dark: "rgb(50, 50, 50)",
-      },
-    },
+  ...zoomConfig,
+  prism: {
+    theme: themes.github,
+    darkTheme: themes.dracula,
   },
   navbar: {
     title: "Stavros' Docs",
@@ -32,7 +27,7 @@ export const themesConfig: ThemeConfig = {
         docId: "index",
         position: "left",
         label: "Documentation",
-        to: "/docs",
+        to: "/",
       },
       {
         docId: "blog",
@@ -55,15 +50,19 @@ export const themesConfig: ThemeConfig = {
         items: [
           {
             label: "Documentation",
-            to: "/docs",
+            to: "/",
           },
         ],
       },
       {
-        title: "Community",
+        title: "Social",
         items: [
           {
-            label: "Twitter",
+            label: "GitHub",
+            href: "https://github.com/stavros-k/docs",
+          },
+          {
+          label: "Twitter",
             href: "https://twitter.com/stavroskois",
           },
         ],
@@ -75,16 +74,9 @@ export const themesConfig: ThemeConfig = {
             label: "Blog",
             to: "/blog",
           },
-          {
-            label: "GitHub",
-            href: "https://github.com/stavros-k/docs",
-          },
         ],
       },
     ],
   },
-  prism: {
-    theme: themes.github,
-    darkTheme: themes.dracula,
-  },
+
 };

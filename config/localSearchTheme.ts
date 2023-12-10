@@ -5,7 +5,11 @@ export const localSearch: PluginConfig = [
   require.resolve("@easyops-cn/docusaurus-search-local"),
   {
     docsRouteBasePath: "/",
-    indexBlog: false,
+    docsDir: "docs",
+    blogRouteBasePath: "/blog",
+    blogDir: "blog",
+    indexBlog: true,
+    indexDocs: true,
     hashed: true,
   },
 ];

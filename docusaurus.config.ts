@@ -7,8 +7,8 @@
 import type { Config } from "@docusaurus/types";
 import { classicPresetOptions } from "./config/presetOptions";
 import { themesConfig } from "./config/themesConfig";
-import { localSearch } from "./config/themes";
-import { imageZoom } from "./config/plugins";
+import { localSearch } from "./config/localSearchTheme";
+import { imageZoom } from "./config/zoomPlugin";
 
 const config: Config = {
   title: "Stavros' Docs",
@@ -17,6 +17,7 @@ const config: Config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
+  onDuplicateRoutes: "throw",
   favicon: "img/favicon.ico",
   organizationName: "stavros-k",
   projectName: "docs",

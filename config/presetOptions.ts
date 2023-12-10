@@ -1,22 +1,26 @@
 import type { Options } from "@docusaurus/preset-classic";
 
+import type {PluginOptions } from "@docusaurus/plugin-sitemap";
+
 export const classicPresetOptions: Options = {
+  pages: false,
   docs: {
-    routeBasePath: "/docs",
+    routeBasePath: "/",
     sidebarPath: "./sidebars.ts",
+    showLastUpdateTime: true,
     editUrl: "https://github.com/stavros-k/docs/tree/master/",
   },
-  // blog: false,
   blog: {
     showReadingTime: true,
+    routeBasePath: "/blog",
     editUrl: "https://github.com/stavros-k/docs/tree/master/"
   },
   theme: {
     customCss: "./src/css/custom.css",
   },
-  sitemap: {
-    changefreq: "weekly",
-    priority: 0.5,
-    filename: 'sitemap.xml',
+  sitemap: <PluginOptions> {
+    priority: 1,
+    filename: "sitemap.xml",
+    changefreq: 'weekly',
   }
-};
+}
