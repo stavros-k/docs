@@ -1,7 +1,10 @@
-# Installation
+---
+title: Installation
+sidebar_position: 1
+---
 
-Assuming you have a running [Ubuntu VM](../../virtualization/1-xcp-ng/2-install-ubuntu-vm.md)
-and installed [docker](../../virtualization/1-xcp-ng/4-install-docker-ubuntu.md)
+Assuming you have a running [Ubuntu VM](../../virtualization/xcp-ng/install-ubuntu-vm.md)
+and installed [docker](../../virtualization/xcp-ng/install-docker-ubuntu.md)
 
 ```shell
 mkdir -p $HOME/docker/portainer

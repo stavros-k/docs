@@ -1,4 +1,7 @@
-# Prometheus
+---
+title: Prometheus
+sidebar_position: 3
+---
 
 ## Windows
 

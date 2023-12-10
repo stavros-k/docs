@@ -1,4 +1,7 @@
-# Installation - Agent
+---
+title: Installation - Agent
+sidebar_position: 2
+---
 
 ## Windows
 
@@ -6,7 +9,7 @@ We will install Prometheus as an agent. That means it will not store locally lon
 only temporary, until they get send to the server defined in the `remote_write` block in the configuration.
 Agent will scrape metrics from local exporters and then send the data to the remote server.
 
-- Create [configuration](3-configuration.md) file for prometheus
+- Create [configuration](configuration.md) file for prometheus
 - Place the configuration file in `C:\monitoring\prometheus`
 - Download `prometheus` from [here](https://prometheus.io/download/)
 

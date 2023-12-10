@@ -1,4 +1,7 @@
-# Configuration
+---
+title: Configuration
+sidebar_position: 2
+---
 
 On the first login, assuming you selected `totp`, you will be asked to initialize it.
 You will need to have an authenticator app for that.

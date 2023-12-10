@@ -1,4 +1,7 @@
-# Prometheus Configuration
+---
+title: Prometheus Configuration
+sidebar_position: 3
+---
 
 ## prometheus.yaml
 

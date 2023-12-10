@@ -1,4 +1,7 @@
-# Installation
+---
+title: Installation
+sidebar_position: 1
+---
 
 I usually configure all my agents in `Active` mode.
 This way it will work either it is behind NAT or not
@@ -45,7 +48,7 @@ Download the agent 2 zip file from [here](https://www.zabbix.com/download_agents
 
 - Extract the zip in `C:\zabbix`
 - Open `C:\zabbix\conf\zabbix_agent2.conf`
-- [Edit](2-agent-configuration.md) config to your needs
+- [Edit](agent-configuration.md) config to your needs
 
 Open `Command Prompt`
 
@@ -54,7 +57,7 @@ C:\zabbix\bin\zabbix_agent2.exe --config C:\zabbix\conf\zabbix_agent2.conf --ins
 C:\zabbix\bin\zabbix_agent2.exe --config C:\zabbix\conf\zabbix_agent2.conf --start
 ```
 
-Now, if you have enabled Auto Regsitration on your Zabbix Server, you should see it on your Hosts
+Now, if you have enabled Auto Registration on your Zabbix Server, you should see it on your Hosts
 
 ### SmartMonTools
 

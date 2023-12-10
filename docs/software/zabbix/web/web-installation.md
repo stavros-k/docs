@@ -1,4 +1,7 @@
-# Installation
+---
+title: Installation
+sidebar_position: 1
+---
 
 There are two options for web interface, Apache and Nginx.
 I'll go with the nginx variant

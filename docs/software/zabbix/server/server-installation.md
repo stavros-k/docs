@@ -1,4 +1,7 @@
-# Installation
+---
+title: Installation
+sidebar_position: 1
+---
 
 Zabbix server can be installed in multiple platforms
 You will need a database (I 'll go with postgres)

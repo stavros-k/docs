@@ -1,4 +1,7 @@
-# Windows Exporter
+---
+title: Windows Exporter
+sidebar_position: 1
+---
 
 ## Installation
 

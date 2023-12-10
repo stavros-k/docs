@@ -1,4 +1,7 @@
-# Installation - Server
+---
+title: Installation - Server
+sidebar_position: 1
+---
 
 ## Docker
 
@@ -17,7 +20,7 @@ as a reverse proxy to expose prometheus
 
 :::info Prerequisite
 
-- Installed [VM](../../virtualization/1-xcp-ng/2-install-ubuntu-vm.md)
+- Installed [VM](../../virtualization/xcp-ng/install-ubuntu-vm.md)
 - Installed Docker and Docker-Compose
 
 :::
@@ -58,9 +61,9 @@ services:
       - ./prometheus/etc:/etc/prometheus
 ```
 
-[`prometheus.yml`](3-configuration.md)
+[`prometheus.yml`](configuration.md)
 
-[`web.yml`](3-configuration.md)
+[`web.yml`](configuration.md)
 
 Once you have the above files created, start prometheus.
 

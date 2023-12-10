@@ -1,4 +1,7 @@
-# Speedtest Exporter
+---
+title: Speedtest Exporter
+sidebar_position: 2
+---
 
 Speedtest [exporter](https://github.com/MiguelNdeCarvalho/speedtest-exporter) is a Prometheus exporter
 written in Python using the official Speedtest CLI made by Ookla.
