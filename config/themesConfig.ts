@@ -1,19 +1,21 @@
 import type { ThemeConfig } from "@docusaurus/preset-classic";
+import { docsLinks, moreLinks, socialLinks } from "./footer";
 import { themes } from "prism-react-renderer";
 import { zoomConfig } from "./zoomPlugin";
+import { sideLinks } from "./navbar";
 
 export const themesConfig: ThemeConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Stavros' Docs, Built with Docusaurus.`,
+  zoom: zoomConfig,
+  prism: {
+    theme: themes.github,
+    darkTheme: themes.dracula,
+  },
   docs: {
     sidebar: {
       autoCollapseCategories: true,
       hideable: true,
     },
-  },
-  ...zoomConfig,
-  prism: {
-    theme: themes.github,
-    darkTheme: themes.dracula,
   },
   navbar: {
     title: "Stavros' Docs",
@@ -21,62 +23,14 @@ export const themesConfig: ThemeConfig = {
       alt: "Dinosaur Logo",
       src: "./img/logo.svg",
     },
-    items: [
-      {
-        type: "doc",
-        docId: "index",
-        position: "left",
-        label: "Documentation",
-        to: "/",
-      },
-      {
-        docId: "blog",
-        label: "Blog",
-        position: "left",
-        to: "/blog",
-      },
-      {
-        href: "https://github.com/stavros-k/docs",
-        label: "GitHub",
-        position: "right",
-      },
-    ],
+    items: sideLinks,
   },
   footer: {
     style: "dark",
     links: [
-      {
-        title: "Docs",
-        items: [
-          {
-            label: "Documentation",
-            to: "/",
-          },
-        ],
-      },
-      {
-        title: "Social",
-        items: [
-          {
-            label: "GitHub",
-            href: "https://github.com/stavros-k/docs",
-          },
-          {
-          label: "Twitter",
-            href: "https://twitter.com/stavroskois",
-          },
-        ],
-      },
-      {
-        title: "More",
-        items: [
-          {
-            label: "Blog",
-            to: "/blog",
-          },
-        ],
-      },
+      docsLinks,
+      socialLinks,
+      moreLinks,
     ],
   },
-
 };
