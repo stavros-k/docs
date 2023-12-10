@@ -21,7 +21,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
       - name: Update Browserslist database and create PR if applies
-        uses: c2corg/browserslist-update-action@b0da823739f07110650c993d9385e18d5796e715 # tag=v2
+        uses: c2corg/browserslist-update-action@0e432e6c50c3c06fcb785a3ba475d462dd93272e # tag=v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: browserslist-update
