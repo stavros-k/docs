@@ -1,4 +1,7 @@
-# HDD Stress Test
+---
+title: HDD Stress Test
+sidebar_position: 1
+---
 
 ## First step, S.M.A.R.T. tests (Scan HDD for problems)
 
@@ -9,8 +12,8 @@ You can view the progress of any of the following tests with this:
 
 The progress (in percentage) of the test is in the line `Self-test execution status:`
 
-|                                  Running Test                                   |                                         Finished Test                                          |
-| :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+|                       Running Test                        |                    Finished Test                    |
+| :-------------------------------------------------------: | :-------------------------------------------------: |
 | ![smart-progress-running](img/smart-progress-running.jpg) | ![smart-progress-zero](img/smart-progress-zero.jpg) |
 
 Zero (`0`) means our test is finished or no test is running.
@@ -98,7 +101,8 @@ This step will **DELETE** any data on the HDD
 ```
 
 <!-- ![badblocks-running](img/badblocks-running.jpg) -->
-Missing image of *badblocks running*, Sorry
+
+Missing image of _badblocks running_, Sorry
 
 To run the test to the other HDDs, press <kbd>Ctrl</kbd>+<kbd>B</kbd> then <kbd>"</kbd>, this will split the screen,
 there you can run `badblocks` on the next HDD. You can split as many times as you want.

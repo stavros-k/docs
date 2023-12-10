@@ -1,4 +1,7 @@
-# GPU for Apps
+---
+title: GPU for Apps
+sidebar_position: 2
+---
 
 ## iGPU
 
