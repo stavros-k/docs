@@ -1,9 +1,3 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import type { Config } from "@docusaurus/types";
 import { classicPresetOptions } from "./config/presetOptions";
 import { themesConfig } from "./config/themesConfig";
