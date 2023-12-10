@@ -1,4 +1,7 @@
-# First Tweaks
+---
+title: First Tweaks
+sidebar_position: 3
+---
 
 ## Dark Theme
 

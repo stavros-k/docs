@@ -1,4 +1,7 @@
-# Install Docker on Ubuntu
+---
+title: Install Docker on Ubuntu
+sidebar_position: 5
+---
 
 Let's install `docker` on `Ubuntu 22.04`
 

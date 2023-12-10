@@ -1,4 +1,7 @@
-# Upload ISO's
+---
+title: Upload ISO's
+sidebar_position: 5
+---
 
 Navigate to your `Node` -> `local(pve)` -> `ISO Images`
 

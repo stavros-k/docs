@@ -1,4 +1,7 @@
-# Add Storage
+---
+title: Add Storage
+sidebar_position: 4
+---
 
 ## Network Storage
 

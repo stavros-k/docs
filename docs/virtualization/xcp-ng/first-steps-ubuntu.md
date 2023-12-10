@@ -1,4 +1,7 @@
-# Ubuntu - First things to do
+---
+title: Ubuntu - First things to do
+sidebar_position: 3
+---
 
 After installing an Ubuntu VM, this is some things I personally do first.
 

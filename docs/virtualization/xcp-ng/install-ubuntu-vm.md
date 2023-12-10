@@ -1,4 +1,7 @@
-# Install Ubuntu VM
+---
+title: Install Ubuntu VM
+sidebar_position: 2
+---
 
 ## Download the ISO
 

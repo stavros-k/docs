@@ -1,8 +1,11 @@
-# Boot Windows from WDS
+---
+title: Boot Windows from WDS
+sidebar_position: 12
+---
 
 :::info Prerequisites
 
-- You have [Created](./10-create-windows-vm.md) the VM
+- You have [Created](./create-windows-vm.md) the VM
 
 :::
 

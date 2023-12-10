@@ -1,4 +1,7 @@
-# Preparation
+---
+title: Preparation
+sidebar_position: 1
+---
 
 We will prepare a boot-able USB for installing Proxmox.
 

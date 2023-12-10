@@ -1,4 +1,7 @@
-# Installation
+---
+title: Installation
+sidebar_position: 2
+---
 
 :::note
 
@@ -6,7 +9,7 @@ Prerequisite to have a boot-able USB with Proxmox ready.
 
 :::
 
-Boot the USB drive you [prepared](1-prepare.md) and once you reach the Proxmox Installer follow the steps
+Boot the USB drive you [prepared](prepare.md) and once you reach the Proxmox Installer follow the steps
 
 - License Agreement
   - Click `I agree`

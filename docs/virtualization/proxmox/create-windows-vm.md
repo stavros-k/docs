@@ -1,8 +1,11 @@
-# Windows 11 VM
+---
+title: Windows 11 VM
+sidebar_position: 10
+---
 
 :::info Prerequisites
 
-- Have [`VirtIO`](5-upload-iso.md#download-virtio-iso) and `windows` ISO's [uploaded](./5-upload-iso.md) to `Proxmox`
+- Have [`VirtIO`](upload-iso.md#download-virtio-iso) and `windows` ISO's [uploaded](./upload-iso.md) to `Proxmox`
 
 :::
 

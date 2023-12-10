@@ -1,4 +1,7 @@
-# Prepare for GPU Passthrough
+---
+title: Prepare for GPU Passthrough
+sidebar_position: 7
+---
 
 ## iGPU as Host Device Passthrough
 

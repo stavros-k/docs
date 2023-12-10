@@ -1,4 +1,7 @@
-# Two Factor Authentication
+---
+title: Two Factor Authentication
+sidebar_position: 6
+---
 
 `Proxmox` supports 2FA out of the box.
 
