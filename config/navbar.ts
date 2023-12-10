@@ -15,7 +15,17 @@ export const sideLinks: NavbarItem[] = [
     to: "/blog",
   },
   {
-    href: "https://github.com/stavros-k/docs",
+    href: "https://twitter.com/stavroskois",
+    label: "Twitter",
+    position: "right",
+  },
+  {
+    href: "https://www.linkedin.com/in/stavros-kois",
+    label: "LinkedIn",
+    position: "right"
+  },
+  {
+    href: "https://github.com/stavros-k",
     label: "GitHub",
     position: "right",
   },
