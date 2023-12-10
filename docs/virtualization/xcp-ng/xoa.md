@@ -7,7 +7,8 @@ You can choose between 3 Methods to install XOA.
 
 - **Quick Deploy**, which spins a VM with limited available features
 - **Fast/Easy**, which downloads a pre-created VM that is build from source code and includes all features
-- **From source**, which you manually download and install the OS and then run the installer to build XOA, this also includes all features
+- **From source**, which you manually download and install the OS and then run the installer to build XOA,
+  this also includes all features
 
 ## Xen Orchestra Appliance (Quick Deploy)
 
