@@ -5,7 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import type { Config } from "@docusaurus/types";
-import { presetOptions } from "./config/presetOptions";
+import { classicPresetOptions } from "./config/presetOptions";
 import { themesConfig } from "./config/themesConfig";
 import { localSearch } from "./config/themes";
 import { imageZoom } from "./config/plugins";
@@ -23,8 +23,8 @@ const config: Config = {
   themeConfig: themesConfig,
   presets: [
     [
-      "classic",
-      presetOptions,
+      '@docusaurus/preset-classic',
+      classicPresetOptions,
     ],
   ],
   themes: [

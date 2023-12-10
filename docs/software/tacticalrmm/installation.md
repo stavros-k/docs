@@ -46,7 +46,7 @@ Create the 3 `subdomains` now.
 
 ### SNI (Optional tip)
 
-If you are running more services on port 443, you can use [HAProxy with SNI](../../networking/1-pfsense/10-haproxy/3-sni.md)
+If you are running more services on port 443, you can use [HAProxy with SNI](../../networking/pfsense/haproxy/sni.md)
 to map the traffic to the correct internal service.
 
 > Note: If you use HAProxy in TCP mode, you need to set the timeouts as follows:

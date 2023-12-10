@@ -15,7 +15,7 @@ But for that we will also need to make our primary prometheus server publicly av
 I will be using a **reverse proxy** plus basic auth for now and later spend some time to figure out
 better ways to secure the connection.
 
-You can use [HAProxy](../../networking/1-pfsense/10-haproxy/4-ssl-tls-offloading.md)
+You can use [HAProxy](../../networking/pfsense/haproxy/ssl-tls-offloading.md)
 as a reverse proxy to expose prometheus
 
 :::info Prerequisite
