@@ -19,9 +19,12 @@ After you login
 
 - Fill your xcp-ng host's info
 - Don't forget to toggle the `Allow Unauthorized Certificates` button, unless you used valid certificates
-
-  ![xoa-add-server](img/xoa-add-server.png)
-
 - Click <kbd>💾Connect</kbd>
 
   ![xoa-connected-server](img/xoa-connected-server.png)
+
+- Go to `🏠Home` > `Hosts`
+- Long click on `Default install` and add a description
+  This is mostly for your own reference
+
+  ![xoa-host-description](img/xoa-host-description.png)
