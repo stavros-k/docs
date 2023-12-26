@@ -1,87 +1,15 @@
 ---
-title: XOA
-sidebar_position: 4
+title: From Source
+sidebar_position: 3
 ---
-
-You can choose between 3 Methods to install XOA.
-
-- **Quick Deploy**, which spins a VM with limited available features
-- **Fast/Easy**, which downloads a pre-created VM that is build from source code and includes all features
-- **From source**, which you manually download and install the OS and then run the installer to build XOA,
-  this also includes all features
-
-## Xen Orchestra Appliance (Quick Deploy)
-
-Deploying XOA the first time is very easy.
-Grab the IP of your xcp-ng host, and visit `https://<xpc.ng.host.ip>`
-
-You will see a webpage like below
-
-![xoa-deploy](img/xoa-deploy.png)
-
-- Click <kbd>Quick Deploy</kbd>
-- Type the root password you entered while installing xcp-ng
-- Click <kbd>Connect</kbd>
-
-![xoa-deploy-connect](img/xoa-deploy-connect.png)
-
-- Leave everything empty if you want to use DHCP.
-- Click <kbd>Next</kbd>
-
-![xoa-deploy-net](img/xoa-deploy-net.png)
-
-- Leave everything empty and change password later
-
-or
-
-- Create XOA Admin Account now
-- Click <kbd>Deploy</kbd>
-
-![xoa-deploy-account](img/xoa-deploy-account.png)
-
-It will take a while to deploy XOA VM, depending on your hardware.
-Once it's done it will redirect you to XOA's web login
-
-Default Username/Password is:
-
-Username: `admin@admin.net`
-Password: `admin`
-
-## XOA VM Import (Fast/Easy)
-
-- SSH to your `xcp-ng` host
-- Run the following command
-
-  ```shell
-  sudo bash -c "$(curl -s https://raw.githubusercontent.com/ronivay/XenOrchestraInstallerUpdater/master/xo-vm-import.sh)"
-  ```
-
-- Follow the on-screen instructions
-- Visit `https://<ip.you-entered-on.setup>`
-![xoa-easy](img/xoa-easy.png)
-- Done
-
-You might want to make this VM auto start when xcp-ng host boots.
-Also protect from accidental deletion or shutdown.
-
-Navigate to `🏠Home` > `🖥️VMs`
-
-- Click `xo-ce`
-- Click `Advanced`
-- Toggle on `Auto power on`
-- Toggle on `Protect from accidental deletion`
-- Toggle on `Protect from accidental shutdown`
-![xoa-auto-power](img/xoa-auto-power.png)
-
-## XOA (From source)
 
 Installing XOA from source gives you all the pro features available.
 
-### Install Ubuntu VM
+## Create a VM
 
-Follow the guide [here](install-ubuntu-vm.md)
+Follow the guide [here](../create-vm)
 
-### Build XOA from source
+## Build XOA from source
 
 For this method, to make it easier, follow first the `Quick Deploy` method, then come back here.
 
@@ -120,13 +48,16 @@ Default credentials are:
 
 - Username: `admin@admin.net`
 - Password: `admin`
+- Follow the [Quick Start](../setup-xoa.md) guide
 
-Now you are ready for the next step `Add server`
+:::note Note
 
-> This is how my xo-install.cfg looks like.
-> With this setup it will auto generate self signed certs and run on https
+This is how my xo-install.cfg looks like.
+With this setup it will auto generate self signed certs and run on https
 
-```shell
+:::
+
+```env
 # Optional user that runs the service
 # default: root
 # no effect to Xen Orchestra proxy
@@ -233,21 +164,10 @@ AUTOCERT="true"
 #INSTALL_REPOS="true"
 ```
 
-## Add server
-
-After you login
-
-- Click <kbd>☁️Add server</kbd>.
-![xoa-welcome](img/xoa-welcome.png)
-- Fill your xcp-ng host's info
-- Don't forget to toggle the `Allow Unauthorized Certificates` button, unless you used valid certificates
-![xoa-add-server](img/xoa-add-server.png)
-- Click <kbd>💾Connect</kbd>
-![xoa-connected-server](img/xoa-connected-server.png)
-
 ## Cleanup
 
-This step is only needed if you followed the `XOA (From source)` method
+This step is only needed if you followed the [Quick Deploy](./quick.md)
+method first and then followed the [XOA (From source)](./source.md) method.
 
 Navigate to `🏠Home` > `🖥️VMs`
 

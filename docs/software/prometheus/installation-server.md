@@ -20,7 +20,7 @@ as a reverse proxy to expose prometheus
 
 :::info Prerequisite
 
-- Installed [VM](../../virtualization/xcp-ng/install-ubuntu-vm.md)
+- Installed [VM](../../operating-systems/ubuntu/installation.md)
 - Installed Docker and Docker-Compose
 
 :::
