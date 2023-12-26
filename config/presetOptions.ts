@@ -13,7 +13,7 @@ export const classicPresetOptions: Options = {
   docs: <DocsPluginOptions>{
     routeBasePath: "/",
     sidebarPath: "./sidebars.ts",
-    showLastUpdateTime: true,
+    showLastUpdateTime: false,
     editUrl: "https://github.com/stavros-k/docs/tree/master/",
   },
   // https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-content-blog#configuration

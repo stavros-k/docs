@@ -1,6 +1,6 @@
 ---
 title: Install Guest Tools
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 ## Install guest tools (Optional)

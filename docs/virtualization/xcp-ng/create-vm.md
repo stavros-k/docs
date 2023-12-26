@@ -1,6 +1,6 @@
 ---
 title: Create VM
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 In this example we will use Ubuntu 22.04 as the OS for our VM.

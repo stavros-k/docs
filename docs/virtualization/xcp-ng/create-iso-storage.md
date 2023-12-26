@@ -1,6 +1,6 @@
 ---
 title: Create ISO storage
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Start by SSH-ing to your `xcp-ng` host
