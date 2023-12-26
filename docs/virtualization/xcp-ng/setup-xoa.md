@@ -1,5 +1,5 @@
 ---
-title: Quick Start - XOA
+title: Setup XOA
 sidebar_position: 3
 ---
 
