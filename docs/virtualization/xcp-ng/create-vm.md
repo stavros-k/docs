@@ -1,30 +1,16 @@
 ---
-title: Install Ubuntu VM
-sidebar_position: 2
+title: Create VM
+sidebar_position: 4
 ---
 
-- Follow steps from [Download Ubuntu ISO](../../operating-systems/ubuntu/installation.md#download-the-iso)
-- SSH to your `xcp-ng` host
+In this example we will use Ubuntu 22.04 as the OS for our VM.
 
-  ```shell
-  mkdir -p /isos && cd /isos
-  curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso --output ubuntu-22.04-live-server-amd64.iso
-  ```
+:::info Prerequisites
 
-  ![xoa-source-mkdir-download-img](img/xoa-source-mkdir-download-img.png)
+- [ISO storage created](./create-iso-storage#create-iso-storage-in-xoa)
+- [ISO downloaded](./create-iso-storage#download-iso)
 
-## Create storage
-
-Navigate to `➕New` > `💿Storage`
-
-- Host: Select your host
-- Name: `ISOs`
-- Description: `Local storage for ISOs`
-- Storage type: `ISO SR Local`
-- Path: `/isos
-- Click <kbd>▶️Create</kbd>
-
-  ![xoa-source-storage](img/xoa-source-storage.png)
+:::
 
 ## Create VM
 

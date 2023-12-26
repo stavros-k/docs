@@ -1,6 +1,6 @@
 ---
 title: XOA
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 You can choose between 3 Methods to install XOA.
