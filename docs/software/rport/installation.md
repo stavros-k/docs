@@ -6,7 +6,7 @@ sidebar_position: 1
 ## Install Ubuntu
 
 You will need a linux VM (or bare metal), I tested this on `Ubuntu 22.04`.
-You can use this [guide](../../virtualization/xcp-ng/install-ubuntu-vm.md).
+You can use this [guide](../../operating-systems/ubuntu/installation.md).
 
 ## Install `RPort`
 
