@@ -30,4 +30,4 @@ Navigate to `🏠Home` > `🖥️VMs`
 
   ![xoa-auto-power](img/xoa-auto-power.png)
 
-- Follow the [Quick Start](../use-xoa) guide
+- Follow the [Quick Start](../setup-xoa.md) guide

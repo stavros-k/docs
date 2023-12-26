@@ -45,4 +45,4 @@ sidebar_position: 4
   ```
 
 - Visit `https://<ip.of.your.docker.host>:8443`
-- Follow the [Quick Start](../use-xoa) guide
+- Follow the [Quick Start](../setup-xoa.md) guide

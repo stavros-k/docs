@@ -48,7 +48,7 @@ Default credentials are:
 
 - Username: `admin@admin.net`
 - Password: `admin`
-- Follow the [Quick Start](../use-xoa) guide
+- Follow the [Quick Start](../setup-xoa.md) guide
 
 :::note Note
 
@@ -166,8 +166,8 @@ AUTOCERT="true"
 
 ## Cleanup
 
-This step is only needed if you followed the [Quick Deploy](./quick)
-method first and then followed the [XOA (From source)](./source) method.
+This step is only needed if you followed the [Quick Deploy](./quick.md)
+method first and then followed the [XOA (From source)](./source.md) method.
 
 Navigate to `🏠Home` > `🖥️VMs`
 
