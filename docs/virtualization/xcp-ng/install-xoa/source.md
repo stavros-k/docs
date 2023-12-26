@@ -48,8 +48,7 @@ Default credentials are:
 
 - Username: `admin@admin.net`
 - Password: `admin`
-
-Now you are ready for the next step `Add server`
+- Follow the [Quick Start](../use-xoa) guide
 
 :::note Note
 

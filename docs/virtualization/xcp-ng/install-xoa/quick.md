@@ -37,3 +37,5 @@ Default Username/Password is:
 
 Username: `admin@admin.net`
 Password: `admin`
+
+- Follow the [Quick Start](../use-xoa) guide
