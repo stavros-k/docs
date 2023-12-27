@@ -9,9 +9,21 @@ sidebar_position: 3
 
 :::
 
-## Add server
-
 After you login
+
+## Change default password
+
+Navigate to `Settings` > `Users`
+
+- Click on the username to edit it
+- Click on `Click to edit` on the same user
+- Enter your new password
+- Press <kbd>Enter</kbd> to save
+- Logout and login again with your new password
+
+  ![xoa-change-password](img/xoa-change-password.png)
+
+## Add server
 
 - Click <kbd>☁️Add server</kbd>.
 
