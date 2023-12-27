@@ -3,9 +3,16 @@ title: Backup/Restore XOA
 sidebar_position: 7
 ---
 
-:::warning Warning
+:::danger Danger
 
 This only backs up the XOA configuration, not the VMs or their data.
+
+:::
+
+:::warning Warning
+
+Backup file contains sensitive information like passwords
+as plain text, so keep it safe.
 
 :::
 
