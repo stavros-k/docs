@@ -19,7 +19,7 @@
     "@easyops-cn/docusaurus-search-local": "0.40.1",
     "@mdx-js/react": "3.0.0",
     "browserslist": "4.22.2",
-    "caniuse-lite": "1.0.30001577",
+    "caniuse-lite": "1.0.30001578",
     "clsx": "2.1.0",
     "docusaurus-plugin-image-zoom": "1.0.1",
     "prism-react-renderer": "2.3.1",
