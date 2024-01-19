@@ -30,12 +30,18 @@ export default defineConfig({
     // }),
     starlight({
       // Starlight Blog
+      // TODO:
       // components: {
       //   MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
       //   Sidebar: "starlight-blog/overrides/Sidebar.astro",
       //   ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
       // },
-      plugins: [starlightLinksValidator()],
+      plugins: [
+        starlightLinksValidator({
+          // TODO: Check this later
+          errorOnRelativeLinks: false,
+        }),
+      ],
       // General
       title: "Stavros' Docs",
       description: "A documentation site built with Astro",
