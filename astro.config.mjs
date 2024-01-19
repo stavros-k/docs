@@ -60,7 +60,7 @@ export default defineConfig({
       social: {
         github: "https://github.com/stavros-k",
         openCollective: "https://opencollective.com/stavros-k",
-        linkedin: "https://www.linkedin.com/in/stavros-k-kois/",
+        linkedin: "https://www.linkedin.com/in/stavros-kois",
         "x.com": "https://x.com/stavroskois",
       },
       sidebar: [
