@@ -1,48 +1,20 @@
 {
   "name": "docs",
-  "version": "1.0.0",
-  "private": true,
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.0",
-    "@docusaurus/preset-classic": "3.1.0",
-    "@easyops-cn/docusaurus-search-local": "0.40.1",
-    "@mdx-js/react": "3.0.0",
-    "browserslist": "4.22.2",
-    "caniuse-lite": "1.0.30001579",
-    "clsx": "2.1.0",
-    "docusaurus-plugin-image-zoom": "1.0.1",
-    "prism-react-renderer": "2.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.0",
-    "@docusaurus/types": "3.1.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
+    "@astrojs/check": "0.4.1",
+    "@astrojs/starlight": "0.16.0",
+    "astro": "4.2.1",
+    "sharp": "0.33.2",
+    "starlight-links-validator": "^0.5.2",
+    "typescript": "5.3.3"
   }
 }
