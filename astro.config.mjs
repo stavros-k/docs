@@ -9,6 +9,7 @@ export default defineConfig({
   site: "https://docs.kois.cc",
   trailingSlash: "ignore",
   outDir: "./build",
+  cacheDir: "./.astro/cache",
   compressHTML: true,
   output: "static",
   build: {
