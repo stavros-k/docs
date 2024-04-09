@@ -1,3 +1,5 @@
+name: Cloudflare Pages
+
 on:
   pull_request:
   push:
@@ -16,6 +18,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Install Packages
+        run: npm ci
+
+      - name: Build
+        run: npm run build
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
