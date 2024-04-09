@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 // import starlightBlog from "starlight-blog";
 import starlightLinksValidator from "starlight-links-validator";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -66,29 +67,48 @@ export default defineConfig({
       sidebar: [
         {
           label: "Networking",
-          autogenerate: { directory: "/networking", collapsed: true },
+          autogenerate: {
+            directory: "/networking",
+            collapsed: true,
+          },
         },
         {
           label: "Operating Systems",
-          autogenerate: { directory: "/operating-systems", collapsed: true },
+          autogenerate: {
+            directory: "/operating-systems",
+            collapsed: true,
+          },
         },
         {
           label: "Software",
-          autogenerate: { directory: "/software", collapsed: true },
+          autogenerate: {
+            directory: "/software",
+            collapsed: true,
+          },
         },
         {
           label: "Virtualization",
-          autogenerate: { directory: "/virtualization", collapsed: true },
+          autogenerate: {
+            directory: "/virtualization",
+            collapsed: true,
+          },
         },
         {
           label: "Windows",
-          autogenerate: { directory: "/windows", collapsed: true },
+          autogenerate: {
+            directory: "/windows",
+            collapsed: true,
+          },
         },
         {
           label: "Home Automation",
-          autogenerate: { directory: "/home-automation", collapsed: true },
+          autogenerate: {
+            directory: "/home-automation",
+            collapsed: true,
+          },
         },
       ],
     }),
+    sitemap(),
   ],
 });
