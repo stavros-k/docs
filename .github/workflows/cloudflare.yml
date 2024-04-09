@@ -36,8 +36,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          # On push to master, set to "production" otherwiesr the head_ref
-          branch: ${{ github.ref == 'refs/heads/master' && 'production' || github.head_ref }}
+          branch: ${{ github.ref == 'refs/heads/master' && 'main' || github.head_ref }}
           projectName: documentation
           directory: ./build
           wranglerVersion: "3"
