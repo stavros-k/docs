@@ -22,7 +22,9 @@ jobs:
       - name: Setup Cache
         uses: actions/cache@v4
         with:
-          path: .astro
+          path: |
+            .astro
+            node_modules/.astro
           key: astro
 
       - name: Setup Node
