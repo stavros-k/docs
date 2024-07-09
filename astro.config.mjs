@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-// import starlightBlog from "starlight-blog";
+import starlightBlog from "starlight-blog";
 import starlightLinksValidator from "starlight-links-validator";
 import sitemap from "@astrojs/sitemap";
 
@@ -19,32 +19,8 @@ export default defineConfig({
     enabled: true,
   },
   integrations: [
-    // starlightBlog({
-    //   title: "Blog",
-    //   authors: {
-    //     "stavros-k": {
-    //       name: "Stavros Kois",
-    //       avatar: "https://avatars.githubusercontent.com/u/1144241?v=4",
-    //       url: "https://github.com/stavros-k",
-    //       picture: "https://github.com/stavros-k.png",
-    //     },
-    //   },
-    // }),
+    sitemap(),
     starlight({
-      // Starlight Blog
-      // TODO:
-      // components: {
-      //   MarkdownContent: "starlight-blog/overrides/MarkdownContent.astro",
-      //   Sidebar: "starlight-blog/overrides/Sidebar.astro",
-      //   ThemeSelect: "starlight-blog/overrides/ThemeSelect.astro",
-      // },
-      plugins: [
-        starlightLinksValidator({
-          // TODO: Check this later
-          errorOnRelativeLinks: false,
-        }),
-      ],
-      // General
       title: "Stavros' Docs",
       description: "A documentation site built with Astro",
       tagline: "A documentation site built with Astro",
@@ -109,7 +85,22 @@ export default defineConfig({
           },
         },
       ],
+      plugins: [
+        starlightLinksValidator({
+          errorOnRelativeLinks: false,
+        }),
+        starlightBlog({
+          title: "Blog",
+          authors: {
+            "stavros-k": {
+              name: "Stavros Kois",
+              avatar: "https://avatars.githubusercontent.com/u/1144241?v=4",
+              url: "https://github.com/stavros-k",
+              picture: "https://github.com/stavros-k.png",
+            },
+          },
+        }),
+      ],
     }),
-    sitemap(),
   ],
 });
