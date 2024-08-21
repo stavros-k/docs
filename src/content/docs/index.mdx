@@ -3,11 +3,32 @@ title: Home
 sidebar_position: 1
 ---
 
+import { Image } from "astro:assets";
+import bestBoy1 from "../../assets/best-boy-1.png";
+import bestBoy2 from "../../assets/best-boy-2.png";
+
 This is a personal documentation site, generated with Starlight.
 
 If you find anything wrong or missing, you can always open a PR.
 
 You can find the repository of these docs are, [here](https://github.com/stavros-k/docs)
+
+---
+
+**💙 In memory of the best boy in the world. 💙**
+
+<div style="display: flex; justify-content: center; align-items: center; width: 400px; height: 400px;">
+  <Image
+    style="object-fit: cover; width: 75%; height: 75%;"
+    src={bestBoy2}
+    alt="best-boy"
+  />
+  <Image
+    style="object-fit: cover; width: 100%; height: 100%;"
+    src={bestBoy1}
+    alt="best-boy"
+  />
+</div>
 
 :::tip[Credits]
 
