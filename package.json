@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/sitemap": "3.2.1",
-    "@astrojs/starlight": "0.28.4",
+    "@astrojs/starlight": "0.28.5",
     "astro": "4.16.8",
     "prettier": "3.3.3",
     "sharp": "0.33.5",
