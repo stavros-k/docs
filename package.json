@@ -13,7 +13,7 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/sitemap": "3.2.1",
     "@astrojs/starlight": "0.29.0",
-    "astro": "4.16.11",
+    "astro": "4.16.12",
     "prettier": "3.3.3",
     "sharp": "0.33.5",
     "starlight-blog": "0.14.1",
