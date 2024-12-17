@@ -11,7 +11,7 @@
   assignAutomerge: true,
   gitAuthor: "Mr.Bot <bot@kois.cc>",
 
-  // Functinality
+  // Functionality
   baseBranches: ["master"],
   rebaseWhen: "conflicted",
   pinDigests: true,
@@ -19,15 +19,16 @@
   semanticCommits: "enabled",
   commitMessageTopic: "{{depName}}",
   commitMessageExtra: "to {{newVersion}}",
+  lockFileMaintenance: { enabled: true },
   packageRules: [
     {
-      "matchManagers": ["npm"],
-      updateTypes: ["patch" ,"minor", "major"],
-      enabled: true
+      matchManagers: ["npm"],
+      updateTypes: ["patch", "minor", "major"],
+      enabled: true,
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
+      automerge: true,
     },
     // Labels
     {
@@ -45,12 +46,12 @@
     {
       matchUpdateTypes: ["minor"],
       addLabels: ["minor"],
-      "groupName": "non-major",
+      groupName: "non-major",
     },
     {
       matchUpdateTypes: ["patch"],
       addLabels: ["patch"],
-      "groupName": "non-major",
+      groupName: "non-major",
     },
   ],
 }
