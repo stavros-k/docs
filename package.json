@@ -12,12 +12,12 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/sitemap": "3.2.1",
-    "@astrojs/starlight": "0.29.3",
+    "@astrojs/starlight": "0.30.3",
     "astro": "4.16.18",
     "prettier": "3.4.2",
     "sharp": "0.33.5",
-    "starlight-blog": "0.15.0",
-    "starlight-links-validator": "0.13.4",
+    "starlight-blog": "0.16.0",
+    "starlight-links-validator": "0.14.0",
     "typescript": "5.7.2"
   }
 }
