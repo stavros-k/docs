@@ -19,7 +19,6 @@
   semanticCommits: "enabled",
   commitMessageTopic: "{{depName}}",
   commitMessageExtra: "to {{newVersion}}",
-  lockFileMaintenance: { enabled: true },
   packageRules: [
     {
       matchManagers: ["npm"],
