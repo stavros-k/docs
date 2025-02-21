@@ -57,7 +57,7 @@ With this setup it will auto generate self signed certs and run on https
 
 :::
 
-```env
+```shell
 # Optional user that runs the service
 # default: root
 # no effect to Xen Orchestra proxy
