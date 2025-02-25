@@ -16,7 +16,7 @@
     "astro": "5.3.1",
     "prettier": "3.5.2",
     "sharp": "0.33.5",
-    "starlight-blog": "0.17.3",
+    "starlight-blog": "0.18.0",
     "starlight-links-validator": "0.14.3",
     "typescript": "5.7.3"
   }
