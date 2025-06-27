@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "3.4.1",
     "@astrojs/starlight": "0.34.4",
     "astro": "5.10.1",
-    "prettier": "3.6.1",
+    "prettier": "3.6.2",
     "sharp": "0.34.2",
     "starlight-blog": "0.24.0",
     "starlight-links-validator": "0.17.0",
