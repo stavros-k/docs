@@ -12,8 +12,8 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/sitemap": "3.4.2",
-    "@astrojs/starlight": "0.35.1",
-    "astro": "5.12.4",
+    "@astrojs/starlight": "0.35.2",
+    "astro": "5.12.5",
     "prettier": "3.6.2",
     "sharp": "0.34.3",
     "starlight-blog": "0.24.0",
