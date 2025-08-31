@@ -13,11 +13,11 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/sitemap": "3.5.1",
     "@astrojs/starlight": "0.35.2",
-    "astro": "5.13.4",
+    "astro": "5.13.5",
     "prettier": "3.6.2",
     "sharp": "0.34.3",
     "starlight-blog": "0.24.1",
-    "starlight-links-validator": "0.17.1",
+    "starlight-links-validator": "0.17.2",
     "typescript": "5.9.2"
   }
 }
