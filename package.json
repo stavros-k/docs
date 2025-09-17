@@ -15,7 +15,7 @@
     "@astrojs/starlight": "0.35.3",
     "astro": "5.13.8",
     "prettier": "3.6.2",
-    "sharp": "0.34.3",
+    "sharp": "0.34.4",
     "starlight-blog": "0.24.1",
     "starlight-links-validator": "0.17.2",
     "typescript": "5.9.2"
