@@ -16,8 +16,8 @@
     "astro": "5.14.5",
     "prettier": "3.6.2",
     "sharp": "0.34.4",
-    "starlight-blog": "0.24.2",
-    "starlight-links-validator": "0.18.0",
+    "starlight-blog": "0.24.3",
+    "starlight-links-validator": "0.18.1",
     "typescript": "5.9.3"
   }
 }
