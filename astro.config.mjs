@@ -56,45 +56,37 @@ export default defineConfig({
       sidebar: [
         {
           label: "Networking",
-          autogenerate: {
-            directory: "/networking",
-            collapsed: true,
-          },
+          items: [
+            { autogenerate: { directory: "networking", collapsed: true } },
+          ],
         },
         {
           label: "Operating Systems",
-          autogenerate: {
-            directory: "/operating-systems",
-            collapsed: true,
-          },
+          items: [
+            {
+              autogenerate: { directory: "operating-systems", collapsed: true },
+            },
+          ],
         },
         {
           label: "Software",
-          autogenerate: {
-            directory: "/software",
-            collapsed: true,
-          },
+          items: [{ autogenerate: { directory: "software", collapsed: true } }],
         },
         {
           label: "Virtualization",
-          autogenerate: {
-            directory: "/virtualization",
-            collapsed: true,
-          },
+          items: [
+            { autogenerate: { directory: "virtualization", collapsed: true } },
+          ],
         },
         {
           label: "Windows",
-          autogenerate: {
-            directory: "/windows",
-            collapsed: true,
-          },
+          items: [{ autogenerate: { directory: "windows", collapsed: true } }],
         },
         {
           label: "Home Automation",
-          autogenerate: {
-            directory: "/home-automation",
-            collapsed: true,
-          },
+          items: [
+            { autogenerate: { directory: "home-automation", collapsed: true } },
+          ],
         },
       ],
       plugins: [
