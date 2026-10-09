@@ -38,11 +38,10 @@ jobs:
         run: npm run build
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@f0a1cd58cd66095dee69bfa18fa5efd1dde93bca # v1
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3.15.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          branch: ${{ github.ref == 'refs/heads/master' && 'main' || github.head_ref }}
-          projectName: documentation
-          directory: ./build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: "3"
+          command: pages deploy ./build --project-name=documentation --branch=${{ github.ref == 'refs/heads/master' && 'main' || github.head_ref }}
