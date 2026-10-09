@@ -18,6 +18,6 @@
     "sharp": "0.35.5",
     "starlight-blog": "0.30.0",
     "starlight-links-validator": "0.27.0",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   }
 }
