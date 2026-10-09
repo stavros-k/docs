@@ -23,7 +23,6 @@ export default defineConfig({
     starlight({
       title: "Stavros' Docs",
       description: "A documentation site built with Astro",
-      tagline: "A documentation site built with Astro",
       titleDelimiter: " | ",
       tableOfContents: {
         maxHeadingLevel: 3,
