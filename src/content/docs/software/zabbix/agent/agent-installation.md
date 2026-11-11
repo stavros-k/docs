@@ -27,19 +27,19 @@ I also use TLS-PSK
 If you are using docker for your server too, just add this on your docker-compose.yml file.
 
 ```yaml
-  zabbix_agent2:
-    # https://hub.docker.com/r/zabbix/zabbix-agent2/tags7
-    image: 'zabbix/zabbix-agent2:ubuntu-6.2.0'
-    restart: unless-stopped
-    networks:
-      - zabbix_net
-    environment:
-      ZBX_HOSTNAME: "Zabbix server"
-      ZBX_SERVER_HOST: "zabbix_server"
-      ZBX_PASSIVESERVERS: "zabbix_server"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
-    privileged: true
+zabbix_agent2:
+  # https://hub.docker.com/r/zabbix/zabbix-agent2/tags7
+  image: "zabbix/zabbix-agent2:ubuntu-6.2.0"
+  restart: unless-stopped
+  networks:
+    - zabbix_net
+  environment:
+    ZBX_HOSTNAME: "Zabbix server"
+    ZBX_SERVER_HOST: "zabbix_server"
+    ZBX_PASSIVESERVERS: "zabbix_server"
+  volumes:
+    - "/var/run/docker.sock:/var/run/docker.sock:ro"
+  privileged: true
 ```
 
 ## Windows

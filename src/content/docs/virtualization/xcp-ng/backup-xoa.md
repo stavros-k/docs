@@ -21,7 +21,7 @@ as plain text, so keep it safe.
 Navigate to `Settings` > `XO Config`
 
 - Click <kbd>Download current config</kbd>
--
+
   ![xoa-download-backup](./img/xoa-backup-restore.png)
 
 - (Optional) Enter a password to encrypt your backup

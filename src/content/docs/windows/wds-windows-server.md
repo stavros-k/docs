@@ -42,7 +42,7 @@ sidebar_position: 1
 ## Install MDT
 
 - Visit [Microsoft Deployment Toolkit (MDT) Download Page](https://www.microsoft.com/en-us/download/details.aspx?id=54259)
-  - Download the  `x64` version
+  - Download the `x64` version
 - Visit [Windows ADK Download Page](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
   - Download `Windows ADK`
   - Download `Windows PE add-on`
@@ -100,15 +100,15 @@ sidebar_position: 1
      - Rename them to `Win10Boot.wim` and `Win10Install.esd`
      - Open Powershell (Administrator) and execute the following
 
-      ```powershell
-      cd C:\RemoteInstall
-      dism /Get-WimInfo /WimFile:Win10Install.esd
-      # Note the index numbers of the images you want to extract.
-      # Run the following command for each of the indexes you want to extract, remember to change
-      # the name of the DestinationImageFile for each index.
-      dism /Export-Image /SourceImageFile:Win10Install.esd /Compress:max /CheckIntegrity `
-      /SourceIndex:6 /DestinationImageFile:C:\RemoteInstall\Win10ProInstall.wim
-      ```
+     ```powershell
+     cd C:\RemoteInstall
+     dism /Get-WimInfo /WimFile:Win10Install.esd
+     # Note the index numbers of the images you want to extract.
+     # Run the following command for each of the indexes you want to extract, remember to change
+     # the name of the DestinationImageFile for each index.
+     dism /Export-Image /SourceImageFile:Win10Install.esd /Compress:max /CheckIntegrity `
+     /SourceIndex:6 /DestinationImageFile:C:\RemoteInstall\Win10ProInstall.wim
+     ```
 
   2. Add Boot Images
      - Navigate to WDS and right click `Boot Images` on the left sidebar

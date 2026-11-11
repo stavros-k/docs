@@ -102,13 +102,11 @@ Let everything on automatic. Once you reach the login prompt, use the following 
   Prefer using the `a` option. It's easier.
 
   Let's configure the `LAN` interface address.
-
   - Select option `2`
   - Select the `LAN` interface. Usually option `1`
   - Enter your preferred `LAN` IP (eg. 10.1.1.1)
 
   ![config-interface1](./img/config-interface1.png)
-
   - Enter your preferred subnet mask. (Usually `24`)
   - Configure `IPv6` for LAN via WAN tracking: `n`
   - Configure `IPv6` for LAN via DHCP6: `n`

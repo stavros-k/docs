@@ -126,7 +126,6 @@ I used this file to change few things like timezone, dark theme, locale
 
 </details>
 
-
 Place it in `OSBuilder/Content/Unattend`
 Create Task with:
 

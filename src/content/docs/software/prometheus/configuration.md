@@ -60,9 +60,9 @@ The `web.yml` file is only needed if you want to add basic auth or other forms o
 
 ```yaml
 basic_auth_users:
-    user1: bcrypt_hash
-    user2: bcrypt_hash
-    user3: bcrypt_hash
+  user1: bcrypt_hash
+  user2: bcrypt_hash
+  user3: bcrypt_hash
 # TODO: Check tls_server_config:
 ```
 

@@ -13,7 +13,7 @@ Some of the above highly depend on your hardware (mainly the CPU)
 
 ## Power Savings
 
-Navigate to  `System` -> `Advanced` -> `Miscellaneous`
+Navigate to `System` -> `Advanced` -> `Miscellaneous`
 
 You can also enabled power savings feature, and configure how it works when it's plugged in or on batteries.
 
@@ -28,7 +28,7 @@ Usually `hiadaptive` is a good choice
 
 ## Cryptographic & Thermal Hardware
 
-Navigate to  `System` -> `Advanced` -> `Miscellaneous`
+Navigate to `System` -> `Advanced` -> `Miscellaneous`
 For `Intel` chips the below show work fine.
 
 - Cryptographic Hardware: `AES-NI CPU-based Acceleration`

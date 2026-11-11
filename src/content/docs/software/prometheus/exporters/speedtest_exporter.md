@@ -42,11 +42,11 @@ Add below job under `scrape_configs` on your prometheus configuration.
 `prometheus.yaml`
 
 ```yaml
-  - job_name: 'speedtest-exporter'
-    # How often to run the speedtest
-    scrape_interval: 1h
-    # After how much time it will consider it failed
-    scrape_timeout: 1m
-    static_configs:
-      - targets: ['localhost:9798']
+- job_name: "speedtest-exporter"
+  # How often to run the speedtest
+  scrape_interval: 1h
+  # After how much time it will consider it failed
+  scrape_timeout: 1m
+  static_configs:
+    - targets: ["localhost:9798"]
 ```

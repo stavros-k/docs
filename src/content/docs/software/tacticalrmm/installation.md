@@ -123,6 +123,7 @@ chmod +x install.sh
 ```
 
 Follow on-screen instructions
+
 > Depending on your hardware, this might take **long** time
 
 Once this is finished, visit `https://rmm.yourdomain.com`
