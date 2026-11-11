@@ -18,7 +18,7 @@ services:
   zabbix_pgsql:
     user: root
     # https://hub.docker.com/r/bitnami/postgresql/tags
-    image: 'bitnami/postgresql:14.4.0'
+    image: "bitnami/postgresql:14.4.0"
     restart: unless-stopped
     networks:
       - zabbix_net
@@ -30,7 +30,7 @@ services:
       - /datadisk/zabbix/postgres:/bitnami/postgresql
   zabbix_server:
     # https://hub.docker.com/r/zabbix/zabbix-server-pgsql/tags
-    image: 'zabbix/zabbix-server-pgsql:ubuntu-6.2.0'
+    image: "zabbix/zabbix-server-pgsql:ubuntu-6.2.0"
     restart: unless-stopped
     networks:
       - zabbix_net

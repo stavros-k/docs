@@ -23,7 +23,6 @@ This will be only available for install in Windows machines.
   ```
 
 - Make sure service is started
-
   - Press <kbd>⊞ Win</kbd> + <kbd>R</kbd>
   - Type `services.msc` and press <kbd>Enter</kbd>
   - Check `windows_exporter` service is `Running` and `Automatic`
@@ -56,7 +55,7 @@ Add below job under `scrape_configs` on your prometheus configuration.
 `prometheus.yaml`
 
 ```yaml
-  - job_name: "windows_exporter"
-    static_configs:
-      - targets: ["localhost:9182"]
+- job_name: "windows_exporter"
+  static_configs:
+    - targets: ["localhost:9182"]
 ```

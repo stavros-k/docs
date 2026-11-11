@@ -26,8 +26,12 @@
         }
     },
     "markdown": {
+        "parser": {
+            "frontmatter": true
+        },
         "formatter": {
-            "enabled": false
+            "enabled": true,
+            "formatEmbeds": true
         },
         "linter": {
             "enabled": true

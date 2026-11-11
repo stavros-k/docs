@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run fmt
+        run: npm run fmt:check
 
       - name: Build
         run: npm run build

@@ -12,8 +12,8 @@ You can view the progress of any of the following tests with this:
 
 The progress (in percentage) of the test is in the line `Self-test execution status:`
 
-|                       Running Test                        |                    Finished Test                    |
-| :-------------------------------------------------------: | :-------------------------------------------------: |
+|                        Running Test                         |                     Finished Test                     |
+| :---------------------------------------------------------: | :---------------------------------------------------: |
 | ![smart-progress-running](./img/smart-progress-running.jpg) | ![smart-progress-zero](./img/smart-progress-zero.jpg) |
 
 Zero (`0`) means our test is finished or no test is running.

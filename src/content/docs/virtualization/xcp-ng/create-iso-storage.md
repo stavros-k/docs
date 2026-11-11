@@ -7,15 +7,15 @@ Start by SSH-ing to your `xcp-ng` host
 
 ## Create storage directory
 
-  ```shell
-  mkdir -p /isos && cd /isos
-  ```
+```shell
+mkdir -p /isos && cd /isos
+```
 
 ## Download ISO
 
-  ```shell
-  curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso --output ubuntu-22.04-live-server-amd64.iso
-  ```
+```shell
+curl https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso --output ubuntu-22.04-live-server-amd64.iso
+```
 
 ![xoa-source-mkdir-download-img](./img/xoa-source-mkdir-download-img.png)
 

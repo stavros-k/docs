@@ -15,7 +15,7 @@ internal resources.
 
 ## NAT Reflection
 
-Navigate to  `System` -> `Advanced` -> `Firewall & NAT`
+Navigate to `System` -> `Advanced` -> `Firewall & NAT`
 
 Scroll down to `Network Address Translation`
 

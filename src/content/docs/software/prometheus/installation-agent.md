@@ -27,7 +27,6 @@ Agent will scrape metrics from local exporters and then send the data to the rem
   ```
 
 - Make sure service is started
-
   - Press <kbd>⊞ Win</kbd> + <kbd>R</kbd>
   - Type `services.msc` and press <kbd>Enter</kbd>
   - Check `prometheus` service is `Running` and `Automatic`

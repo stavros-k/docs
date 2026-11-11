@@ -8,8 +8,8 @@
         "build": "astro check && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "fmt": "biome check --error-on-warnings",
-        "fmt-fix": "biome check --write"
+        "fmt": "biome check --write",
+        "fmt:check": "biome check --error-on-warnings"
     },
     "dependencies": {
         "@astrojs/sitemap": "3.7.4",
