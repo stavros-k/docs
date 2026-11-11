@@ -1,7 +1,7 @@
-  MD033:
-    allowed_elements:
+MD033:
+  allowed_elements:
     - "kbd"
     - "details"
     - "summary"
-  MD013:
-    line_length: 120
+MD013:
+  line_length: 120
