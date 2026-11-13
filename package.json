@@ -12,9 +12,9 @@
         "fmt:check": "biome check --error-on-warnings"
     },
     "dependencies": {
-        "@astrojs/sitemap": "3.7.4",
-        "@astrojs/starlight": "0.42.11",
-        "astro": "7.4.11",
+        "@astrojs/sitemap": "3.7.5",
+        "@astrojs/starlight": "0.43.1",
+        "astro": "7.4.12",
         "sharp": "0.35.5",
         "starlight-blog": "0.30.2",
         "starlight-links-validator": "0.27.0"
