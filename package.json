@@ -13,15 +13,15 @@
     },
     "dependencies": {
         "@astrojs/sitemap": "3.7.6",
-        "@astrojs/starlight": "0.43.1",
+        "@astrojs/starlight": "0.43.2",
         "astro": "7.4.13",
         "sharp": "0.35.5",
-        "starlight-blog": "0.30.2",
-        "starlight-links-validator": "0.27.0"
+        "starlight-blog": "0.31.0",
+        "starlight-links-validator": "0.27.1"
     },
     "devDependencies": {
         "@astrojs/check": "0.9.12",
-        "@biomejs/biome": "2.6.8",
+        "@biomejs/biome": "2.6.9",
         "typescript": "6.0.3"
     }
 }
